@@ -1,0 +1,85 @@
+*{
+    margin-top: 0px;
+}
+body{
+    background-color: #F5F5F5;
+}
+#cHead{
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+#cHead h2{
+    margin-left: -7%;
+    margin-top: 10px;
+}
+img{
+    width: 18%;
+    /* margin-left: 12%; */
+}
+#cHead div {
+    width: 20%;
+    margin-right: -18%;
+    margin-top: 10px;
+}
+#cHead div :last-child{
+    margin-left: 18px;
+    width: 9%;
+}
+#cHead div img{
+    width: 10%;
+}
+#cBlankImg{
+    width: 88%;
+    height: 450px;
+    margin: auto;
+    margin-top: 3%;
+    background-color: white;
+}
+#cBlankImg img{
+    width: 24%;
+    margin-left: 38%;
+    margin-top: 2%;
+}
+#cBlankImg div{
+    text-align: center;
+}
+a{
+    color: black;
+}
+#cartService{
+    width: 88%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+    margin-left: 6%;
+}
+.serv img{
+    width: 22%;
+}
+/* .serv img :nth-child(3){
+    width: 50%;
+} */
+.serv{
+    text-align: center;
+}
+hr{
+    width: 88%; 
+}
+#cartBottomRow{
+    width: 88%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6%;
+}
+#cartBottomRow :first-child img{
+    width: 6%;
+}
+#cartBottomRow :nth-child(3) img{
+    width: 20%;
+}
+.cRow{
+    text-align: center;
+}
