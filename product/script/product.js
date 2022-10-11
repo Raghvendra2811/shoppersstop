@@ -34,9 +34,11 @@ function showCheckboxes() {
 
 async function get(url)
 {
+   
     let res=await fetch(url);
     let data=await res.json();
     appendData(data);
+    document.querySelector(".loading").style.display="none";
 }
 let key="Mens Clothing";
 
@@ -50,7 +52,7 @@ select.setAttribute("id","sort_by");
 select.append(option);
 document.getElementById("category_nav").append(h4,select);
 
-let url="http://localhost:3000/Mens";
+let url="https://superstop.herokuapp.com/product";
  
 get(url);
 
@@ -101,9 +103,14 @@ function checkFun()
     if(event.target.checked)
     {
         let ans=event.target.value;
-        let x=`http://localhost:3000/Mens/?q=${ans}`;
+        let x=`https://superstop.herokuapp.com/product/?q=${ans}`;
+        document.querySelector(".loading").style.display="block";
+        setTimeout(()=>
+        {
           
-        get(x);
+          get(x);
+        },1000);
+         
     }
        
  
