@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* #something{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+} */
+/* #main{
+    overflow: hidden;
+ background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+} */
+
+#navbarhomepage{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5%;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+#navbarline1part1 ul{
+    list-style: none;
+}
+#navbarline1part1 ul li{
+    position: relative;
+    float: left;
+}
+
+#navbarline1part1 ul li a{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    color: black;
+    display: block;
+}
+#navbarpart3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#navbarpart3 div{
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+#navbarpart3 div > input{
+    border: none;
+    padding: 10px ;
+    width: 200px;
+    outline: none;  
+}
+#navbarpart3 div > i{
+    font-size: 20px;
+}
+#navbarpart3 a i{
+    font-size: 25px;
+    margin: 17px;
+    /* margin-bottom: -1px; */
+}
+#navbarpart3  img{
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+}
+#navbarpart3  img:last-child{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+#navbarpart3 > div > button{
+    outline: none;  
+    border: none;
+    background-color: white;
+    margin: 17px;
+}
+#navbarpart3 > div > button i{
+    font-size: 20px;
+}
+#navbarline2part1 ul{
+    list-style: none;
+}
+#navbarline2part1 ul li{
+    position: relative;
+    float: left;
+}
+
+#navbarline2part1 ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    color: black;
+    display: block;
+    margin: 5px 15px ;
+}
+#navbarline2part1{
+    width: 80%;
+    margin: auto;
+}
+/* #part1 ul {
+position: absolute;
+display: none;
+} */
+#LUXE{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5%;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* border: 1px solid teal; */
+    width: 1000px;   
+}
+/* #LUXE > div{
+    border: 1px solid crimson;
+    height: 400px;
+} */
+#luxepart1 ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    color: rgb(119, 119, 119);
+    display: block;
+}
+/* */
+#luxepart1{
+    padding: 10px 10%;
+   margin-bottom: 10%; 
+    background-color: white;
+    
+    
+}
+#luxepart1 ul li a:hover{
+    border-left: 2px solid red;
+    color: black;
+}
+#luxepart1 ul{
+    list-style: none;
+}
+#luxepart2 ul li a{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    color: black;
+    display: block;
+}
+/* */
+#luxepart2{
+    /* padding: px; */
+    /* width: 50%; */
+    padding: 10px;
+   margin-bottom: 10%;
+    background-color: white;
+    
+    
+}
+#luxepart2 ul li a:hover{
+    /* border-left: 2px solid red; */
+    color: red;
+}
+/* #luxepart1 ul li a:hover{
+    border-left: 2px solid red;
+    color: black;
+} */
+#luxepart2 ul{
+    list-style: none;
+}
+#luxepart3{
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+#luxepart3 a img{
+    width: 200px;
+    height: 200px;
+}
+#luxepart3 a:last-child{
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+#luxepart4{
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid salmon; */
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+#luxepart4 a img{
+    width: 200px;
+    height: 200px;
+}
+#luxepart4 a:last-child{
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+#luxeonhover{
+    display: none;
+}
+
+
+#navbarline1part1 ul li:hover  #luxeonhover{
+    display: block;
+   position: absolute;
+   z-index: 1;
+   background-color: white;  
+   
+}
+
+
+
+#bargains{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+    font-size: 18px;
+    padding: 0 5%;
+    width : 900px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+#bargainspart1 {
+    padding: 10px 10%;
+   margin-bottom: 10%; 
+    /* margin-left: -20%; */
+    
+}
+#bargainspart2{
+    margin-top: 1%;
+    margin-bottom: 10%;
+    /* margin-left: -20%; */
+
+}
+#bargainspart1 ul li{
+    list-style: none;
+    padding: 5px;
+    font-weight: bold;  
+}
+#bargainspart1 ul li a{
+    color: rgb(119, 119, 119);
+    padding: 8px;
+    display: block;
+}
+#bargainspart1 ul li a:hover{
+    border-left: 2px solid red;
+    color: black;
+}
+#bargainspart2 ul li{
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;  
+}
+#bargainspart2 ul li a{
+    color: black;
+    padding: 5px;
+    display: block;
+}
+#bargainspart2 ul li a:hover{ 
+    color: red;
+}
+#bargainspart3{
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin-left: -20%; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#bargainspart3 img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+#bargainspart3 a:first-child{
+    padding: 5px;
+    color: red;
+}
+#bargainsonhover{
+    display: none;
+}
+#navbarline1part1 ul li:hover  #bargainsonhover{
+    display: block;
+   position: absolute;
+   z-index: 1;
+   background-color: white;  
+   
+}
+
+
+#mensonhover{
+    display: none;
+}
+
+
+#navbarline2part1 ul li:hover  #mensonhover{
+    display: block;
+   position: absolute;
+   z-index: 1;
+   background-color: white;  
+   
+}
+
+
+
+#menshomepage{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+    font-size: 18px;
+    padding: 0 5%;
+    width : 1000px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#menshomepage h5{
+    font-size: 17px;
+   padding: 5px;
+   
+}
+#menshomepage h5:hover{
+    color: red;
+    cursor: pointer;
+}
+#menshomepage h6:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
+#menshomepage  h6{
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+    padding: 5px;
+}
+#menspart1 ul li a{
+                
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px;
+        color: rgb(119, 119, 119);
+        display: block;
+        list-style: none;
+}
+#menspart1 ul li a:hover{
+    border-left: 2px solid red;
+    color: black;
+    }
+    #menspart1 ul{
+        list-style: none;
+    }
+    #menspart1{
+        padding: 10px 10%;
+        margin-top: -20%;
+    }
+    #menspart2,#menspart3,#menspart4{
+        margin: 0px 50px;
+       
+    }
+   
+
+
+    #womens {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+        font-size: 18px;
+        padding: 0 5%;
+        width: 1000px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #womenspart1 {
+        padding: 10px 10%;
+        margin-top: -10%;
+        /* margin-left: -20%; */
+      }
+      #womenspart1 ul li {
+        list-style: none;
+        padding: 5px;
+        font-weight: bold;
+      }
+      #womenspart1 ul li a {
+        color: rgb(119, 119, 119);
+        padding: 8px;
+        display: block;
+      }
+      #womenspart1 ul li a:hover {
+        border-left: 2px solid red;
+        color: black;
+      }
+      #womens h4 {
+        font-size: 17px;
+        padding: 5px;
+      }
+      #womens h4:hover {
+        color: red;
+        cursor: pointer;
+      }
+      #womens p:hover {
+        color: red;
+        cursor: pointer;
+      }
+
+      #womens p {
+        color: rgb(119, 119, 119);
+        padding: 5px;
+      }
+      #womenspart4 {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin-left: -20%; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #womenspart4 img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      #womenspart4 a{
+        padding: 5px;
+        color: red;
+      }
+      #womenspart2,#womenspart3,#womenspart4{
+        margin: 0px 50px;
+       
+    }
+    
+    #womenspart2{
+        margin-top: 4%;
+    }
+    #womensparts3{
+        margin-top: -65%;
+    }
+    #womenspart4{
+        margin-top: -50%;
+    }
+
+      #womensonhover{
+        display: none;
+    }
+    
+    
+    #navbarline2part1 ul li:hover  #womensonhover{
+        display: block;
+       position: absolute;
+       z-index: 1;
+       background-color: white;  
+       
+    }
+
+
+
+
+    #beauty {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+        font-size: 18px;
+        padding: 0 5%;
+        width: 1000px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #beautypart1 {
+        padding: 10px 10%;
+        /* margin-top: -10%; */
+        /* margin-left: -20%; */
+      }
+      #beautypart1 ul li {
+        list-style: none;
+        padding: 5px;
+        font-weight: bold;
+      }
+      #beautypart1 ul li a {
+        color: rgb(119, 119, 119);
+        padding: 8px;
+        display: block;
+      }
+      #beautypart1 ul li a:hover {
+        border-left: 2px solid red;
+        color: black;
+      }
+      #beauty h4 {
+        font-size: 17px;
+        padding: 5px;
+      }
+      #beauty h4:hover {
+        color: red;
+        cursor: pointer;
+      }
+      #beauty p:hover {
+        color: red;
+        cursor: pointer;
+      }
+
+      #beauty p {
+        color: rgb(119, 119, 119);
+        padding: 5px;
+      }
+      #beautypart4 {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin-left: -20%; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #beautypart4 img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      #beautypart4 a{
+        padding: 5px;
+        color: red;
+      }
+
+      #beautypart2,#beautypart3,#beautypart4{
+        margin: 0px 50px;
+       
+    }
+
+     #beautyonhover{
+        display: none;
+    }
+    
+    
+    #navbarline2part1 ul li:hover  #beautyonhover{
+        display: block;
+       position: absolute;
+       z-index: 1;
+       background-color: white;  
+       
+    }
