@@ -8,7 +8,7 @@
   width: 100%;
   height: 100vh;
   background:#fff url('https://cdn.dribbble.com/users/645440/screenshots/3162915/shopping-loader.gif') no-repeat center;
-   z-index:9999;
+  z-index:9999;
 }
 
 #page{
@@ -38,8 +38,6 @@
     display: flex;
     justify-content: space-between;
     margin-left:328px;
-    font-style: italic;
-    
     margin-bottom: 5px;
     align-items: center;
      
@@ -49,14 +47,15 @@
 }
 #category_nav>select{
 height: 50px;
- 
  border-radius: 2px;
 font-size: 15px;
 color:Black;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 
-
+}
+#category_text{
+  font-style: italic;
 }
 
 
@@ -88,7 +87,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
      margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap:15px;
+    gap:25px;
 }
 #card{
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
@@ -96,15 +95,64 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
   text-align:start;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap:10px;
+  /* box-shadow: 0 0.25rem 0.25rem 0 #ececec; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   
 }
+#price_parent{
+  display: flex;
+  gap: 6px;
+  text-align: center;
+  align-items:baseline;
+  margin-top:-5px;
+  font-size:.8500rem;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0;
+  margin-left:10px;
+  margin-right: 10px;
+}
 
- 
- 
-
- 
+#parent_img{
+  
+  overflow: hidden;
+}
+#price_parent>
+#discount{
+  color:#FF6B35;
+  
+  font-size:.8500rem;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0;
+   
+}
+#description{
+  font-size:.8500rem;
+  font-weight: 300;
+  color: grey;
+  margin-left:10px;
+  margin-right: 10px;
+}
+#title{
+  text-transform: capitalize;
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+  letter-spacing: .03125rem;
+  text-align: left;
+  font-stretch: normal;
+  font-style: normal;
+  font-size:1.01rem;
+  margin-left:10px;
+  margin-right: 10px;
+}
+#striked_price{
+  text-decoration: line-through;
+  color: grey;
+  font-size:.8500rem;
+}
 
 /* for css of slidbare */ 
 
@@ -140,7 +188,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     
     border-right: none;
     border-left: none;
-
+    border-bottom: none;
     font-size: .75rem;
     letter-spacing: .03125rem;
     font-weight: 700;
@@ -166,9 +214,9 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
      
   }
   
-  #checkboxes1 {
+  #checkboxes1,#checkboxes2,#checkboxes3,#checkboxes4,#checkboxes5{
     display:none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  */
     font-size: .75rem;
     letter-spacing: .03125rem;
     font-weight: 700;
@@ -179,33 +227,25 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     color: #333;
     text-transform: uppercase;
    border-right: 2px solid black;
-    
-    
+   border-bottom:1px solid grey;
+   width: 100%; 
   }
     
-  #checkboxes2 {
-    display:none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-    font-size: .75rem;
-    letter-spacing: .03125rem;
-    font-weight: 700;
-    line-height: 1.33;
-    cursor: pointer;
-    margin-right: .625rem;
-    margin-bottom: .75rem;
-    color: #333;
-    text-transform: uppercase;
-   border-right: 2px solid black;
-  
-    
-  }
+   
   
 #sort_by{
   color: #777777;
-  border:none;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-
+   background-color: white;
+   border-radius: 0;
+   text-transform: capitalize;
+   height:30px;
+    
+   width: 25%;
+  font-family:Arial, Helvetica, sans-serif;
+  
+   
+   
+  
 }
   
   #checkboxes1 label {
@@ -220,6 +260,25 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
    
     
   }
+  #checkboxes3 label {
+    display: block;
+    margin: 10px;
+   
+    
+  }
+  #checkboxes4 label {
+    display: block;
+    margin: 10px;
+   
+    
+  }
+  #checkboxes5 label {
+    display: block;
+    margin: 10px;
+   
+    
+  }
+
   
    
   .filter{
@@ -230,7 +289,14 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
    .box{
     cursor: pointer;
    }
-  
+  #mens_filter{
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    margin-right: 15px;
+  }
  
 
 
