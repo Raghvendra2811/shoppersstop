@@ -321,25 +321,23 @@ display: none;
     width : 1000px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-#menshomepage h5{
+#menshomepage h4{
     font-size: 17px;
    padding: 5px;
    
 }
-#menshomepage h5:hover{
+#menshomepage h4:hover{
     color: red;
     cursor: pointer;
 }
-#menshomepage h6:hover{
-    color: red;
-    cursor: pointer;
-
+#womens p:hover {
+  color: red;
+  cursor: pointer;
 }
 
-#menshomepage  h6{
-    font-size: 14px;
-    color: rgb(119, 119, 119);
-    padding: 5px;
+#womens p {
+  color: rgb(119, 119, 119);
+  padding: 5px;
 }
 #menspart1 ul li a{
                 
@@ -484,7 +482,7 @@ display: none;
       }
       #beautypart1 ul li a {
         color: rgb(119, 119, 119);
-        padding: 8px;
+        padding: 2px;
         display: block;
       }
       #beautypart1 ul li a:hover {
@@ -526,9 +524,16 @@ display: none;
         color: red;
       }
 
-      #beautypart2,#beautypart3,#beautypart4{
+      #beautypart2,#beautyparts3,#beautypart4{
         margin: 0px 50px;
        
+    }
+    #beautypart2,#beautypart4{
+        margin-top: -12%;
+    }
+    #beautypart4{
+        /* margin-top: -10%; */
+        margin-top: -26%;
     }
 
      #beautyonhover{
@@ -543,3 +548,196 @@ display: none;
        background-color: white;  
        
     }
+
+
+
+
+    #watches {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+        font-size: 18px;
+        padding: 0 5%;
+        width: 1000px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #watchespart1 {
+        padding: 10px 10%;
+        margin-bottom: 10%;
+        margin-left: -10%;
+        margin-top: -10%;
+      }
+      #watchespart1 ul li {
+        list-style: none;
+        padding: 5px;
+        font-weight: bold;
+      }
+      #watchespart1 ul li a {
+        color: rgb(119, 119, 119);
+        padding: 3px;
+        display: block;
+      }
+      #watchespart1 ul li a:hover {
+        border-left: 2px solid red;
+        color: black;
+      }
+      #watches h4 {
+        font-size: 17px;
+        padding: 5px;
+      }
+      #watches h4:hover {
+        color: red;
+        cursor: pointer;
+      }
+      #watches p:hover {
+        color: red;
+        cursor: pointer;
+      }
+
+      #watchesparts3{
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin-left: -20%; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #watchesparts3 img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      #watchesparts3 a{
+        padding: 5px;
+        color: red;
+      }
+      #watchespart4 {
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* margin-left: -20%; */
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+      #watchespart4 img {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+      }
+      #watchespart4 a{
+        padding: 5px;
+        color: red;
+      }
+      #watchespart2{
+        /* margin-top: -10%; */
+        margin-left: -8%;
+      }
+      #watchesparts3{
+        margin:  5%;
+        
+    }
+    #watchespart4{
+        margin:  5%;
+    }
+
+
+      #watchesonhover{
+        display: none;
+    }
+   
+    
+    #navbarline2part1 ul li:hover  #watchesonhover{
+        display: block;
+       position: absolute;
+       z-index: 1;
+       background-color: white;    
+    }
+
+
+    #Kids {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 10;
+      font-size: 18px;
+      padding: 0 5%;
+      width: 800px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    #Kidspart1 {
+      padding: 10px 10%;
+      margin-bottom: 10%;
+      /* margin-left: -20%; */
+    }
+    #Kidspart1 ul li {
+      list-style: none;
+      padding: 5px;
+      font-weight: bold;
+    }
+    #Kidspart1 ul li a {
+      color: rgb(119, 119, 119);
+      padding: 3px;
+      display: block;
+    }
+    #Kidspart1 ul li a:hover {
+      border-left: 2px solid red;
+      color: black;
+    }
+    #Kids h4 {
+      font-size: 17px;
+      padding: 5px;
+    }
+    #Kids h4:hover {
+      color: red;
+      cursor: pointer;
+    }
+    #Kids p:hover {
+      color: red;
+      cursor: pointer;
+    }
+
+   
+    #Kidspart4 {
+      margin-bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      /* margin-left: -20%; */
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      margin-left: 5%;
+    }
+    #Kidspart4 img {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+    }
+    #Kidspart4 a{
+      padding: 5px;
+      color: red;
+    }
+    #Kidspart2{
+      margin-left: 5%;
+      margin-top: -10%;
+    }
+    #Kidsparts3{
+      margin-left: 5%;
+      margin-top: -10%;
+    }
+   
+
+
+    #Kidsonhover{
+      display: none;
+  }
+ 
+  
+  #navbarline2part1 ul li:hover  #Kidsonhover{
+      display: block;
+     position: absolute;
+     z-index: 1;
+     background-color: white;    
+  }
+
+
+  
