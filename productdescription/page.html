@@ -17,460 +17,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Secular+One&display=swap"
         rel="stylesheet">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@100;300;400&family=Secular+One&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Secular+One&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
-    <style>
-        body {
-            background-color: rgb(243, 243, 243);
-        }
-
-        #contant_div {
-            padding: 30px;
-
-            display: flex;
-            column-gap: 10px;
-            width: 80%;
-            justify-content: space-between;
-            margin: auto;
-            margin-bottom: 40px;
-            margin-bottom: 30px;
-            background-color: rgb(255, 255, 255);
-            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
-            /* position: relative; */
-        }
-
-        * {
-            /* font-family: 'Roboto', sans-serif; */
-            /* font-family: 'Secular One', sans-serif; */
-            /* font-family: 'Source Sans Pro', sans-serif; */
-        }
-
-        li {
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-
-        #contant_div_child_1 {
-            width: 40%;
-            /* border: 2px black solid; */
-            height: fit-content;
-            /* position: sticky; */
-            /* top: 0; */
-            /* height: 700px; */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 100px;
-            justify-content: center;
-
-        }
-
-        #contant_div_child_2 {
-            width: 50%;
-            /* border-left: 1px solid rgb(172, 155, 158); */
-            /* border: 1px black solid; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            row-gap: 30px;
-            align-items: center;
-            /* height: 1000px; */
-        }
-
-        #picx {
-            margin-top: 10px;
-            width: 80%;
-            /* height: 590px; */
-            /* border: 2px black solid; */
-        }
-
-        #disImg {
-            width: 100%;
-            /* height: 80%; */
-            display: block;
-            margin: auto;
-            transition: 0.3s all ease-in-out;
-
-        }
-
-        #disImg:hover {
-            transform: scale(1.1);
-        }
-
-        #nav {
-            border: 2px black solid;
-            width: 100%;
-            height: 50px;
-            position: sticky;
-            top: 0;
-            margin-bottom: 100px;
-            background-color: black;
-            z-index: 999;
-        }
-
-        #fi1stdiv {
-            width: 97%;
-            margin: auto;
-            /* border: 2px black solid; */
-            /* height: 400px; */
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #fi1stdiv>div:first-child {
-            width: 65%;
-            /* height: 200px; */
-            /* border: 2px black solid; */
-        }
-
-        /* #sec2div h1,
-        p {
-            text-align: end;
-        } */
-        #sec2div h3 {
-
-            text-align: end;
-        }
-
-        #sec2div p {
-            text-align: end;
-        }
-
-        #seconddiv_2 {
-            width: 97%;
-            margin: auto;
-            /* border: 2px rgb(195, 28, 28) solid; */
-            /* height: 100px; */
-            display: flex;
-            /* column-gap: 3%; */
-            align-items: center;
-            /* justify-content: space-around; */
-
-        }
-
-        #third_div3 {
-            width: 100%;
-
-            border: 0.1px rgb(119, 110, 110) solid;
-            /* height: 100px; */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        #emptybox {
-            width: 75%;
-
-            border: 2px rgb(8, 8, 8) solid;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #emptybox>div {
-            width: 100%;
-            border: 1px rgb(8, 8, 8) solid;
-            height: 50px;
-        }
-
-        #seconddiv_2 div:first-child {
-            background-color: rgb(245, 245, 245);
-            margin: 5%;
-            padding: 2%;
-            border-radius: 100%;
-        }
-
-        #seconddiv_2 div:nth-child(2) {
-            background-color: rgb(245, 245, 245);
-            margin: 5%;
-            padding: 1.5%;
-            border-radius: 100%;
-        }
-
-        #seconddiv_2 div:last-child {
-            width: 30%;
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5%;
-            margin: 5%;
-
-        }
-
-
-        #seconddiv_2 i {
-            font-size: 35px;
-        }
-
-        #span {
-            font-size: 20px;
-            /* font-weight: bold; */
-
-
-        }
-
-        #lineeee {
-            text-decoration: line-through;
-            font-weight: lighter;
-        }
-
-        #span~span {
-            font-size: 20px;
-            font-weight: bold;
-
-        }
-
-        #thirddivchild {
-            width: 90%;
-            /* border: 2px rgb(195, 28, 28) solid; */
-            /* height: 100px; */
-            /* margin: auto; */
-            margin-top: 15px;
-            display: flex;
-            column-gap: 20px;
-            align-items: center;
-        }
-
-        #thirddivchild i {
-            font-size: 25px;
-            color: red;
-
-        }
-
-        #thirddivchild span {
-            font-size: 25px;
-            /* font-weight: bold; */
-        }
-
-
-
-
-        #third_div3>p {
-            /* border: 2px rgb(195, 28, 28) solid; */
-            width: 90%;
-        }
-
-        #drp1 {
-            width: 90%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 20px;
-        }
-
-        #itags {
-            display: grid;
-            padding: 1% 0%;
-            grid-template-columns: repeat(3, 1fr);
-            /* width: 75%; */
-            border: 1px black solid;
-        }
-
-        #itags>div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #itags>div:first-child {
-            border-right: 1px solid black;
-        }
-
-        #itags>div:nth-child(2) {
-            border-right: 1px solid black;
-        }
-
-        strong {
-            color: red;
-        }
-
-        #itags i {
-            font-size: 30px;
-            margin-top: 10px;
-        }
-
-
-        #itags p {
-            width: 100%;
-            text-align: center;
-            margin: 3px;
-            font-size: 22px;
-            /* border: 2px rgb(201, 214, 200) solid; */
-            border-top: none;
-            border-bottom: none;
-        }
-
-        #accordionExample {
-            width: 80%;
-            margin: auto;
-            /* border: 1px black solid; */
-        }
-
-        #acordinen1 {
-            /* border: 1px black solid; */
-        }
-
-        #dropDownContent {
-            width: 100%;
-            margin: auto;
-            height: 50px;
-            border: 2px black solid;
-            display: flex;
-            /* justify-content: space-between; */
-        }
-
-        #redeeee {
-            color: orangered;
-        }
-
-        #dropDownContent input {
-            width: 100%;
-            height: 50px;
-            border: none;
-            outline: none;
-            border-bottom: 2px black solid;
-            font-size: 23px;
-        }
-
-        #dropDownContent div:first-child {
-            width: 70%;
-        }
-
-        #dropDownContent div:last-child {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-            color: white;
-            font-weight: bold;
-            font-size: 25px;
-            width: 30%;
-            height: 50px;
-            border: 1px black solid;
-        }
-
-        #dropDownContent2 {
-            /* border: 1px black solid; */
-            width: 80%;
-            margin: auto;
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            /* align-items: center; */
-        }
-
-        #dropDownContent2 i {
-            /* border: 1px black solid; */
-            font-size: 40px;
-        }
-
-        #dropDownContent2 div {
-            /* border: 1px black solid; */
-            width: 70%;
-            /* border: 1px black solid; */
-        }
-
-        #highlight {
-            background-color: rgb(245, 245, 245);
-            margin-top: 20px;
-            padding: 3%;
-        }
-
-        a {
-            color: black;
-            font-weight: bold;
-        }
-
-        h1 {
-            /* font-family: 'Roboto', sans-serif; */
-            font-family: 'Secular One', sans-serif;
-        }
-
-        #acrdioncont {
-            width: 100%;
-            /* border: 1px black solid; */
-            /* height: 400px; */
-
-        }
-
-        #acrdioncont h4 {
-            font-weight: 500;
-            font-size: 1rem;
-            margin-bottom: 0;
-        }
-
-        #acordiantables {
-            /* border: 1px black solid; */
-            width: 80%;
-            margin: auto;
-        }
-
-        #acordiantables tbody {
-            /* border: 1px rgb(214, 24, 24) solid; */
-
-        }
-
-        #acordiantables td {
-
-
-            /* border: 1px black solid; */
-            width: 50%;
-            padding: 10px;
-        }
-
-        li td:first-child {
-            font-size: 18px;
-            font-weight: 900;
-        }
-
-        li td:last-child {
-            font-size: 18px;
-            /* font-weight: 400; */
-
-            border-color: inherit;
-            border-top-color: inherit;
-            border-right-color: inherit;
-            border-bottom-color: inherit;
-            border-left-color: inherit;
-            border-style: solid;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-width: 0;
-            border-top-width: 0px;
-            border-right-width: 0px;
-            border-bottom-width: 0px;
-            border-left-width: 0px;
-        }
-
-        li h4 {
-            font-weight: 900;
-        }
-
-        li p {
-            font-size: 18px;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        #sixe {
-            width: 100%;
-            border: 1px black solid;
-            height: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="./description.css">
 </head>
 
 <body>
@@ -481,8 +38,16 @@
                 <img src="https://sslimages.shoppersstop.com/sys-master/images/h97/h46/27696665100318/S22346KT244_YELLOW.jpg_230Wx334H"
                     id="disImg">
             </div>
-            <div id="sixe">
+            <div id="mangediv">
+                <h3>Size</h3>
 
+                <div id="sixe">
+                    <div>Large</div>
+                    <div>Small</div>
+                    <div>Medium</div>
+                    <div>x-large</div>
+                    <div>xx-large</div>
+                </div>
             </div>
         </div>
         <div id="contant_div_child_2">
@@ -500,8 +65,9 @@
                             <!-- <span> Rs</span><span></span>455</span><span>Rs</span><span></span>855</span><span>60 </span><span></span> %OFF </span> -->
 
                     </p>
-                    <p style="margin-top: 0;margin-bottom:2px">Includes all taxes</p>
-                    <p style="margin-top: 0;margin-bottom:2px">Find your perfect match! <a href="#">Ask your Expert
+                    <p id="includee" style="margin-top: 0;margin-bottom:2px">Includes all taxes</p>
+                    <p id="parenthigh" style="margin-top: 0;margin-bottom:2px">Find your perfect match! <a href="#">Ask
+                            your Expert
                             Advisor</a></p>
 
                     <p id="highlight">4 days easy return and exchange applicable for this item</p>
@@ -567,11 +133,6 @@
                     </div>
                     <ul>
 
-                        <div id="acrdioncont">
-                            <h4>Product Description</h4>
-                            <p>.</p>
-
-                        </div>
                         <li>
                             <table width="100%" id="acordiantables">
                                 <tbody>
@@ -821,9 +382,226 @@
         </div>
     </div>
 
+    <div style="height: 30px;"></div>
 
 
 
+    <div class="main-carousel" data-flickity='{"groupCells": 2}'>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/h15/h68/27490444541982/S22STSOLIDPOLO_BLACK.jpg_136Wx204H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Solid Cotton Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>299</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/h82/hcb/27112428765214/SS22INFDNM08_MUSTARD.jpg_136Wx204H"
+                alt="">
+            <div id="crusalnner">
+                Infuse
+            </div>
+            <p id="cropp">Solid Cotton Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>359</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>1199</span>
+                </span> <span id="gappp">.</span> <span id="redii">70%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/h3a/h53/16100532715550/S21831POPCORNOA_OATMEAL.jpg_136Wx204H"
+                alt="">
+            <div id="crusalnner">
+                Fratini
+            </div>
+            <p id="cropp">Mens INHANCE Regular Fit Solid Henley Neck T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>319</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/hb9/hfc/16469157117982/FS1509MHENIM_INDIGO.jpg_2000Wx3000H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Solid Cotton Blend Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>319</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>799</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/h70/h44/16383110676510/S21183RNP453G_GREY_MELANGE.jpg_2000Wx3000H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Printed Cotton Blend Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>299</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/h67/hf6/16549527486494/S21509RNHSP427N_NAVY.jpg_2000Wx3000H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Printed Cotton Blend Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>319</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>799</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/hfa/hd8/27489797242910/SS22LFGRATEEC24_AQUA.jpg_2000Wx3000H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Solid Cotton Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>299</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/hdd/h3e/27606608642078/SS22INFPOL02_RUST.jpg_136Wx204H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Solid Cotton Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>299</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/h88/h59/27960314724382/A22LFDNMEP4409_NAVY.jpg_2000Wx3000H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Solid Cotton Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>999</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>1599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+        <div class="carousel-cell">
+            <img src="https://sslimages.shoppersstop.com/sys-master/images/hf4/h40/27462888456222/SS22DNMPRNTEE19_BLUE.jpg_2000Wx3000H"
+                alt="">
+            <div id="crusalnner">
+                Life
+            </div>
+            <p id="cropp">Solid Cotton Regular Fit Mens T-Shirt</p>
+            <div id="crusalnner">
+                <span>₹</span>
+                <span>499</span>
+                <span id="gappp">.</span>
+                <span id="lineddd">
+                    <span>₹</span>
+                    <span>1599</span>
+                </span> <span id="gappp">.</span> <span id="redii">60%Off</span>
+            </div>
+            <div id="nutton">
+                <a href="#">Add To Bag</a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
