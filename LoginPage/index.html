@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div id="second_child_modal">
-
+                <!-- <label id="labe">Mobile Number<span id="textred">*</span></label> -->
                 <input type="number" class="form-control ob-mobile custom-validity-input" id="mobileNumber"
                     placeholder="" required="">
                 <label id="label1">Mobile Number<span id="textred">*</span></label>
@@ -118,8 +118,10 @@
 
 
                 <div id="otp">
-                    <input id="input1" type="text" maxlength="1"><input id="input2" type="text" maxlength="1"><input
-                        id="input3" type="text" maxlength="1"><input id="input4" type="text" maxlength="1">
+                    <input id="input1" type="text" maxlength="1" onkeyup="move(event, '','input1','input2')">
+                    <input id="input2" type="text" maxlength="1" onkeyup="move(event, 'input1','input2','input3')">
+                    <input id="input3" type="text" maxlength="1" onkeyup="move(event, 'input2','input3','input4')">
+                    <input id="input4" type="text" maxlength="1" onkeyup="move(event, 'input3','input4','')">
                 </div>
                 <button id="submit3">Enter OTP</button>
                 <div id="option">

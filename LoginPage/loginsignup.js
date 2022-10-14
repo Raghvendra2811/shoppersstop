@@ -52,6 +52,7 @@ document.getElementById("submit2").addEventListener("click", () => {
   let val = document.getElementById("password").value;
   arr.map((ele) => {
     if (ele.password == val) {
+      alert("Login sucess!");
       document.getElementById("containemodal2").style.display = "none";
     } else {
       alert("Please enter correct password");
@@ -118,3 +119,19 @@ document.getElementById("submit4").addEventListener("click", () => {
     document.getElementById("containemodal").style.display = "flex";
   }
 });
+
+function move(e, p, c, n) {
+  var length = document.getElementById(c).value.length;
+  var max = document.getElementById(c).getAttribute("maxLength");
+  if (length == max) {
+    if (n !== "") {
+      document.getElementById(n).focus();
+    }
+  }
+  // console.log(e);
+  if (e.key === "Backspace") {
+    if (p !== "") {
+      document.getElementById(p).focus();
+    }
+  }
+}
