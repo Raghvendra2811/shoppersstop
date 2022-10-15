@@ -114,87 +114,86 @@ function footer(){
     <div id="footer-inner-3">
       <div>
         <div class="h4_ul_footer3">
-          <h4>CUSTOMER</h4>
+          <h4>WOMEN</h4>
           <div class="footer-line-white"></div>
           <ul>
-            <li class="h4_ul_li_footer2">HELP/FAQS</li>
-            <li class="h4_ul_li_footer2">TRACK ORDER</li>
-            <li class="h4_ul_li_footer2">SIZE GUIDE</li>
-            <li class="h4_ul_li_footer2">BUYING GUIDE</li>
-            <li class="h4_ul_li_footer2">HOW DO I SHOP?</li>
-            <li class="h4_ul_li_footer2">HOW DO I PAY?</li>
-            <li class="h4_ul_li_footer2">FIND PLACES WE DELIVER</li>
-            <li class="h4_ul_li_footer2">STYLE HUB</li>
+            <li class="h4_ul_li_footer2">Indian Wear/FAQS</li>
+            <li class="h4_ul_li_footer2">Western Wear</li>
+            <li class="h4_ul_li_footer2">Lingerie & Night Wear</li>
+            <li class="h4_ul_li_footer2">Footwear</li>
+            <li class="h4_ul_li_footer2">Watches</li>
+            <li class="h4_ul_li_footer2">Fragrances</li>
+            <li class="h4_ul_li_footer2">Bags & Wallets</li>
+            <li class="h4_ul_li_footer2">Sunglasses & Frames</li>
+            <li class="h4_ul_li_footer2">Jewellery</li>
+            <li class="h4_ul_li_footer2">Travel</li>
           </ul>
         </div>
         <div class="h4_ul_footer3">
-          <h4>CUSTOMER</h4>
+          <h4>MEN</h4>
           <div class="footer-line-white"></div>
           <ul>
-            <li class="h4_ul_li_footer2">HELP/FAQS</li>
-            <li class="h4_ul_li_footer2">TRACK ORDER</li>
-            <li class="h4_ul_li_footer2">SIZE GUIDE</li>
-            <li class="h4_ul_li_footer2">BUYING GUIDE</li>
-            <li class="h4_ul_li_footer2">HOW DO I SHOP?</li>
-            <li class="h4_ul_li_footer2">HOW DO I PAY?</li>
-            <li class="h4_ul_li_footer2">FIND PLACES WE DELIVER</li>
-            <li class="h4_ul_li_footer2">STYLE HUB</li>
+            <li class="h4_ul_li_footer2">Clothing</li>
+            <li class="h4_ul_li_footer2">Footwear</li>
+            <li class="h4_ul_li_footer2">Watches</li>
+            <li class="h4_ul_li_footer2">Fragrances</li>
+            <li class="h4_ul_li_footer2">Grooming For Men</li>
+            <li class="h4_ul_li_footer2">Sunglasses & Frames</li>
+            <li class="h4_ul_li_footer2">Accessories</li>
+            <li class="h4_ul_li_footer2">Jewellery</li>
           </ul>
         </div>
         <div class="h4_ul_footer3">
-          <h4>CUSTOMER</h4>
+          <h4>KIDS</h4>
           <div class="footer-line-white"></div>
           <ul>
-            <li class="h4_ul_li_footer2">HELP/FAQS</li>
-            <li class="h4_ul_li_footer2">TRACK ORDER</li>
-            <li class="h4_ul_li_footer2">SIZE GUIDE</li>
-            <li class="h4_ul_li_footer2">BUYING GUIDE</li>
-            <li class="h4_ul_li_footer2">HOW DO I SHOP?</li>
-            <li class="h4_ul_li_footer2">HOW DO I PAY?</li>
-            <li class="h4_ul_li_footer2">FIND PLACES WE DELIVER</li>
-            <li class="h4_ul_li_footer2">STYLE HUB</li>
+            <li class="h4_ul_li_footer2">Boys</li>
+            <li class="h4_ul_li_footer2">Girls</li>
+            <li class="h4_ul_li_footer2">Infants</li>
+            <li class="h4_ul_li_footer2">Toys</li>
+            <li class="h4_ul_li_footer2">School Essential</li>
+            <li class="h4_ul_li_footer2">Footwear</li>
+            <li class="h4_ul_li_footer2">Watches</li>
+            <li class="h4_ul_li_footer2">Accessories</li>
           </ul>
         </div>
         <div class="h4_ul_footer3">
-          <h4>CUSTOMER</h4>
+          <h4>BEAUTY</h4>
           <div class="footer-line-white"></div>
           <ul>
-            <li class="h4_ul_li_footer2">HELP/FAQS</li>
-            <li class="h4_ul_li_footer2">TRACK ORDER</li>
-            <li class="h4_ul_li_footer2">SIZE GUIDE</li>
-            <li class="h4_ul_li_footer2">BUYING GUIDE</li>
-            <li class="h4_ul_li_footer2">HOW DO I SHOP?</li>
-            <li class="h4_ul_li_footer2">HOW DO I PAY?</li>
-            <li class="h4_ul_li_footer2">FIND PLACES WE DELIVER</li>
-            <li class="h4_ul_li_footer2">STYLE HUB</li>
+            <li class="h4_ul_li_footer2">Make Up</li>
+            <li class="h4_ul_li_footer2">Skincare</li>
+            <li class="h4_ul_li_footer2">Bath & Body</li>
+            <li class="h4_ul_li_footer2">Nails</li>
+            <li class="h4_ul_li_footer2">Haircare</li>
+            <li class="h4_ul_li_footer2">Tools & Accessories</li>
+            <li class="h4_ul_li_footer2">Women's Fragrances</li>
+            <li class="h4_ul_li_footer2">Men's Fragrances</li>
+            <li class="h4_ul_li_footer2">Grooming For Men</li>
+            <li class="h4_ul_li_footer2">Personal Hygiene</li>
           </ul>
         </div>
         <div class="h4_ul_footer3">
-          <h4>CUSTOMER</h4>
+          <h4>HOMESTOP</h4>
           <div class="footer-line-white"></div>
           <ul>
-            <li class="h4_ul_li_footer2">HELP/FAQS</li>
-            <li class="h4_ul_li_footer2">TRACK ORDER</li>
-            <li class="h4_ul_li_footer2">SIZE GUIDE</li>
-            <li class="h4_ul_li_footer2">BUYING GUIDE</li>
-            <li class="h4_ul_li_footer2">HOW DO I SHOP?</li>
-            <li class="h4_ul_li_footer2">HOW DO I PAY?</li>
-            <li class="h4_ul_li_footer2">FIND PLACES WE DELIVER</li>
-            <li class="h4_ul_li_footer2">STYLE HUB</li>
+            <li class="h4_ul_li_footer2">Kitchen & Dining</li>
+            <li class="h4_ul_li_footer2">Decor</li>
+            <li class="h4_ul_li_footer2">Home Furnishing</li>
+            <li class="h4_ul_li_footer2">Storage & Organization</li>
+            <li class="h4_ul_li_footer2">Smart Home and</li>
+            <li class="h4_ul_li_footer2">Appliances</li>
+            <li class="h4_ul_li_footer2">Bath</li>
+            <li class="h4_ul_li_footer2">Bedding</li>
           </ul>
         </div>
         <div class="h4_ul_footer3">
-          <h4>CUSTOMER</h4>
+          <h4>WATCHES</h4>
           <div class="footer-line-white"></div>
           <ul>
-            <li class="h4_ul_li_footer2">HELP/FAQS</li>
-            <li class="h4_ul_li_footer2">TRACK ORDER</li>
-            <li class="h4_ul_li_footer2">SIZE GUIDE</li>
-            <li class="h4_ul_li_footer2">BUYING GUIDE</li>
-            <li class="h4_ul_li_footer2">HOW DO I SHOP?</li>
-            <li class="h4_ul_li_footer2">HOW DO I PAY?</li>
-            <li class="h4_ul_li_footer2">FIND PLACES WE DELIVER</li>
-            <li class="h4_ul_li_footer2">STYLE HUB</li>
+            <li class="h4_ul_li_footer2">Mens Watches</li>
+            <li class="h4_ul_li_footer2">Women Watches</li>
+            <li class="h4_ul_li_footer2">Kids Watches</li>
           </ul>
         </div>
       </div>
