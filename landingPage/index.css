@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#home-container {
+  width: 90%;
+  margin: auto;
+}
+
+#home-crousel1 {
+  width: 100%;
+  /* margin: auto; */
+}
+.carousel {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 4% 92% 4%;
+}
+.carousel div i {
+ font-size: 30px;
+}
+.carousel div {
+  /* border: 2px solid blueviolet; */
+  /* padding: auto; */
+  margin: auto;
+}
+.slides {
+  /* width: 100%; */
+  /* height: 500px; */
+  display: flex;
+  /* position: relative; */
+  overflow-x: hidden;
+}
+.slide {
+  width: 100%;
+  transition: 1s;
+  height: 100%;
+  /* position: absolute; */
+}
+
+.home-singleimg {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.home-singleimg img {
+  width: 100%;
+  margin: auto;
+}
+
+.housedesign {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.housedesign img {
+  width: 100%;
+  margin: auto;
+}
+
+.slide_outer_img {
+  /* border: 5px solid red; */
+  transition: transform 500ms;
+  display: flex;
+
+}
+.h2_3grid {
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.design3grid {
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+.design3grid img {
+  width: 100%;
+  margin: auto;
+}
+.design6grid {
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+.design6grid img {
+  width: 100%;
+  margin: auto;
+}
+h2 {
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
