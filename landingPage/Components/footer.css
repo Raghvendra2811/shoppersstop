@@ -1,0 +1,217 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-line {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 30px;
+}
+.footer-line-1 {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 50px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.footer-line-white {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 30px;
+}
+
+#footer-inner-2 > div {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer-inner-1 > div {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 85%;
+}
+#footer-inner-3 > div {
+  margin: auto;
+  width: 85%;
+}
+#footer-inner-3 {
+  padding: 40px 0px;
+  width: 100%;
+  background-color: #000;
+}
+#footer-inner-2 > div > div > ul > li {
+  font-family: sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  padding-top: 0.9375rem;
+  list-style-type: none;
+}
+#footer-inner-2 > div > div > h4 {
+  font-family: sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-size: 13px;
+}
+
+/*  */
+
+#footer-inner-3 > div {
+  background-color: #000;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer-inner-3 > div > div > ul > li {
+  font-family: sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  padding-top: 0.9375rem;
+  list-style-type: none;
+}
+
+#footer-inner-3 > div > div > ul,
+#footer-inner-2 > div > div > ul {
+  padding-left: 0px;
+}
+
+#bottom-text {
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+#footer-inner-3 > div > div > h4 {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* foooter  */
+/* img { */
+  /* width: 18%; */
+  /* margin-left: 12%; */
+/* } */
+#cartService {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 18px;
+      margin-left: 6%; */
+  border-bottom: 0.0625rem solid #e1e1df;
+  padding: 10px 30px;
+}
+/* .serv img{
+      width: 22%;
+  } */
+.serv {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.serv img {
+  margin: auto;
+  margin-bottom: 10px;
+}
+.serv h4,
+#cartBottomRow > .cRow > h3 {
+  color: #4e4b4b;
+  /* max-width: initial; */
+  /* letter-spacing: 0.03125rem; */
+  font-size: 14px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+.serv h4 {
+  text-align: center;
+}
+#cartBottomRow > .cRow > h4 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: sans-Serif;
+  color: #000;
+  position: relative;
+  margin: auto;
+  /* border-bottom: .5px solid grey; */
+  text-align: center;
+  margin-bottom: 15px;
+}
+#cartBottomRow > .cRow > h5 {
+  /* border-bottom: 0.0625rem solid #ff6b35; */
+  color: #ff6b35;
+  /* max-width: initial; */
+  /* letter-spacing: 0.03125rem; */
+  font-size: 14px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+/* #cartBottomRow > .cRow > h4 {
+} */
+#footer-inner-1 {
+  background-color: #f5f5f5;
+}
+#cartBottomRow {
+  /* width: 88%; */
+
+  display: flex;
+  justify-content: space-around;
+  /* margin-left: 6%; */
+}
+#social-media img {
+  width: 32px;
+  height: 32px;
+}
+#pay-secure img {
+  width: 42px;
+  height: 25px;
+  /* border: 5px solid red; */
+}
+#download-app img {
+  width: 90px;
+  height: 38px;
+  /* border: 2px solid greenyellow; */
+}
+.cRow {
+  text-align: center;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  #cartBottomRow,
+  #cartService {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #footer-inner-2 > div,
+  #footer-inner-3 > div {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 550px){
+  #footer{
+    display: none;
+  }
+  #cartBottomRow,
+  #cartService {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #footer-inner-2 > div,
+  #footer-inner-3 > div {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
