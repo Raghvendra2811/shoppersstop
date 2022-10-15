@@ -17,12 +17,6 @@ body {
   /* position: relative; */
 }
 
-* {
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'Secular One', sans-serif; */
-  /* font-family: 'Source Sans Pro', sans-serif; */
-}
-
 li {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -279,10 +273,6 @@ strong {
   /* border: 1px black solid; */
 }
 
-#acordinen1 {
-  /* border: 1px black solid; */
-}
-
 #dropDownContent {
   width: 100%;
   margin: auto;
@@ -375,10 +365,6 @@ h1 {
   /* border: 1px black solid; */
   width: 80%;
   margin: auto;
-}
-
-#acordiantables tbody {
-  /* border: 1px rgb(214, 24, 24) solid; */
 }
 
 #acordiantables td {
@@ -646,9 +632,6 @@ img {
 .carousel-cell img {
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 3%);
 }
-#na {
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-}
 
 #crusalnner {
   /* border: 1px greenyellow solid; */
@@ -707,6 +690,6 @@ a {
 
 .main-carousel {
   margin-top: 30px;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
