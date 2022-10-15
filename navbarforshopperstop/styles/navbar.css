@@ -1112,7 +1112,6 @@ display: none;
     text-align: center;
     transition: 0.3s;
     margin-top: 170px;
-    background-color: white !important;
     /* background-color: white !important; */
   }
   #navbarline2part1  ul li{
@@ -1240,7 +1239,6 @@ display: none;
       text-align: center;
       transition: 0.3s;
       margin-top: 170px;
-      background-color: white !important;
       /* background-color: white !important; */
     }
     #navbarline2part1  ul li{
