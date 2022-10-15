@@ -66,15 +66,17 @@ document.getElementById("submit2").addEventListener("click", () => {
 document.getElementById("crose").addEventListener("click", () => {
   document.getElementById("containemodal").style.display = "none";
   document.getElementById("containemodal2").style.display = "none";
+  document.getElementById("mobileNumber").value = "";
 });
 
 document.getElementById("crose2").addEventListener("click", () => {
   document.getElementById("containemodal2").style.display = "none";
+  document.getElementById("mobileNumber").value = "";
 });
 
 document.getElementById("openmodal").addEventListener("click", () => {
+  document.getElementById("mobileNumber").value = "";
   document.getElementById("containemodal").style.display = "flex";
-  document.getElementById("mobileNumber").innerText = "";
 });
 
 //input otp
@@ -83,10 +85,15 @@ document.getElementById("submit3").addEventListener("click", () => {
   let input2 = document.getElementById("input2").value;
   let input3 = document.getElementById("input3").value;
   let input4 = document.getElementById("input4").value;
-
+  document.getElementById("mobileNumber").value = "";
   if (input1 == 1 && input2 == 2 && input3 == 3 && input4 == 4) {
     document.getElementById("containemodal3").style.display = "none";
     document.getElementById("containemodal4").style.display = "flex";
+
+    document.getElementById("input1").value = "";
+    document.getElementById("input2").value = "";
+    document.getElementById("input3").value = "";
+    document.getElementById("input4").value = "";
   } else {
     alert("Enter Valid Otp");
   }
@@ -94,10 +101,20 @@ document.getElementById("submit3").addEventListener("click", () => {
 
 document.getElementById("crose3").addEventListener("click", () => {
   document.getElementById("containemodal3").style.display = "none";
+  document.getElementById("mobileNumber").value = "";
+  document.getElementById("input1").value = "";
+  document.getElementById("input2").value = "";
+  document.getElementById("input3").value = "";
+  document.getElementById("input4").value = "";
 });
 
 document.getElementById("crose4").addEventListener("click", () => {
   document.getElementById("containemodal4").style.display = "none";
+  document.getElementById("input1").value = "";
+  document.getElementById("input2").value = "";
+  document.getElementById("input3").value = "";
+  document.getElementById("input4").value = "";
+  document.getElementById("mobileNumber").value = "";
 });
 
 var arr = JSON.parse(localStorage.getItem("userlist")) || [];
@@ -121,6 +138,11 @@ document.getElementById("submit4").addEventListener("click", () => {
     localStorage.setItem("userlist", JSON.stringify(arr));
     document.getElementById("containemodal4").style.display = "none";
     document.getElementById("containemodal").style.display = "flex";
+
+    document.getElementById("div_1_input").value = "";
+    document.getElementById("div_2_input").value = "";
+    document.getElementById("div_3_input").value = "";
+    document.getElementById("div_4_input").value = "";
   }
 });
 
