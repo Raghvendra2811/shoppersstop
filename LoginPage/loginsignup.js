@@ -1,14 +1,15 @@
 let flag = true;
 var c = 1;
 document.getElementById("change").addEventListener("click", () => {
-  // let div = document.getElementById("change");
+  document.getElementById("change").innerText = "";
   if (flag) {
     console.log("hello1");
     document.getElementById(
       "label1"
     ).innerHTML = `Mobile Number<span id="textred">*</span>`;
+    document.getElementById("siguppp").innerText = "Login Using";
     document.getElementById("change").innerText = "Email";
-    document.getElementById("mobileNumber").setAttribute("type", "number");
+    document.getElementById("mobileNumber").setAttribute("type", "tel");
 
     flag = false;
 
@@ -17,6 +18,7 @@ document.getElementById("change").addEventListener("click", () => {
     document.getElementById(
       "label1"
     ).innerHTML = `Email<span id="textred">*</span>`;
+    document.getElementById("siguppp").innerText = "Signup Using";
     document.getElementById("change").innerText = "Number";
     document.getElementById("mobileNumber").setAttribute("type", "email");
 
@@ -28,6 +30,7 @@ console.log(c);
 
 var arr = JSON.parse(localStorage.getItem("userlist")) || [];
 document.getElementById("submit").addEventListener("click", () => {
+  document.getElementById("mobileNumber").innerText = "";
   console.log("hz");
   if (c == 1) {
     let val = document.getElementById("mobileNumber").value;
@@ -40,11 +43,11 @@ document.getElementById("submit").addEventListener("click", () => {
       if (el.email == val) {
         document.getElementById("containemodal2").style.display = "flex";
         document.getElementById("containemodal").style.display = "none";
-      } else {
+        document.getElementById("password").innerText = "";
+      } else if (el.email != val) {
         alert("Please enter correct email");
       }
     });
-    // localStorage.setItem("email", val);
   }
 });
 
@@ -71,6 +74,7 @@ document.getElementById("crose2").addEventListener("click", () => {
 
 document.getElementById("openmodal").addEventListener("click", () => {
   document.getElementById("containemodal").style.display = "flex";
+  document.getElementById("mobileNumber").innerText = "";
 });
 
 //input otp

@@ -83,9 +83,18 @@
 }
 
 #second_child_modal {
-  height: 57%;
+  /* height: 57%; */
+  height: 250px;
+  /* border: 5px darkblue solid; */
 }
 
+#somenewdiv {
+  width: 90%;
+
+  margin: auto;
+  height: fit-content;
+  /* border: 3px rgb(0, 139, 79) solid; */
+}
 #third_child_modal {
   height: 9%;
 }
@@ -118,13 +127,15 @@
 }
 
 #grandchild1 p {
+  color: white;
+  padding: 4%;
   font-size: 23px;
   /* border: 1px white solid; */
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   margin-right: 5%;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 #second_child_modal {
@@ -136,8 +147,8 @@
 }
 
 #mobileNumber {
-  margin-top: 30px;
-  width: 80%;
+  /* margin-top: 30px; */
+  width: 95%;
 
   /* font-size: 30px; */
   /* border: none; */
@@ -146,7 +157,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 2px black solid;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   outline: none;
   font-size: 18px;
 }
@@ -168,7 +179,7 @@
 }
 
 #second_child_modal button {
-  width: 80%;
+  width: 52%;
   height: 40px;
   background-color: #000;
   color: white;
@@ -178,12 +189,12 @@
 }
 
 #label1 {
-  position: absolute;
-  bottom: 57%;
-  padding-top: 30px;
+  /* position: absolute; */
+  /* bottom: 57%; */
+  /* padding-top: 30px; */
   /* border-bottom: 2px black solid; */
-  width: 100%;
-  margin-left: 77%;
+  /* width: 100%; */
+  /* margin-left: 77%; */
 }
 
 #label2 {
@@ -205,7 +216,7 @@
 
 #option a {
   color: #000;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 #facebook_logo {
