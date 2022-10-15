@@ -1,18 +1,25 @@
 var expanded1 = false;
-console.log(1);
+
+//console.log(1);
 //document.querySelector(".loading").style.display="block";
+
+
 checkboxes1.style.display = "block";
+
 function showCheck() {
+
   var checkboxes1 = document.getElementById("checkboxes1");
   if (!expanded1) {
     checkboxes1.style.display = "block";
     expanded1 = true;
-  } else {
+  }
+   else {
     checkboxes1.style.display = "none";
     expanded1 = false;
   }
 
 }
+
 var expanded5 = false;
 //document.querySelector(".loading").style.display="block";
 checkboxes5.style.display = "block";
@@ -112,6 +119,8 @@ function appendData(data) {
     let card = document.createElement("div");
     card.setAttribute("id", "card");
 
+    
+
     let img_div = document.createElement("div");
     img_div.setAttribute("id", "parent_img");
     let img = document.createElement("img");
@@ -155,6 +164,13 @@ function appendData(data) {
    
     card.append(img_div,title,desc,price_parent);
 
+    card.addEventListener("click",function()
+    {
+      let arr=[];
+      arr.push(ele);
+      localStorage.setItem("target_product",JSON.stringify(arr[0]));
+    })
+
     document.getElementById("show_product").prepend(card);
 
   })
@@ -177,8 +193,6 @@ function checkFun() {
       get(x);
     }, 100);
     })
-   
-     
  
 
   }
