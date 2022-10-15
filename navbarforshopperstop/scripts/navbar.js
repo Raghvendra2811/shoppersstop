@@ -9,8 +9,8 @@
 // }
 
 
-import{navbarim} from '../components/navbarimport.js';
-import{navbarim1} from '../components/navbarimport.js';
+// import{navbarim} from '../components/navbarimport.js';
+// import{navbarim1} from '../components/navbarimport.js';
 
 document.getElementById('main').innerHTML = navbarim();
 document.getElementById('main1').innerHTML = navbarim1();
