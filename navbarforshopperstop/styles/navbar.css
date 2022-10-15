@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
+ a{
+  text-decoration: none;
+ }
+ i{
+  color:black;
+ }
 #main1{
   font-family: sans-serif;
 }

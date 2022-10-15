@@ -92,7 +92,7 @@ function navbarim() {
     </div>
     <div id="navbarline1part2">
       <img
-        src="./images/newLogo.svg"
+        src="https://prodstatic.shoppersstop.com/_ui/updated_path/images/newLogo.svg"
         alt="Shopperstop logo"
         title="Shopper Stop"
       />
@@ -103,7 +103,7 @@ function navbarim() {
         <button id='searchfunctionbybutton'><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
       <a href=""><i class="fa-regular fa-heart"></i></a>
-      <a href="#"><img src="./images/cartpng.png" alt="" /></a>
+      <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
       <a href="">
         <img
           src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg"

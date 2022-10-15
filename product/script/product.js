@@ -1,3 +1,4 @@
+
 var expanded1 = false;
 
 //console.log(1);
@@ -169,6 +170,9 @@ function appendData(data) {
       let arr=[];
       arr.push(ele);
       localStorage.setItem("target_product",JSON.stringify(arr[0]));
+      
+      location.href="../productdescription/page.html";
+
     })
 
     document.getElementById("show_product").prepend(card);
