@@ -12,9 +12,15 @@
   </head>
   <body>
     <div id="main">
-      <header id="navbarhomepage">
+      <!-- <header id="navbarhomepage">
+        <div id="hamburger">
+          <span class="bars"></span>
+          <span class="bars"></span>
+          <span class="bars"></span>
+
+        </div>
         <div id="navbarline1part1">
-          <ul>
+          <ul id="nav-menu">
             <li><a href="#">CATEGORIES</a></li>
             <li>
               <a href="#" id="luxe2345" onmouseover="newconatiner()">LUXE</a>
@@ -106,8 +112,8 @@
         </div>
         <div id="navbarpart3">
           <div>
-            <input type="search" placeholder="Search Products & Brands" />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="search" placeholder="Search Products & Brands" id='searchfunction'/>
+            <button id='searchfunctionbybutton'><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
           <a href=""><i class="fa-regular fa-heart"></i></a>
           <a href="#"><img src="./images/cartpng.png" alt="" /></a>
@@ -118,13 +124,14 @@
             />
           </a>
         </div>
-      </header>
+      </header> -->
     </div>
+    <div id="main1">
 
-    <div id="navbarline2part1">
-      <ul>
+    <!-- <div id="navbarline2part1">
+      <ul id="nav-menu1">
         <li>
-          <a href="#">MENS</a>
+          <a href="#" class="storeinls">MENS</a>
 
           <div id="mensonhover">
             <div id="menshomepage">
@@ -193,7 +200,7 @@
           </div>
         </li>
         <li>
-          <a href="#">WOMENS</a>
+          <a href="#" class="storeinls" >WOMENS</a>
 
           <div id="womensonhover">
             <div id="womens">
@@ -245,7 +252,7 @@
           </div>
         </li>
         <li>
-          <a href="#">BEAUTY</a>
+          <a href="#" class="storeinls">BEAUTY</a>
 
           <div id="beautyonhover">
             <div id="beauty">
@@ -304,7 +311,7 @@
           </div>
         </li>
         <li>
-          <a href="#">WATCHES</a>
+          <a href="#" class="storeinls">WATCHES</a>
 
           <div id="watchesonhover">
             <div id="watches">
@@ -342,7 +349,7 @@
           </div>
         </li>
         <li>
-          <a href="#">KIDS</a>
+          <a href="#" class="storeinls">KIDS</a>
 
           <div id="Kidsonhover">
             <div id="Kids">
@@ -393,11 +400,159 @@
             </div>
           </div>
         </li>
-        <li><a href="#">HOMESTOP</a></li>
-        <li><a href="#">GIFTS</a></li>
-        <li><a href="#">BRANDS</a></li>
+        <li id="hoomestop">
+          <a href="#" class="storeinls">HOMESTOP</a>
+
+          <div id="homestoponhover">
+            <div id="homestop">
+              <div id="homestoppart1">
+                <ul>
+                  <li><a href="">Kitchen & Dinning</a></li>
+                  <li><a href="">Decor</a></li>
+                  <li><a href="">Home Furnishing</a></li>
+                  <li><a href="">Storage & Organization</a></li>
+                  <li><a href="">Smart Home and Appliances</a></li>
+                  <li><a href="">Bath</a></li>
+                  <li><a href="">Bedding</a></li>
+                </ul>
+              </div>
+              <div id="homestoppart2">
+                <h4>All Kitchen</h4>
+                <h4>Bar & Drinkware</h4>
+                <p>Barware</p>
+                <p>Bar Games</p>
+                <h4>Cookeware & Bakeware</h4>
+                <p>Cookwear Sets</p>
+                <p>Tawa</p>
+                <p>Pots & Pans</p>
+                <p>Kadai & Woks</p>
+                <p>Bakeware</p>
+                <p>Bakeware Accessiores</p>
+                <p>Pressure Cooker</p>
+                <h4>Kitechen & Table Linen</h4>
+                <p>Runners & Mat</p>
+
+                <p>Kitchen Towels</p>
+                <p>Table Covers</p>
+              </div>
+              <div id="homestoppart3">
+                <h4>Storage & Containers</h4>
+                <p>Conatiners & Jars</p>
+                <p>Tray</p>
+                <p>Storage & Conatiner Bags</p>
+                <p>Bottels</p>
+                <p>Flask</p>
+                <p>Baskets</p>
+                <h4>Table Accessiores</h4>
+                <h4>Knifes and Peelers</h4>
+                <h4>All Dining</h4>
+                <h4>Crockery</h4>
+                <p>Mugs & Cups</p>
+                <p>Pots & Ketties</p>
+                <p>Tea & Coffee Sets</p>
+              </div>
+              <div id="homestoppart4">
+                <h4>Cutlery</h4>
+                <h4>Dinner</h4>
+                <p>Dinnerware</p>
+                <p>Dinner Sets</p>
+                <h4>Serving</h4>
+                <p>Bowls</p>
+                <p>Plates</p>
+                <p>Glasses & Jugs</p>
+                <p>Trays & Platters</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="storeinls">GIFTS</a>
+
+          <div id="giftsonhover">
+            <div id="gifts">
+              <div id="giftspart1">
+                <ul>
+                  <li><a href="">Gifts For Her</a></li>
+                  <li><a href="">gifts For Him</a></li>
+                  <li><a href="">Instant Gifting</a></li>
+                  <li><a href="">House Warming Gift</a></li>
+                  <li><a href="">Wedding Gifts</a></li>
+                </ul>
+              </div>
+              <div id="giftspart2">
+                <h4>All Boys</h4>
+                <h4>Topwaer</h4>
+                <h4>All Gifts For Her</h4>
+                <h4>Watches</h4>
+                <h4>Jewellery</h4>
+              </div>
+              <div id="giftspart3">
+                <img
+                  src="https://sslimages.shoppersstop.com/sys-master/root/ha6/h70/26838380937246/Gift-Instant-Gifting-Navigation.jpg"
+                  alt=""
+                />
+                <a href="">Shop Now</a>
+              </div>
+              <div id="giftspart4">
+                <img
+                  src="https://sslimages.shoppersstop.com/sys-master/root/hac/h1a/26838381395998/Gift-E-Gift-Voucher-Navigation.jpg"
+                  alt=""
+                />
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="storeinls">BRANDS</a>
+
+          <div id="Brandsoftagonhover">
+            <div id="Brandsoftag">
+              <div id="Brandsoftagpart1">
+                <ul>
+                  <li><a href="">Brands of Shopper Stop</a></li>
+                  <li><a href="">Luxury Brands</a></li>
+                  <li><a href="">Trending Brands</a></li>
+                  <li><a href="">Brand Store</a></li>
+                  <li><a href="">Celeb Brands</a></li>
+                  <li><a href="">Just Launched Brands</a></li>
+                  <li><a href="">All Brands</a></li>
+                </ul>
+              </div>
+              <div id="Brandsoftagpart2">
+                <h4>Arcelia</h4>
+                <h4>Alt Life</h4>
+                <h4>Bandeya</h4>
+                <h4>Elliza Donatein</h4>
+                <h4>Fratini</h4>
+                <h4>Haute Curry</h4>
+                <h4>Infuse</h4>
+                <h4>Insense</h4>
+                <h4>Kashish</h4>
+                <h4>Karrot</h4>
+                <h4>Stop</h4>
+                <h4>Life</h4>
+              </div>
+              <div id="Brandsoftagparts3">
+                <img
+                  src="https://sslimages.shoppersstop.com/sys-master/root/he9/h49/27112019394590/life-navigation-banner.jpg"
+                  alt=""
+                />
+                <a href="">Shop Now</a>
+              </div>
+              <div id="Brandsoftagpart4">
+                <img
+                  src="https://sslimages.shoppersstop.com/sys-master/root/h43/h7c/27108369203230/tribe-navigation-banner.jpg"
+                  alt=""
+                />
+                <a href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
-    </div>
+    </div> -->
+  </div>
     <!-- <div>
       <img src="./images/newLogo.svg" alt="">
       <img src="./images/cartpng.png" alt="">
@@ -405,4 +560,4 @@
     </div> -->
   </body>
 </html>
-<script src="./scripts/navbar.js"></script>
+<script src="./scripts/navbar.js" type="module" ></script>

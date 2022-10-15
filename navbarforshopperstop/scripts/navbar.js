@@ -7,5 +7,76 @@
 
 
 // }
-let color1 = document.getElementById('luxe2345');
+
+
+import{navbarim} from '../components/navbarimport.js';
+import{navbarim1} from '../components/navbarimport.js';
+
+document.getElementById('main').innerHTML = navbarim();
+document.getElementById('main1').innerHTML = navbarim1();
+ let color1 = document.getElementById('luxe2345');
 color1.style.color = '#D3A84F';
+
+
+var searchfromhomepage =  document.getElementById('searchfunction');
+searchfromhomepage.addEventListener('keypress', getsearchaname)
+function getsearchaname(danny){
+    if(danny.key === 'Enter')
+    {
+        var sarchedname = document.getElementById('searchfunction').value;
+        localStorage.setItem('Productsearched',JSON.stringify(sarchedname));
+        document.getElementById('searchfunction').value = "";
+
+    }  
+}
+document.getElementById('searchfunctionbybutton').addEventListener('click',Bybutton);
+
+function Bybutton(){
+    var getproductfromsearch = document.getElementById('searchfunction').value;
+    localStorage.setItem('Productsearched',JSON.stringify(getproductfromsearch));
+    document.getElementById('searchfunction').value = '';
+}
+
+
+const hamburger = document.getElementById('hamburger');
+const Navmenu = document.getElementById('nav-menu');
+const Navmenu1 = document.getElementById('nav-menu1');
+const x12 = document.getElementById('searchfunction');
+hamburger.addEventListener('click',() => {
+    hamburger.classList.toggle('active');
+    Navmenu.classList.toggle('active');
+    Navmenu1.classList.toggle('active');
+    x12.classList.toggle('active');  
+})
+
+
+// document.querySelectorAll('.storeinls').addEventListener('click',()=>{
+//     var getitpart2 = event.target.innerText;
+//     console.log(getitpart2)
+    
+//     localStorage.setItem('Productsearched',JSON.stringify(getitpart2));
+// });
+// function addtolocal(){
+//    var getitpart3 = document.querySelector('.storeinls').innerText;
+//    console.log(getitpart3)
+//    localStorage.setItem('Productsearched',JSON.stringify(getitpart3));
+
+// }
+
+
+
+
+
+// document.getElementById('hoomestop').addEventListener('mouseover', () =>{
+//   let hoome = document.getElementById('watchesonhover')
+//    hoome.style.display = 'block';
+//    hoome.style.position = 'absolute';
+//    hoome.style.zIndex = '10';
+//    hoome.style.backgroundColor = 'white';
+// })
+
+// document.getElementById('hoomestop').addEventListener('mouseout', () =>{
+//     let hoome = document.getElementById('watchesonhover')
+//      hoome.style.display = 'none';
+     
+//   })
