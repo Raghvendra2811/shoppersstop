@@ -1,4 +1,12 @@
-console.log("helo");
+
+import{navbar} from "../navbarforshopperstop/components/navbarimport.js";
+import {footer} from "../landingPage/Components/footer.js";
+
+document.getElementById("vikram_footer").innerHTML=footer();
+document.getElementById("").innerHTML=navbar();
+ 
+
+ 
 document.getElementById("sizess1").addEventListener("click", () => {
   // console.log("helo2")
   document.getElementById("sizess1").style.backgroundColor = "black";

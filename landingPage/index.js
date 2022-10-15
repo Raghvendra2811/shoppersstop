@@ -44,11 +44,16 @@
 //   // slideImage(slide);
 // };
 
+ 
+
+ 
 
 
 import {footer} from "./Components/footer.js"
 
 document.getElementById("home-footer").innerHTML=footer();
+
+
 
 
 let x = 0;
