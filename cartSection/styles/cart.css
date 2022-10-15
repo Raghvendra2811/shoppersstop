@@ -1,35 +1,8 @@
 *{
-    margin-top: 0px;
-}
-body{
-    background-color: #F5F5F5;
-}
-#cHead{
-    width: 100%;
-    background-color: white;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-}
-#cHead h2{
-    margin-left: -7%;
-    margin-top: 10px;
-}
-img{
-    width: 18%;
-    /* margin-left: 12%; */
-}
-#cHead div {
-    width: 20%;
-    margin-right: -18%;
-    margin-top: 10px;
-}
-#cHead div :last-child{
-    margin-left: 18px;
-    width: 9%;
-}
-#cHead div img{
-    width: 10%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background-color: #F5F5F5; */
 }
 #cBlankImg{
     width: 88%;
@@ -46,49 +19,61 @@ img{
 #cBlankImg div{
     text-align: center;
 }
-a{
-    color: black;
-}
-#cartService{
-    width: 88%;
+a{color: black;}
+/* notepad */
+  
+  #carthead {
     display: flex;
-    justify-content: space-around;
-    margin-top: 18px;
-    margin-left: 6%;
-}
-.serv img{
-    width: 22%;
-}
-/* .serv img :nth-child(3){
-    width: 50%;
-} */
-.serv{
-    text-align: center;
-}
-hr{
-    width: 88%; 
-}
-#cartBottomRow{
-    width: 88%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: -30px;
+    height: 10%;
+  }
+  #carthead > div:nth-child(2) {
+    background-color: black;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+  #carthead > div:nth-child(2) > a {
+    text-decoration: none;
+  }
+  #carthead > div:nth-child(2) > a > h2 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #carthead > div:nth-child(2) > a > h2::first-letter {
+    font-size: 30px;
+  }
+  #carthead > div:first-child {
+    padding-top: 15px;
+  }
+  #carthead > div:last-child {
     display: flex;
-    justify-content: space-around;
-    margin-left: 6%;
-}
-#cartBottomRow :first-child img{
-    width: 6%;
-}
-#cartBottomRow :nth-child(3) img{
-    width: 20%;
-}
-.cRow{
+    margin-top: 15px;
+  }
+  #carthead > div:last-child > i {
+    margin-right: 20px;
+    padding-top: 5px;
+  }
+  #carthead > div:last-child > p {
     text-align: center;
-}
-
-
-
-
-
-#middle1 > div {
+    background-color: rgb(192, 190, 190);
+    border-radius: 25px;
+    padding: 3px;
+    margin-top: -2px;
+    margin-bottom: 15px;
+    width: 90px;
+  }
+  #middle {
+    background-color: rgb(247, 243, 243);
+    margin-top: 5px;
+    margin-top: 25px;
+  }
+  #middle1 > div {
     padding-top: 55px;
   }
   #middle1 > div > p {
@@ -99,7 +84,6 @@ hr{
     border: 0.1px solid rgb(88, 236, 88);
   }
   #middle2 {
-    /* border: 2px solid red; */
     height: 100%;
   }
   #middle2child {
@@ -109,13 +93,9 @@ hr{
     margin-right: 6%;
     margin-top: 8px;
     gap: 0px 30px;
-    background-color: rgb(247, 243, 243);
-    /* border: 4px solid green; */
-    /* height: 100%; */
   }
   #middle2child > div > div {
     background-color: white;
-    /* margin-top: 8px; */
     margin-bottom: 25px;
   }
   #middle2child > div > div > div {
@@ -123,10 +103,12 @@ hr{
     padding-top: 30px;
     padding-bottom: 35px;
     padding-right: 25px;
+    background-color: white;
   }
   #middle2child > div > div > div:first-child {
     display: flex;
     justify-content: space-between;
+    background-color: white;
   }
   #middle2child > div > div > div:first-child > p {
     border: 1px solid rgb(156, 153, 153);
@@ -136,42 +118,41 @@ hr{
     margin-top: -10px;
     font-size: 12px;
     font-weight: 600;
+    background-color: white;
   }
-  #middle2child > div > div > div:nth-child(2) > p {
+  #middle2child > div > div > div:nth-child(2) > #vivek {
     margin-top: -50px;
     color: rgb(156, 153, 153);
   }
   #middle2child > div > div > div:last-child > div {
     margin-top: -60px;
-    /* border: 2px solid red; */
-    display: flex;
   }
   #middle2child > div > div > div:last-child > div > div {
     margin-right: 50px;
   }
-  #offerimg {
-    width: 100%;
-    /* margin-top: 15px; */
-    /* background-color: rgb(247, 243, 243); */
-  }
+  #offerimg {width: 100%;}
   #middle2child > div > div:nth-child(2) {
     background-color: rgb(247, 243, 243);
     margin-bottom: 15px;
   }
-  #middle2child > div:nth-child(2) > div > p {
+  #middle2child > div:nth-child(2) > div > #vaanii {
     padding: 20px;
+    background-color: white;
   }
   #middle2child > div:nth-child(2) > div > input {
     margin-bottom: 15px;
     padding: 12px;
     margin-left: 15px;
-    border: 1px solid black;
+    border: none;
   }
   #middle2child > div:nth-child(2) > div > input + span {
     background-color: grey;
     padding: 12px 15px;
-    /* padding-lef/t: 15px; */
     margin-left: -1px;
+  }
+  #middle2child > div:nth-child(2) > div > input + span:hover {
+    cursor: pointer;
+    border: none;
   }
   #middle2child > div:nth-child(2) > div {
     background-color: white;
@@ -179,60 +160,183 @@ hr{
   }
   
   #middle2child > div:nth-child(2) > div:nth-child(2) > div {
-    /* padding: 2px; */
     font-size: 18px;
-    margin-right: 180px;
+    margin-right: 55%;
+    background-color: white;
   }
-  #middle2child > div:first-child .cartitems {
-    /* border: 2px solid red; */
-    margin-top: 50px;
+  #middle2child > div:nth-child(2) > div:nth-child(2) > div > label {
+    background-color: white;
   }
-  #middle2child > div:first-child .cartitems > div:first-child {
-    /* border: 2px solid green; */
+  #cartitems {
+    display: flex;
+    height: 300px;
+  }
+  #cartitems > #itemimage {
+    width: 70%;
+  }
+  #cartitems > #itemimage > img {
+    width: 80%;
+    height: 70%;
+  }
+  #cartitems > #aboutitem {
+    width: 65%;
+  }
+  #cartitems > #aboutitem > div {
+    display: flex;
+    width: 50%;
+  }
+  #cartitems > #aboutitem > div > div > span > select {
+    width: 48%;
+    border: none;
+    padding: 10px 1px;
+  }
+  #cartitems > #aboutitem > div {
+    background-color: white;
+  }
+  #cartitems > #aboutitem > div > div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #aboutitem > #branddescrip {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    background-color: white;
+    color: grey;
+  }
+  #aboutitem > #brandname {
+    background-color: white;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    font-weight: 200;
+  }
+  #itemprice { width: 3%;}
+  #itemprice > span {
+    margin-left: -20px;
+    margin-bottom: 100px;
+    background-color: white;
+  }
+  #itemprice > span:nth-child(3) {
+    margin: 10px;
+    color: red;
+  }
+  #aboutitem > #remove {
+    margin-top: 60px;
+    margin-right: 90px;
+    padding: 8px;
+    font-weight: 200;
+  }
+  #aboutitem > #remove:hover {
+    cursor: pointer;
+    background-color: rgb(247, 243, 243);
+    border: none;
+  }
+  #aboutitem > h2 {
+    background-color: white;
+    display: inline-block;
+    margin-right: 90px;
+    padding: 8px;
+    font-weight: 200;
+  }
+  #aboutitem > h2:hover {
+    cursor: pointer;
+    background-color: rgb(247, 243, 243);
+    border: none;
+  }
+  #strokedprice {text-decoration: line-through;}
+  #middle2second > #billingbox {height: 500px;}
+  #middle2second > #billingbox > div {
     display: flex;
     justify-content: space-between;
-  
-    /* background-color: white; */
+    padding: 10px;
   }
-  /* #middle2child>div:first-child .cartitems>div{
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      height: 30%;
-  } */
-  #middle2child > div:first-child .cartitems > div > div > img {
-    width: 50%;
-    margin-top: -30px;
-    margin-left: -15px;
+  #middle2second > #billingbox > div:last-child {
+    display: block;
+    padding: 15px;
   }
-  #middle2child > div:first-child .cartitems > div > div:nth-child(2) > p {
-    color: black;
-    margin-top: -5px;
-    margin-left: -120px;
+  #middle2second > #billingbox > div:last-child > p {
+    margin: 20px;
+    color: grey;
+    font-size: 13px;
   }
-  #middle2child > div:first-child .cartitems > div:nth-child(2) {
-    display: flex;
-    justify-content: end;
+  #middle2second > #billingbox > div:last-child > p:first-child {
+    margin-bottom: 60px;
   }
-  #middle2child > div:first-child .cartitems > div:nth-child(2) > p {
-    color: black;
-    margin-top: -10px;
+  #middle2second > #billingbox > div:nth-child(7) {
+    justify-content: center;
+    margin-top: 20px;
+    background-color: black;
   }
-  #middle2child > div:first-child .cartitems > div:nth-child(3) {
-    display: flex;
-    justify-content: space-around;
-    /* margin-top: -10px; */
-    margin-bottom: -20px;
+  #middle2second > #billingbox > div:nth-child(7) > h4 {
+    color: white;
+    background-color: black;
   }
-  #middle2child > div:first-child .cartitems > div:nth-child(3) > div {
-    /* display: flex; */
-    /* border: 2px solid red; */
-    padding-top: 70px;
-    font-weight: 100;
-    /* margin-top: -10px; */
-    /* justify-content:space-between; */
+  #middle2second > #billingbox > div h3,
+  p {
+    background-color: white;
   }
-  #strokedprice {
-    text-decoration: line-through;
+  #middle2second > #billingbox > div:nth-child(4) > h3 {
+    text-decoration: underline;
+  }
+  #middle2second > #billingbox > div:nth-child(5) > h4 {
+    color: red;
+  }
+  #middle2second > #billingbox > div:nth-child(3) > p:nth-child(2) {
+    color: grey;
+  }
+  #middle2second > #billingbox > div:nth-child(5) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  input:hover {
+    cursor: pointer;
+  }
+  #alertmessage {
+    color: red;
+    background-color: white;
+    margin-left: 20px;
+  }
+  #alertmessage1 {
+    color: red;
+    background-color: white;
+    margin-left: 20px;
+  }
+  #delivery_container > span {
+    display: inline-block;
+    margin-right: 70px;
+    font-weight: 700;
+    background-color: white;
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  #delivery_container {
+    background-color: white;
+    margin-top: -60px;
+  }
+  #delivery_container > input {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  #deliveryoption {
+    width: 23%;
+    color: green;
+    margin-top: 35px;
+    background-color: rgb(234, 254, 234);
+    padding: 2px;
+    white-space: nowrap;
+    text-overflow: hidden;
+  }
+  @media screen and (max-width: 992px) {
+    #middle2child {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   
