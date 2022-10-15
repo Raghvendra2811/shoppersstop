@@ -1,22 +1,45 @@
+
 var expanded1 = false;
- 
+
+//console.log(1);
+//document.querySelector(".loading").style.display="block";
+
+
 checkboxes1.style.display = "block";
-function showCheckboxes() {
+
+function showCheck() {
+
   var checkboxes1 = document.getElementById("checkboxes1");
   if (!expanded1) {
     checkboxes1.style.display = "block";
     expanded1 = true;
-  } else {
+  }
+   else {
     checkboxes1.style.display = "none";
     expanded1 = false;
   }
 
 }
+
+var expanded5 = false;
+//document.querySelector(".loading").style.display="block";
+checkboxes5.style.display = "block";
+function showCheck() {
+  var checkboxes5 = document.getElementById("checkboxes5");
+  if (!expanded5) {
+    checkboxes5.style.display = "block";
+    expanded5 = true;
+  } else {
+    checkboxes5.style.display = "none";
+    expanded5 = false;
+  }
+
+}
 var expanded2 = false;
- 
+
 checkboxes2.style.display = "block";
 function showCheckboxes() {
-  var checkboxes2 = document.getElementById("checkboxes1");
+  var checkboxes2 = document.getElementById("checkboxes2");
   if (!expanded2) {
     checkboxes2.style.display = "block";
     expanded2 = true;
@@ -26,89 +49,232 @@ function showCheckboxes() {
   }
 
 }
+var expanded3 = false;
 
- 
-   
+checkboxes3.style.display = "block";
+function showCheckboxes3() {
+  var checkboxes3 = document.getElementById("checkboxes3");
+  if (!expanded3) {
+    checkboxes3.style.display = "block";
+    expanded3 = true;
+  } else {
+    checkboxes3.style.display = "none";
+    expanded3 = false;
+  }
+
+}
+var expanded4 = false;
+
+checkboxes4.style.display = "block";
+function showCheckboxes4() {
+  var checkboxes4 = document.getElementById("checkboxes3");
+  if (!expanded4) {
+    checkboxes4.style.display = "block";
+    expanded4 = true;
+  } else {
+    checkboxes4.style.display = "none";
+    expanded4 = false;
+  }
+
+}
 
 //var arr=["https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H"];
+let whole_arr=[];
+async function get(url) {
 
-async function get(url)
+  let res = await fetch(url);
+  let data = await res.json();
+data.map((ele)=>
 {
-    let res=await fetch(url);
-    let data=await res.json();
-    appendData(data);
-}
-let key="Mens Clothing";
-
-let h4=document.createElement("h4");
-h4.innerText=key;
-
-let select=document.createElement("select");
-let option=document.createElement("option");
-option.innerText="SORT BY:POPULAR";
-select.setAttribute("id","sort_by");
-select.append(option);
-document.getElementById("category_nav").append(h4,select);
-
-let url="http://localhost:3000/Mens";
+  whole_arr.push(ele);
+  
+})
  
+
+  localStorage.setItem("show_data",JSON.stringify(whole_arr));
+  document.querySelector(".loading").style.display = "none";
+  let ans=JSON.parse(localStorage.getItem("show_data"));
+
+  appendData(ans);
+  ans.sort((a,b)=>
+  {
+    return a.rating-b.rating;
+  })
+  appendData(ans);
+}
+ 
+
+let url = "https://superstop.herokuapp.com/product";
+
 get(url);
 
 
-function appendData(data)
-{
-  document.getElementById("show_product").innerText="";
-  let div=document.createElement("div");
-  div.setAttribute("class","loading");
-    data.map((ele)=>
+
+function appendData(data) {
+  document.querySelector(".loading").style.display = "none";
+  document.getElementById("show_product").innerHTML="";
+  let div = document.createElement("div");
+  div.setAttribute("class", "loading");
+  data.map((ele) => {
+
+    let card = document.createElement("div");
+    card.setAttribute("id", "card");
+
+    
+
+    let img_div = document.createElement("div");
+    img_div.setAttribute("id", "parent_img");
+    let img = document.createElement("img");
+    img.src = ele.img;
+    img.style.width = "100%";
+
+    img_div.append(img);
+
+    let title = document.createElement("h6");
+    title.innerText = ele.brand;
+    title.setAttribute("id","title");
+
+
+    let desc = document.createElement("p");
+    desc.innerText = ele.name;
+    desc.setAttribute("id","description");
+
+    let price_parent=document.createElement("div");
+    price_parent.setAttribute("id","price_parent");
+    let price = document.createElement("h6");
+    price.innerText = "₹ " + ele.price1;
+     
+    let price1 = document.createElement("p");
+    
+    price1.innerText = "₹ " + ele.price2;
+
+    if(price1.innerText=="₹ undefined")
     {
-        
-        let card=document.createElement("div");
-        card.setAttribute("id","card");
-        
-        let img_div=document.createElement("div");
-        img_div.setAttribute("id","parent_img");
-        let img=document.createElement("img");
-        img.src=ele.img;
-        img.style.width="100%";
-        
-        img_div.append(img);
+      price1.innerText="₹ 6000";
+    }
 
-        let title=document.createElement("h4");
-        title.innerText=ele.brand;
-        
-        let desc=document.createElement("p");
-        desc.innerText=ele.name;
+    price1.setAttribute("id","striked_price");
 
-        let price=document.createElement("h4");
-        price.innerText="₹ "+ele.price2;
+    let rating = document.createElement("h4");
+    rating.innerText = ele.rating;
 
-        let rating=document.createElement("h4");
-        rating.innerText=ele.rating;
+    let discount=document.createElement("p");
+    discount.innerText=ele.discount+"% off";
+    discount.setAttribute("id","discount");
+    price_parent.append(price,price1,discount);
+   
+    card.append(img_div,title,desc,price_parent);
 
-        card.append(img_div,title,desc,price);
-
-        document.getElementById("show_product").append(card);
-
+    card.addEventListener("click",function()
+    {
+      let arr=[];
+      arr.push(ele);
+      localStorage.setItem("target_product",JSON.stringify(arr[0]));
+      
+      location.href="../productdescription/page.html";
 
     })
-     
+
+    document.getElementById("show_product").prepend(card);
+
+  })
+
 
 }
-
-function checkFun()
-{
-    if(event.target.checked)
+let new_arr=[];
+function checkFun() {
+  console.log("hello");
+  if (event.target.checked) {
+    let ans = event.target.value;
+   whole_arr=[];
+    new_arr.push(ans);
+    
+    document.querySelector(".loading").style.display = "block";
+    new_arr.map((el)=>
     {
-        let ans=event.target.value;
-        let x=`http://localhost:3000/Mens/?q=${ans}`;
-          
-        get(x);
+      let x=`https://superstop.herokuapp.com/product/?q=${el}`;
+       setTimeout(() => {
+      get(x);
+    }, 100);
+    })
+ 
+
+  }
+   
+  else {
+    
+    let uncheck=event.target.value;
+   let index=-1;
+    for(let i=0; i<new_arr.length; i++)
+    {
+      if(new_arr[i]==uncheck)
+      {
+        index=i;
+        break;
+      }
     }
+    new_arr.splice(index,1);
+    
+     
+    if(new_arr.length==0)
+    {
+    let x = `https://superstop.herokuapp.com/product`;
+    document.querySelector(".loading").style.display = "block";
+    
+    setTimeout(() => {
+      get(x);
+    }, 100);
+  }
+  else{
+    whole_arr=[];
+    new_arr.map((el)=>
+    {
+      let x=`https://superstop.herokuapp.com/product/?q=${el}`;
+       setTimeout(() => {
+      get(x);
+    }, 100);
+    })
+  }
+
+  }
+
+};
+   function Sorting()
+   {
+    document.querySelector(".loading").style.display = "block";
+       let ans=JSON.parse(localStorage.getItem("show_data"));
+        
+       let value=document.getElementById("sort_by").value;
+        
+       ans.sort((a,b)=>
+       {
+        if(value=="discount")
+        {
+          return a.discount-b.discount;
+        }
+        else if(value=="rating")
+        {
+          return a.rating-b.rating;
+        }
+        else if(value=="high")
+        {
+          return a.price1-b.price1;
+        }
+        else if(value=="low")
+        {
+          return b.price1-a.price1;
+        }
+       });
        
- 
- 
-}       
+       setTimeout(()=>
+       {
+        appendData(ans);
+       },200);
+       
+      
+       
 
-
+      }
+  
+   
 

@@ -30,21 +30,27 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <p>skip</p>
+
                 </div>
                 <div id="grandchild">
                     <h1>Login/Signup</h1>
                     <P>for a tailored experience</P>
                 </div>
             </div>
-            <div id="second_child_modal">
 
-                <input type="number" class="form-control ob-mobile custom-validity-input" id="mobileNumber"
-                    placeholder="" required="">
+            <div id="somenewdiv">
                 <label id="label1">Mobile Number<span id="textred">*</span></label>
+                <input type="tel" class="form-control ob-mobile custom-validity-input" id="mobileNumber" placeholder=""
+                    required="">
+            </div>
+            <div id="second_child_modal">
+                <!-- <label id="labe">Mobile Number<span id="textred">*</span></label> -->
+                <!-- <input type="number" class="form-control ob-mobile custom-validity-input" id="mobileNumber"
+                    placeholder="" required=""> -->
+                <!-- <label id="label1">Mobile Number<span id="textred">*</span></label> -->
                 <button id="submit">Continue</button>
                 <div id="option">
-                    <span>Login using</span> <a id="change" href="#">Email</a>
+                    <span id="siguppp">Login using</span> <a id="change" href="#">Email</a>
                 </div>
                 <div id="logos">
                     <img id="facebook_logo"
@@ -67,7 +73,7 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <p>skip</p>
+                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
                 </div>
                 <div id="grandchild">
                     <h1>Password</h1>
@@ -107,7 +113,7 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <!-- <p>skip</p> -->
+                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
                 </div>
                 <div id="grandchild">
                     <h1>Verify OTP</h1>
@@ -118,8 +124,10 @@
 
 
                 <div id="otp">
-                    <input id="input1" type="text" maxlength="1"><input id="input2" type="text" maxlength="1"><input
-                        id="input3" type="text" maxlength="1"><input id="input4" type="text" maxlength="1">
+                    <input id="input1" type="text" maxlength="1" onkeyup="move(event, '','input1','input2')">
+                    <input id="input2" type="text" maxlength="1" onkeyup="move(event, 'input1','input2','input3')">
+                    <input id="input3" type="text" maxlength="1" onkeyup="move(event, 'input2','input3','input4')">
+                    <input id="input4" type="text" maxlength="1" onkeyup="move(event, 'input3','input4','')">
                 </div>
                 <button id="submit3">Enter OTP</button>
                 <div id="option">
@@ -146,7 +154,7 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <!-- <p>skip</p> -->
+                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
                 </div>
                 <div id="grandchild">
                     <h1>Welcome to Shoppers Stop</h1>
@@ -187,6 +195,65 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+
+
+
+
+    var arr = JSON.parse(localStorage.getItem("userlist")) || [];
+    let val = document.getElementById("mobileNumber").value;
+    // arr.map((el) => {
+    //   if (el.email == val) {
+    //     document.getElementById("containemodal2").style.display = "flex";
+    //     document.getElementById("containemodal").style.display = "none";
+    //     // document.getElementById("password").innerText = "";
+    //     return;
+    //   } else if (el.email != val) {
+    //     alert("Please enter correct email");
+    //   }
+    // });
+    let bool = false;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].email == val) {
+        document.getElementById("containemodal2").style.display = "flex";
+        document.getElementById("containemodal").style.display = "none";
+        // document.getElementById("password").innerText = "";
+        bool = true;
+        break;
+      }
+    }
+    if (!bool) {
+      alert("Please enter correct email");
+    }
+  }
+});
+
+document.getElementById("submit2").addEventListener("click", () => {
+  var arr = JSON.parse(localStorage.getItem("userlist")) || [];
+  let val = document.getElementById("password").value;
+  let bool = false;
+  arr.map((ele) => {
+    if (ele.password == val) {
+      alert("Login sucess!");
+      document.getElementById("containemodal2").style.display = "none";
+      bool = true;
+      return;
+    }
+  });
+  if (!bool) {
+    alert("Please enter correct password");
+  }
+}); -->
 
 
 </body>
