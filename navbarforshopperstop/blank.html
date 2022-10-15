@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            #resourcesBackground {
+    /* border: 1px solid blue; */
+    background-color: rgba(0, 0, 0, 0.833);
+    height: 85vh;
+    position: fixed;
+    width: 100vw;
+    display: none;
+}
+#cross3 {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    left: 70%;
+    top: 1%;
+    z-index: 10;
+}
+#resourcesdiv {
+    /* border: 1px solid red; */
+    background-color: black;
+    position: sticky;
+    width: 40%;
+    margin: auto;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+    gap: 20px;
+}
+#resourcesdiv h6 {
+    color: gray;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+#resourcesdiv h5 {
+    font-size: 15px;
+}
+#resourcesdiv h5:hover {
+    cursor: pointer;
+}
+#resourcesdiv > div {
+    /* border: 1px solid yellow; */
+    padding-left: 20px;
+    
+    
+}
+#resourcesdiv > div > div {
+    /* border: 1px solid white; */
+    margin-bottom: 15px;
+}
+        </style>
+    </head>
+    <body>
+        <div id="resourcesBackground">
+            <div id="cross3"><i onclick="crossFn()" class="fa-solid fa-xmark"></i></div>
+            <div id="resourcesdiv">
+                <div>
+                    <div><h6>LEARN</h6></div>
+                    <div><h5>Blog</h5></div>
+                    <div><h5>Customer stories</h5></div>
+                    <div><h5>Resource center</h5></div>
+                    <div><h5>Guides</h5></div>
+                    <div><h5>App download</h5></div>
+                    <div><h5>Support</h5></div>
+                </div>
+                <div>
+                    <div><h6>CONNECT</h6></div>
+                    <div><h5>Events</h5></div>
+                    <div><h5>Webinars</h5></div>
+                    <div><h5>Podcast</h5></div>
+                    <div><h6>PODCASTS</h6></div>
+                    <div><h5>All Hands on Tech/h5></div>
+                    <div><h5>Perspectives in Leadership</h5></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
