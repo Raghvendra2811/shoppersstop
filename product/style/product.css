@@ -360,6 +360,23 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
       
     }
    
+    #title,#description{
+      font-size: 2rem;
+    }
+    #price_parent>h6{
+      font-size: 2rem;
+
+    }
+    #striked_price{
+      font-size: 2rem;
+
+    }
+    #price_parent>#discount{
+      font-size: 2rem;
+
+    }
+    
+    
     
    
 
@@ -430,6 +447,21 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     #sort_up option{
       width: 100%;
     }
+    #title,#description{
+      font-size: 2rem;
+    }
+    #price_parent>h6{
+      font-size: 2rem;
+
+    }
+    #striked_price{
+      font-size: 2rem;
+
+    }
+    #price_parent>#discount{
+      font-size: 2rem;
+
+    }
   
   }
   @media screen and (min-width: 310px) and (max-width: 559px) {
@@ -499,6 +531,21 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
       width: 100%;
       margin:auto;
     }
+    #title,#description{
+      font-size: 2rem;
+    }
+    #price_parent>h6{
+      font-size: 2rem;
+
+    }
+    #striked_price{
+      font-size: 2rem;
+
+    }
+    #price_parent>#discount{
+      font-size: 2rem;
+
+    }
 
   }
 
@@ -552,8 +599,6 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
       width: 200%;
       margin:auto;
       display:block;
-       
-      
     }
     
      
@@ -577,6 +622,21 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     #sort_up option{
       width: 100%;
       margin:auto;
+    }
+    #title,#description{
+      font-size: 2rem;
+    }
+    #price_parent>h6{
+      font-size: 2rem;
+
+    }
+    #striked_price{
+      font-size: 2rem;
+
+    }
+    #price_parent>#discount{
+      font-size: 2rem;
+
     }
 
   }
