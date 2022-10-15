@@ -197,6 +197,65 @@
 
 
 
+
+
+
+
+
+
+
+
+    <!-- 
+
+
+
+
+    var arr = JSON.parse(localStorage.getItem("userlist")) || [];
+    let val = document.getElementById("mobileNumber").value;
+    // arr.map((el) => {
+    //   if (el.email == val) {
+    //     document.getElementById("containemodal2").style.display = "flex";
+    //     document.getElementById("containemodal").style.display = "none";
+    //     // document.getElementById("password").innerText = "";
+    //     return;
+    //   } else if (el.email != val) {
+    //     alert("Please enter correct email");
+    //   }
+    // });
+    let bool = false;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].email == val) {
+        document.getElementById("containemodal2").style.display = "flex";
+        document.getElementById("containemodal").style.display = "none";
+        // document.getElementById("password").innerText = "";
+        bool = true;
+        break;
+      }
+    }
+    if (!bool) {
+      alert("Please enter correct email");
+    }
+  }
+});
+
+document.getElementById("submit2").addEventListener("click", () => {
+  var arr = JSON.parse(localStorage.getItem("userlist")) || [];
+  let val = document.getElementById("password").value;
+  let bool = false;
+  arr.map((ele) => {
+    if (ele.password == val) {
+      alert("Login sucess!");
+      document.getElementById("containemodal2").style.display = "none";
+      bool = true;
+      return;
+    }
+  });
+  if (!bool) {
+    alert("Please enter correct password");
+  }
+}); -->
+
+
 </body>
 
 </html>
