@@ -1,4 +1,4 @@
-import {footer} from "./Components/footer.js"
+import {footer} from "./landingPage/Components/footer.js"
 
 document.getElementById("home-footer").innerHTML=footer();
 

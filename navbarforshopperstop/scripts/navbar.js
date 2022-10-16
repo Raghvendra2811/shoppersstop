@@ -150,3 +150,10 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+document.getElementById("navbarline1part2").addEventListener("click",()=>{
+  location.href="../../index.html";
+})
+
+let  count =JSON.parse(localStorage.getItem("cartprotuct_s"))||[];
+
+document.querySelector(".noi").innerText=count.length
