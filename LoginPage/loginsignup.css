@@ -374,8 +374,8 @@
 }
 
 #otp input {
-  width: 21px;
-  height: 21px;
+  width: 41px;
+  height: 41px;
   font-size: 32px;
   padding: 10px;
   text-align: center;
@@ -387,6 +387,7 @@
 
   outline: none;
   transition: all 0.1s;
+  z-index: 20;
 }
 
 #containemodal3 input:focus {

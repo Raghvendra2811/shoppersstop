@@ -1,234 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/product.css">
-    <link rel="stylesheet" href="../landingPage/Components/footer.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../navbarforshopperstop/styles/navbar.css">
-    
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/product.css">
+  <link rel="stylesheet" href="../landingPage/Components/footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../navbarforshopperstop/styles/navbar.css">
+  <link rel="stylesheet" href="../navbarforshopperstop/styles/navbar.css">
+  <script src="https://kit.fontawesome.com/fb8ecd1eb8.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="../LoginPage/loginsignup.css">
+
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Noto+Sans+JP:wght@500&family=Roboto:wght@100;300;400&family=Secular+One&family=Source+Sans+Pro:wght@200&display=swap"
+    rel="stylesheet">
+
+
 </head>
+
 <body onload="myFunction()">
 
-   
+
 
   <div class="loading"></div>
 
 
-    <div id="main">
-      
-               
-    </div>
+  <div id="main">
 
-    <div id="main1">
 
-    </div>
+  </div>
 
-    <div id="container">
-        <div id="category_nav">
+  <div id="main1">
 
-                <h4 id="category_text">Mens Clothing</h4>
+  </div>
 
-                <select id="sort_by" class="form-select" aria-label="Default select example" onchange="Sorting()">
-                    <option selected value="popular">SORT BY POPULAR</option>
-                    <option value="rating">SORT BY Rating</option>
-                    <option value="discount">SORT BY DISCOUNT</option>
-                    <option value="low">PRICE:LOW TO HIGH</option>
-                    <option value="high">PRICE:HIGH TO LOW</option>
-                </select>
-             
-        </div>
-        <div id="product">
+  <div id="container">
+    <div id="category_nav">
 
-            <div id="slidebar">
+      <h4 id="category_text">Mens Clothing</h4>
 
-                            <div id="filter_heading">Filters <span> <i class="fa-solid fa-sort-down"></i></span> </div>
-                            
-                           <form>
-                              <div class="multiselect">
-
-                                 
-
-                                <div class="selectBox" onclick="showCheck()">
-                                  <select>
-                                     <option>Select Mens Brand</option>
-                                  </select>
-                                <div class="overSelect"></div>
-                                </div>
-                                
-                                <div id="checkboxes1">
-                                   
-                                <label for="one">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Adidas"/><div class="filter">Adidas</div></label>
-                                <label for="two">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Addon"/><div class="filter">Addon</div></label>
-                                <label for="three">
-                                  <input type="checkbox" class="box"  onclick="checkFun()" value="Bandeya"/><div class="filter">Bandeya</div></label>
-                                  <label for="four">
-                                    <input type="checkbox" class="box"  onclick="checkFun()" value="Voi"/><div class="filter">Voi Jeans</div></label>
-                                    <label for="five">
-                                      <input type="checkbox" class="box"  onclick="checkFun()" value="Casio"/><div class="filter">Casio</div></label>
-                                      <label for="six">
-                                        <input type="checkbox" class="box"  onclick="checkFun()" value="Fastrack"/><div class="filter">Fastrack</div></label>
-                                        <label for="seven">
-                                          <input type="checkbox" class="box"  onclick="checkFun()" value="Titan"/><div class="filter">Titan</div></label>
-                                </div>
-                                
-                                 
-
-                                <div class="selectBox" onclick="showCheckboxes()">
-                                  <select>
-                                     <option>Select Mens Category</option>
-                                  </select>
-                                <div class="overSelect"></div>
-                                </div>
-                                <div id="checkboxes2">
-                                <label for="one">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Jeans"/><div class="filter">Jeans</div></label>
-                                <label for="two">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Trousers"/><div class="filter">Trousers</div></label>
-                                <label for="three">
-                                  <input type="checkbox" class="box"  onclick="checkFun()" value="T-Shirt"/><div class="filter">T-Shirt</div></label>
-                                  <label for="four">
-                                    <input type="checkbox" class="box"  onclick="checkFun()" value="Shirt"/><div class="filter">Shirt</div></label>
-                                    <label for="five">
-                                      <input type="checkbox" class="box"  onclick="checkFun()" value="Watch"/><div class="filter">Watch</div></label>
-                                </div>
-
-                                
-
-                                <div class="selectBox" onclick="showCheckboxes3()">
-                                  <select>
-                                     <option>Select Womens Brand</option>
-                                  </select>
-                                <div class="overSelect"></div>
-                                </div>
-                                <div id="checkboxes3">
-                                <label for="one">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Amukti"/><div class="filter">Amukti</div></label>
-                                <label for="two">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Arteastri"/><div class="filter">Arteastri</div></label>
-                                <label for="three">
-                                  <input type="checkbox" class="box"  onclick="checkFun()" value="Biba"/><div class="filter">Biba</div></label>
-                                  <label for="four">
-                                    <input type="checkbox" class="box"  onclick="checkFun()" value="Shirt"/><div class="filter">Shirt</div></label>
-                                    <label for="five">
-                                      <input type="checkbox" class="box"  onclick="checkFun()" value="Watch"/><div class="filter">Watch</div></label>
-                                </div>
-
-                                <div class="selectBox" onclick="showCheckboxes4()">
-                                  <select>
-                                     <option>Select Womens Category</option>
-                                  </select>
-                                <div class="overSelect"></div>
-                                </div>
-                                <div id="checkboxes4">
-                                <label for="one">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Dupatta"/><div class="filter">Dupatta</div></label>
-                                <label for="two">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Tops"/><div class="filter">Tops</div></label>
-                                <label for="three">
-                                  <input type="checkbox" class="box"  onclick="checkFun()" value="kurtis"/><div class="filter">kurtis</div></label>
-                                  <label for="four">
-                                    <input type="checkbox" class="box"  onclick="checkFun()" value="Palazzos"/><div class="filter">Palazzos</div></label>
-                                    <label for="five">
-                                      <input type="checkbox" class="box"  onclick="checkFun()" value="Saree"/><div class="filter">Saree</div></label>
-                                </div>
-
-                                <div class="selectBox" onclick="showCheck()">
-                                  <select>
-                                     <option>Select Boys Brand</option>
-                                  </select>
-                                <div class="overSelect"></div>
-                                </div>
-                                
-                                <div id="checkboxes5">
-                                   
-                                <label for="one">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Hangup"/><div class="filter">Hangup</div></label>
-                                <label for="two">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Gas"/><div class="filter">Gas</div></label>
-                                <label for="three">
-                                  <input type="checkbox" class="box" onclick="checkFun()" value="Allen"/><div class="filter">Allen</div></label>
-                                  <label for="four">
-                                    <input type="checkbox" class="box" onclick="checkFun()" value="Puma"/><div class="filter">Puma</div></label>
-                                   <label for="five">
-                                       
-                                </div>
-                                
-                                
-
-                              </div>
-                            </form>
-
-                            
-
-                            
-                  
-            </div>
-            <div id="main_product">
-                
-                   <div id="show_product">
-                  
-
-                    
-                   </div>
-
-            </div>
-
-            
-
-        </div>
-         
-
-      </div>
-
-      <br>
-      <br>
-      <br>
-
-      <div id="product_footer">
-
-      </div>
-
-      
-       
-
-       
-
-      <select id="sort_up" class="form-select" onchange="Sorting()">
-           <option id="sort_up_option" class="select_option" selected value="popular">SORT BY POPULAR</option>
-           <option id="sort_up_option" class="select_option" value="rating">SORT BY Rating</option>
-           <option id="sort_up_option" class="select_option" value="discount">SORT BY DISCOUNT</option>
-           <option id="sort_up_option" class="select_option" value="low">PRICE:LOW TO HIGH</option>
-           <option id="sort_up_option" class="select_option" value="high">PRICE:HIGH TO LOW</option>
+      <select id="sort_by" class="form-select" aria-label="Default select example" onchange="Sorting()">
+        <option selected value="popular">SORT BY POPULAR</option>
+        <option value="rating">SORT BY Rating</option>
+        <option value="discount">SORT BY DISCOUNT</option>
+        <option value="low">PRICE:LOW TO HIGH</option>
+        <option value="high">PRICE:HIGH TO LOW</option>
       </select>
 
-       
-    
-    <script>
-      let preload=document.querySelector(".loading");
-      
-      function myFunction()
-      {
-        preload.style.display="none";
+    </div>
+    <div id="product">
+
+      <div id="slidebar">
+
+        <div id="filter_heading">Filters <span> <i class="fa-solid fa-sort-down"></i></span> </div>
+
+        <form>
+          <div class="multiselect">
+
+
+
+            <div class="selectBox" onclick="showCheck()">
+              <select>
+                <option>Select Mens Brand</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+
+            <div id="checkboxes1">
+
+              <label for="one">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Adidas" />
+                <div class="filter">Adidas</div>
+              </label>
+              <label for="two">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Addon" />
+                <div class="filter">Addon</div>
+              </label>
+              <label for="three">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Bandeya" />
+                <div class="filter">Bandeya</div>
+              </label>
+              <label for="four">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Voi" />
+                <div class="filter">Voi Jeans</div>
+              </label>
+              <label for="five">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Casio" />
+                <div class="filter">Casio</div>
+              </label>
+              <label for="six">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Fastrack" />
+                <div class="filter">Fastrack</div>
+              </label>
+              <label for="seven">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Titan" />
+                <div class="filter">Titan</div>
+              </label>
+            </div>
+
+
+
+            <div class="selectBox" onclick="showCheckboxes()">
+              <select>
+                <option>Select Mens Category</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes2">
+              <label for="one">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Jeans" />
+                <div class="filter">Jeans</div>
+              </label>
+              <label for="two">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Trousers" />
+                <div class="filter">Trousers</div>
+              </label>
+              <label for="three">
+                <input type="checkbox" class="box" onclick="checkFun()" value="T-Shirt" />
+                <div class="filter">T-Shirt</div>
+              </label>
+              <label for="four">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Shirt" />
+                <div class="filter">Shirt</div>
+              </label>
+              <label for="five">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Watch" />
+                <div class="filter">Watch</div>
+              </label>
+            </div>
+
+
+
+            <div class="selectBox" onclick="showCheckboxes3()">
+              <select>
+                <option>Select Womens Brand</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes3">
+              <label for="one">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Amukti" />
+                <div class="filter">Amukti</div>
+              </label>
+              <label for="two">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Arteastri" />
+                <div class="filter">Arteastri</div>
+              </label>
+              <label for="three">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Biba" />
+                <div class="filter">Biba</div>
+              </label>
+              <label for="four">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Shirt" />
+                <div class="filter">Shirt</div>
+              </label>
+              <label for="five">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Watch" />
+                <div class="filter">Watch</div>
+              </label>
+            </div>
+
+            <div class="selectBox" onclick="showCheckboxes4()">
+              <select>
+                <option>Select Womens Category</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes4">
+              <label for="one">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Dupatta" />
+                <div class="filter">Dupatta</div>
+              </label>
+              <label for="two">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Tops" />
+                <div class="filter">Tops</div>
+              </label>
+              <label for="three">
+                <input type="checkbox" class="box" onclick="checkFun()" value="kurtis" />
+                <div class="filter">kurtis</div>
+              </label>
+              <label for="four">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Palazzos" />
+                <div class="filter">Palazzos</div>
+              </label>
+              <label for="five">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Saree" />
+                <div class="filter">Saree</div>
+              </label>
+            </div>
+
+            <div class="selectBox" onclick="showCheck()">
+              <select>
+                <option>Select Boys Brand</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+
+            <div id="checkboxes5">
+
+              <label for="one">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Hangup" />
+                <div class="filter">Hangup</div>
+              </label>
+              <label for="two">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Gas" />
+                <div class="filter">Gas</div>
+              </label>
+              <label for="three">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Allen" />
+                <div class="filter">Allen</div>
+              </label>
+              <label for="four">
+                <input type="checkbox" class="box" onclick="checkFun()" value="Puma" />
+                <div class="filter">Puma</div>
+              </label>
+              <label for="five">
+
+            </div>
+
+
+
+          </div>
+        </form>
+
+
+
+
+
+      </div>
+      <div id="main_product">
+
+        <div id="show_product">
+
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div id="product_footer">
+
+  </div>
+
+
+
+
+
+
+  <select id="sort_up" class="form-select" onchange="Sorting()">
+    <option id="sort_up_option" class="select_option" selected value="popular">SORT BY POPULAR</option>
+    <option id="sort_up_option" class="select_option" value="rating">SORT BY Rating</option>
+    <option id="sort_up_option" class="select_option" value="discount">SORT BY DISCOUNT</option>
+    <option id="sort_up_option" class="select_option" value="low">PRICE:LOW TO HIGH</option>
+    <option id="sort_up_option" class="select_option" value="high">PRICE:HIGH TO LOW</option>
+  </select>
+
+
+
+
+
+  <div id="containemodal">
+    <div id="crose"><i class="fa-regular fa-circle-xmark"></i></div>
+    <div id="modal">
+      <div id="first_child_modal">
+        <div id="grandchild1">
+
+        </div>
+        <div id="grandchild">
+          <h1>Login/Signup</h1>
+          <P>for a tailored experience</P>
+        </div>
+      </div>
+
+      <div id="somenewdiv">
+        <label id="label1">Mobile Number<span id="textred">*</span></label>
+        <input type="tel" id="mobileNumber" placeholder="" required="">
+      </div>
+      <div id="second_child_modal">
+        <!-- <label id="labe">Mobile Number<span id="textred">*</span></label> -->
+        <!-- <input type="number" class="form-control ob-mobile custom-validity-input" id="mobileNumber"
+                  placeholder="" required=""> -->
+        <!-- <label id="label1">Mobile Number<span id="textred">*</span></label> -->
+        <button id="submit">Continue</button>
+        <div id="option">
+          <span id="siguppp">Login using</span> <a id="change" href="#">Email</a>
+        </div>
+
+        <div id="lodinasadminn">
+          Login as admin
+        </div>
+        <div id="logos">
+          <img id="facebook_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" /><img
+            id="google_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
+        </div>
+      </div>
+      <div id="third_child_modal">
+        <p>By signing up you agree to our<a href="#"> Terms of Service </a>& <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="containemodal2">
+    <div id="crose2"><i class="fa-regular fa-circle-xmark"></i></div>
+    <div id="modal">
+      <div id="first_child_modal">
+        <div id="grandchild1">
+          <p><i class="fa-solid fa-arrow-left-long" id="back1"></i></p>
+        </div>
+        <div id="grandchild">
+          <h1>Password</h1>
+          <P>for a tailored experience</P>
+        </div>
+      </div>
+
+      <div id="somenewdiv">
+        <label id="label1">Password<span id="textred">*</span></label>
+        <input type="password" class="hideclose" id="password" placeholder="" required="">
+        <i id="eye" class="fa-solid fa-eye"></i>
+      </div>
+      <div id="second_child_modal">
+        <!-- <input type="password" class="form-control ob-mobile custom-validity-input" id="password" placeholder=""
+                  required="">
+              <i id="eye" class="fa-solid fa-eye"></i>
+              <label id="label2">Password<span id="textred">*</span></label> -->
+        <button id="submit2">Submit</button>
+        <div id="option1">
+          <p style="text-align:right">Forgot password?</p>
+
+        </div>
+        <div id="logos">
+          <img id="facebook_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" /><img
+            id="google_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
+        </div>
+      </div>
+      <div id="third_child_modal">
+        <p>By signing up you agree to our<a href="#"> Terms of Service </a>& <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="containemodal3">
+    <div id="crose3"><i class="fa-regular fa-circle-xmark"></i></div>
+    <div id="modal">
+      <div id="first_child_modal">
+        <div id="grandchild1">
+          <p><i id="back2" class="fa-solid fa-arrow-left-long"></i></p>
+        </div>
+        <div id="grandchild">
+          <h1>Verify OTP</h1>
+          <P>Enter the 4-digit otp.</P>
+        </div>
+      </div>
+      <div id="second_child_modal">
+
+
+        <div id="otp">
+          <input id="input1" type="text" maxlength="1" onkeyup="move(event, '','input1','input2')">
+          <input id="input2" type="text" maxlength="1" onkeyup="move(event, 'input1','input2','input3')">
+          <input id="input3" type="text" maxlength="1" onkeyup="move(event, 'input2','input3','input4')">
+          <input id="input4" type="text" maxlength="1" onkeyup="move(event, 'input3','input4','')">
+        </div>
+        <button id="submit3">Enter OTP</button>
+        <div id="option">
+          <a href="#">Resend Otp</a>
+          <!-- <span>Login using</span> <a id="change" href="#">Email</a> -->
+        </div>
+        <div id="logos">
+          <img id="facebook_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" /><img
+            id="google_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
+        </div>
+      </div>
+      <div id="third_child_modal">
+        <p>By signing up you agree to our<a href="#"> Terms of Service </a>& <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="containemodal4">
+    <div id="crose4"><i class="fa-regular fa-circle-xmark"></i></div>
+    <div id="modal">
+      <div id="first_child_modal">
+        <div id="grandchild1">
+          <p><i id="back3" class="fa-solid fa-arrow-left-long"></i></p>
+        </div>
+        <div id="grandchild">
+          <h1>Welcome to Shoppers Stop</h1>
+          <P>let's get you registerd!</P>
+        </div>
+      </div>
+      <div id="second_child_modal">
+        <div id="div_1" class="div_1">
+          <label>Name<span id="textred">*</span></label>
+          <input type="text" class="div_1_input" id="div_1_input">
+        </div>
+        <div id="div_1">
+          <label>Mobile<span id="textred">*</span></label>
+          <input type="tel" maxlength="10" class="div_1_input" id="div_2_input">
+        </div>
+        <div id="div_1">
+          <label>Email<span id="textred">*</span></label>
+          <input type="email" class="div_1_input" id="div_3_input">
+        </div>
+        <div id="div_1">
+          <label>Password<span id="textred">*</span></label>
+          <input type="password" class="div_1_input" id="div_4_input">
+        </div>
+
+
+        <button id="submit4">Submit</button>
+
+        <div id="logos">
+          <img id="facebook_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" /><img
+            id="google_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
+        </div>
+      </div>
+      <!-- <div id="third_child_modal">
+              <p>By signing up you agree to our<a href="#"> Terms of Service </a>& <a href="#">Privacy Policy</a></p>
+          </div> -->
+    </div>
+  </div>
+
+
+
+
+  <div id="containemodal5">
+    <div id="crose5"><i class="fa-regular fa-circle-xmark"></i></div>
+    <div id="modal">
+      <div id="first_child_modal">
+        <div id="grandchild1">
+          <p><i id="backlast" class="fa-solid fa-arrow-left-long"></i></p>
+        </div>
+        <div id="grandchild">
+          <h1>ADMIN LOGIN</h1>
+          <!-- <P>let's get you registerd!</P> -->
+        </div>
+      </div>
+      <div id="second_child_modal">
+        <div id="div_1" class="div_1">
+
+        </div>
+
+        <div id="div_1" class="diadmin">
+          <label>Email<span id="textred">*</span></label>
+          <input type="email" class="div_1_input" id="adminemail">
+        </div>
+        <div id="div_1" class="diadmin">
+          <label>Password<span id="textred">*</span></label>
+          <input type="password" class="div_1_input" id="idminpass">
+        </div>
+
+
+        <button id="submit5">Submit</button>
+
+        <div id="logos">
+          <img id="facebook_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" /><img
+            id="google_logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
+        </div>
+      </div>
+      <!-- <div id="third_child_modal">
+              <p>By signing up you agree to our<a href="#"> Terms of Service </a>& <a href="#">Privacy Policy</a></p>
+          </div> -->
+    </div>
+  </div>
+
+
+
+  <div id="alertts">Sucessfully Login</div>
+
+
+
+
+  <script>
+    function move(e, p, c, n) {
+      var length = document.getElementById(c).value.length;
+      var max = document.getElementById(c).getAttribute("maxLength");
+      if (length == max) {
+        if (n !== "") {
+          document.getElementById(n).focus();
+        }
       }
+      console.log(e);
+      if (e.key === "Backspace") {
+        if (p !== "") {
+          document.getElementById(p).focus();
+        }
+      }
+    }
+  </script>
 
-    </script>
+  <script src="../LoginPage/loginsignup.js"></script>
 
- 
+  <script>
+    let preload = document.querySelector(".loading");
+
+    function myFunction() {
+      preload.style.display = "none";
+    }
+
+  </script>
+
+
 </body>
+
 </html>
 <script src="./script/productfooter.js" type="module"></script>
 <script src="https://kit.fontawesome.com/b926e1845e.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<script src="./script/product.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="./script/product.js"></script>
 <script src="../navbarforshopperstop/scripts/navbar.js" type="module"></script>
- 
-  
-
- 
