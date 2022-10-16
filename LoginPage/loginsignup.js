@@ -40,7 +40,16 @@ document.getElementById("submit").addEventListener("click", () => {
   if (c == 1) {
     let val = document.getElementById("mobileNumber").value;
     if (val == "") {
-      alert("Please fill detail");
+      let s = document.getElementById("alertts");
+      s.innerText = "Please fill detail";
+      s.style.display = "flex";
+      s.style.backgroundColor = "red";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+
+      // alert("Please fill detail");
       return;
     } else {
       localStorage.setItem("contact", val);
@@ -66,7 +75,16 @@ document.getElementById("submit").addEventListener("click", () => {
       }
     }
     if (!bool) {
-      alert("Please enter correct email");
+      let s = document.getElementById("alertts");
+      s.innerText = "Invalid Email";
+      s.style.display = "flex";
+      s.style.backgroundColor = "red";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+
+      // alert("Please enter correct email");
     }
   }
 });
@@ -77,12 +95,14 @@ document.getElementById("submit2").addEventListener("click", () => {
   let bool = false;
   arr.map((ele) => {
     if (ele.password == val) {
-      document.getElementById("alertts").style.display = "flex";
+      let s = document.getElementById("alertts");
+      s.innerText = "Login sucessfull";
+      s.style.display = "flex";
+      s.style.backgroundColor = "green";
 
       setTimeout(() => {
         document.getElementById("alertts").style.display = "none";
       }, 1200);
-      // alert("Login sucess!");
 
       document.getElementById("containemodal2").style.display = "none";
       bool = true;
@@ -90,7 +110,15 @@ document.getElementById("submit2").addEventListener("click", () => {
     }
   });
   if (!bool) {
-    alert("Please enter correct password");
+    let s = document.getElementById("alertts");
+    s.innerText = "Invalid Credentials";
+    s.style.display = "flex";
+    s.style.backgroundColor = "red";
+
+    setTimeout(() => {
+      document.getElementById("alertts").style.display = "none";
+    }, 1200);
+    // alert("Please enter correct password");
   }
 });
 
@@ -117,7 +145,15 @@ document.getElementById("submit3").addEventListener("click", () => {
   let input4 = document.getElementById("input4").value;
 
   if (input1 == "" || input2 == "" || input3 == "" || input4 == "") {
-    alert("please fill all detail");
+    let s = document.getElementById("alertts");
+    s.innerText = "Enter all Details";
+    s.style.display = "flex";
+    s.style.backgroundColor = "red";
+
+    setTimeout(() => {
+      document.getElementById("alertts").style.display = "none";
+    }, 1200);
+    // alert("please fill all detail");
     return;
   } else {
     if (input1 == 1 && input2 == 2 && input3 == 3 && input4 == 4) {
@@ -128,7 +164,16 @@ document.getElementById("submit3").addEventListener("click", () => {
       document.getElementById("div_3_input").value = "";
       document.getElementById("div_4_input").value = "";
     } else {
-      alert("Enter Valid Otp");
+      let s = document.getElementById("alertts");
+      s.innerText = "Enter Valid OTP";
+      s.style.display = "flex";
+      s.style.backgroundColor = "red";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+
+      // alert("Enter Valid Otp");
     }
   }
 });
@@ -149,7 +194,16 @@ document.getElementById("submit4").addEventListener("click", () => {
   let input4 = document.getElementById("div_4_input").value;
 
   if (input1 == "" || input2 == "" || input3 == "" || input4 == "") {
-    alert("Enter all details");
+    let s = document.getElementById("alertts");
+    s.innerText = "Enter all Details";
+    s.style.display = "flex";
+    s.style.backgroundColor = "red";
+
+    setTimeout(() => {
+      document.getElementById("alertts").style.display = "none";
+    }, 1200);
+
+    // alert("Enter all details");
   } else {
     let obj = {
       name: input1,
@@ -162,6 +216,7 @@ document.getElementById("submit4").addEventListener("click", () => {
     localStorage.setItem("userlist", JSON.stringify(arr));
     document.getElementById("containemodal4").style.display = "none";
     document.getElementById("containemodal").style.display = "flex";
+    document.getElementById("mobileNumber").value = "";
   }
 });
 
@@ -215,9 +270,41 @@ document.getElementById("submit5").addEventListener("click", () => {
   let pass = document.getElementById("idminpass").value;
   if (email == "admin@gmail.com") {
     if (pass == "admin123") {
-      alert("login sucessfull");
+      let s = document.getElementById("alertts");
+      s.innerText = "login sucessfull";
+      s.style.display = "flex";
+      s.style.backgroundColor = "green";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+
+      // alert("login sucessfull");
     } else {
-      alert("Invalid crediatial");
+      let s = document.getElementById("alertts");
+      s.innerText = "Invalid Credentials";
+      s.style.display = "flex";
+      s.style.backgroundColor = "red";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+
+      // alert("Invalid crediatial");
     }
   }
+});
+
+document.getElementById("lodinasadminn").addEventListener("click", () => {
+  document.getElementById("containemodal").style.display = "none";
+  document.getElementById("containemodal5").style.display = "flex";
+});
+
+document.getElementById("crose5").addEventListener("click", () => {
+  document.getElementById("containemodal5").style.display = "none";
+});
+
+document.getElementById("backlast").addEventListener("click", () => {
+  document.getElementById("containemodal5").style.display = "none";
+  document.getElementById("containemodal").style.display = "flex";
 });
