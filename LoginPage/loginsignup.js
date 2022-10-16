@@ -10,6 +10,7 @@ document.getElementById("change").addEventListener("click", () => {
     document.getElementById("siguppp").innerText = "Login Using";
     document.getElementById("change").innerText = "Email";
     document.getElementById("mobileNumber").setAttribute("type", "tel");
+    // document.getElementById("mobileNumber").setAttribute("maxlength", "15");
 
     flag = false;
 
@@ -29,7 +30,7 @@ document.getElementById("change").addEventListener("click", () => {
 console.log(c);
 
 document.getElementById("submit").addEventListener("click", () => {
-  document.getElementById("mobileNumber").value = "";
+  // document.getElementById("mobileNumber").value = "";
   document.getElementById("input1").value = "";
   document.getElementById("input2").value = "";
   document.getElementById("input3").value = "";
@@ -38,12 +39,20 @@ document.getElementById("submit").addEventListener("click", () => {
   console.log("hz");
   if (c == 1) {
     let val = document.getElementById("mobileNumber").value;
-    localStorage.setItem("contact", val);
-    document.getElementById("containemodal").style.display = "none";
-    document.getElementById("containemodal3").style.display = "flex";
+    if (val == "") {
+      alert("Please fill detail");
+      return;
+    } else {
+      localStorage.setItem("contact", val);
+      document.getElementById("div_2_input").value =
+        localStorage.getItem("contact");
+      document.getElementById("containemodal").style.display = "none";
+      document.getElementById("containemodal3").style.display = "flex";
+    }
   } else if (c == 0) {
     var arr = JSON.parse(localStorage.getItem("userlist")) || [];
-    let val = document.getElementById("mobileNumber").value;
+    var val = document.getElementById("mobileNumber").value;
+    // console.log(val);
 
     let bool = false;
     for (let i = 0; i < arr.length; i++) {
@@ -51,6 +60,7 @@ document.getElementById("submit").addEventListener("click", () => {
         document.getElementById("containemodal2").style.display = "flex";
         document.getElementById("containemodal").style.display = "none";
         document.getElementById("password").value = "";
+        document.getElementById("mobileNumber").value = "";
         bool = true;
         break;
       }
@@ -67,7 +77,13 @@ document.getElementById("submit2").addEventListener("click", () => {
   let bool = false;
   arr.map((ele) => {
     if (ele.password == val) {
-      alert("Login sucess!");
+      document.getElementById("alertts").style.display = "flex";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+      // alert("Login sucess!");
+
       document.getElementById("containemodal2").style.display = "none";
       bool = true;
       return;
@@ -100,15 +116,20 @@ document.getElementById("submit3").addEventListener("click", () => {
   let input3 = document.getElementById("input3").value;
   let input4 = document.getElementById("input4").value;
 
-  if (input1 == 1 && input2 == 2 && input3 == 3 && input4 == 4) {
-    document.getElementById("containemodal3").style.display = "none";
-    document.getElementById("containemodal4").style.display = "flex";
-    document.getElementById("div_1_input").value = "";
-    document.getElementById("div_2_input").value = "";
-    document.getElementById("div_3_input").value = "";
-    document.getElementById("div_4_input").value = "";
+  if (input1 == "" || input2 == "" || input3 == "" || input4 == "") {
+    alert("please fill all detail");
+    return;
   } else {
-    alert("Enter Valid Otp");
+    if (input1 == 1 && input2 == 2 && input3 == 3 && input4 == 4) {
+      document.getElementById("containemodal3").style.display = "none";
+      document.getElementById("containemodal4").style.display = "flex";
+      document.getElementById("div_1_input").value = "";
+      // document.getElementById("div_2_input").value = "";
+      document.getElementById("div_3_input").value = "";
+      document.getElementById("div_4_input").value = "";
+    } else {
+      alert("Enter Valid Otp");
+    }
   }
 });
 
@@ -159,3 +180,44 @@ function move(e, p, c, n) {
     }
   }
 }
+
+document.getElementById("back1").addEventListener("click", () => {
+  document.getElementById("containemodal").style.display = "flex";
+  document.getElementById("containemodal2").style.display = "none";
+});
+document.getElementById("back2").addEventListener("click", () => {
+  document.getElementById("containemodal").style.display = "flex";
+  document.getElementById("containemodal3").style.display = "none";
+  document.getElementById("mobileNumber").value = "";
+});
+document.getElementById("back3").addEventListener("click", () => {
+  document.getElementById("input1").value = "";
+  document.getElementById("input2").value = "";
+  document.getElementById("input3").value = "";
+  document.getElementById("input4").value = "";
+  document.getElementById("containemodal3").style.display = "flex";
+  document.getElementById("containemodal4").style.display = "none";
+});
+
+let b = true;
+document.querySelector("#eye").addEventListener("click", () => {
+  if (b) {
+    document.querySelector(".hideclose").setAttribute("type", "text");
+    b = false;
+  } else {
+    b = true;
+    document.querySelector(".hideclose").setAttribute("type", "password");
+  }
+});
+
+document.getElementById("submit5").addEventListener("click", () => {
+  let email = document.getElementById("adminemail").value;
+  let pass = document.getElementById("idminpass").value;
+  if (email == "admin@gmail.com") {
+    if (pass == "admin123") {
+      alert("login sucessfull");
+    } else {
+      alert("Invalid crediatial");
+    }
+  }
+});

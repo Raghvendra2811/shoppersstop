@@ -100,10 +100,15 @@ function navbarim() {
     <div id="navbarpart3">
       <div>
         <input type="search" placeholder="Search Products & Brands" id='searchfunction'/>
-        <button id='searchfunctionbybutton'><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id='searchfunctionbybutton'><i class="fa-solid fa-microphone"></i></button>
       </div>
+      
       <a href=""><i class="fa-regular fa-heart"></i></a>
+      
+      <div id="cartofhomepage">
       <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+      <span class='noi'>0</span>
+      </div>
       <a href="">
         <img
           src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg"
@@ -119,7 +124,7 @@ function navbarim1(){
   return `<div id="navbarline2part1">
   <ul id="nav-menu1">
     <li>
-      <a href="#" class="storeinls" onclick ="addtolocal()">MENS</a>
+      <a href="#" id="storeinls" >MENS</a>
 
       <div id="mensonhover">
         <div id="menshomepage">
@@ -135,36 +140,36 @@ function navbarim1(){
             </ul>
           </div>
           <div id="menspart2">
-            <h4>All Clothing</h4>
-            <h4>T-Shirts & Polos</h4>
-            <h4>Shirts</h4>
-            <p>All Shirts</p>
-            <p>Casual</p>
+            <h4 id='test0018'>All Clothing</h4>
+            <h4 id='test003'>T-Shirts & Polos</h4>
+            <h4 id='test001'>Shirts</h4>
+            <p id='test0019'>All Shirts</p>
+            <p id='test002'>Casual</p>
+            <p id='test0020'> Formal</p>
+            <h4 id='test004'>Jeans</h4>
+            <h4 id='test005'>Trousers</h4>
+            <p id='test0021'>All Trousers</p>
+            <p id='test0022'>Casual</p>
             <p>Formal</p>
-            <h4>Jeans</h4>
-            <h4>Trousers</h4>
-            <p>All Trousers</p>
-            <p>Casual</p>
-            <p>Formal</p>
-            <h4>Shorts</h4>
-            <h4>Sports & Activewear</h4>
-            <p>All Sports & Activewear</p>
-            <p>Tshirts</p>
-            <p>Joggers & Track pants</p>
+            <h4 id='test006'>Shorts</h4>
+            <h4 id='test0023'>Sports & Activewear</h4>
+            <p id='test0024'>All Sports & Activewear</p>
+            <p id='test007'>Tshirts</p>
+            <p id='test008'>Joggers & Track pants</p>
           </div>
           <div id="menspart3">
-            <h4>Suits & Blazers</h4>
-            <h4>Casual Jackets</h4>
-            <h4>Ethnicwear</h4>
+            <h4 id='test009'>Suits & Blazers</h4>
+            <h4 id='test0010'>Casual Jackets</h4>
+            <h4 id='test0011'>Ethnicwear</h4>
 
-            <p>Kurtas</p>
-            <p>Kurta Sets</p>
-            <h4>Nehru Jackets</h4>
-            <h4>Winterwear</h4>
-            <p>All Winterwear</p>
-            <p>Sweatshrits</p>
-            <p>Sweaters</p>
-            <p>Jackets</p>
+            <p id='test0012'>Kurtas</p>
+            <p id='test0013'>Kurta Sets</p>
+            <h4 id='test0017'>Nehru Jackets</h4>
+            <h4 id='test0016'>Winterwear</h4>
+            <p id='test0015'>All Winterwear</p>
+            <p id='test0014'>Sweatshrits</p>
+            <p id='test0025'>Sweaters</p>
+            <p id='test0026'>Jackets</p>
             <h4>Mask</h4>
             <h4>Personal Protection Equipment</h4>
           </div>
@@ -188,7 +193,7 @@ function navbarim1(){
       </div>
     </li>
     <li>
-      <a href="#" class="storeinls" onclick = "addtolocal()">WOMENS</a>
+      <a href="#" id="storeinls1" onclick = "addtolocal1()">WOMENS</a>
 
       <div id="womensonhover">
         <div id="womens">
@@ -240,7 +245,7 @@ function navbarim1(){
       </div>
     </li>
     <li>
-      <a href="#" class="storeinls">BEAUTY</a>
+      <a href="#" id="storeinls2" onclick = "addtolocal2()">BEAUTY</a>
 
       <div id="beautyonhover">
         <div id="beauty">
@@ -299,7 +304,7 @@ function navbarim1(){
       </div>
     </li>
     <li>
-      <a href="#" class="storeinls">WATCHES</a>
+      <a href="#"id="storeinls3" onclick = "addtolocal3()">WATCHES</a>
 
       <div id="watchesonhover">
         <div id="watches">
@@ -337,7 +342,7 @@ function navbarim1(){
       </div>
     </li>
     <li>
-      <a href="#" class="storeinls">KIDS</a>
+      <a href="#" id="storeinls4" onclick = "addtolocal4()">KIDS</a>
 
       <div id="Kidsonhover">
         <div id="Kids">
@@ -389,7 +394,7 @@ function navbarim1(){
       </div>
     </li>
     <li id="hoomestop">
-      <a href="#" class="storeinls">HOMESTOP</a>
+      <a href="#" id="storeinls5" onclick = "addtolocal5()">HOMESTOP</a>
 
       <div id="homestoponhover">
         <div id="homestop">
@@ -454,7 +459,7 @@ function navbarim1(){
       </div>
     </li>
     <li>
-      <a href="#" class="storeinls">GIFTS</a>
+      <a href="#"id="storeinls6" onclick = "addtolocal6()">GIFTS</a>
 
       <div id="giftsonhover">
         <div id="gifts">
@@ -492,7 +497,7 @@ function navbarim1(){
       </div>
     </li>
     <li>
-      <a href="#" class="storeinls">BRANDS</a>
+      <a href="#" id="storeinls7" onclick = "addtolocal7()">BRANDS</a>
 
       <div id="Brandsoftagonhover">
         <div id="Brandsoftag">
@@ -539,7 +544,8 @@ function navbarim1(){
       </div>
     </li>
   </ul>
-</div>`;
+</div>
+<a href="#main"><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button></a>`;
 }
 
 export{navbarim,navbarim1};

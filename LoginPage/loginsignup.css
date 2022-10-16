@@ -13,6 +13,54 @@
   background-color: beige;
 }
 
+#adminemail {
+  width: 100%;
+}
+
+#lodinasadminn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: xx-large;
+  width: 80%;
+  margin: auto;
+  height: 20%;
+  border: 2px black solid;
+}
+
+#alertts {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 20%;
+  top: 10%;
+  left: 40%;
+  font-size: x-large;
+  border-radius: 8px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  animation-name: alert;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes alert {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 #containemodal {
   width: 100%;
   height: 100%;
@@ -24,6 +72,18 @@
 
   justify-content: end;
   /* border: 3px darkblue solid; */
+}
+
+#containemodal5 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+  display: none;
+
+  justify-content: end;
 }
 
 #containemodal4 {
@@ -163,8 +223,8 @@
 }
 
 #password {
-  margin-top: 30px;
-  width: 80%;
+  /* margin-top: 30px; */
+  width: 95%;
 
   /* font-size: 30px; */
   /* border: none; */
@@ -173,7 +233,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 2px black solid;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   outline: none;
   font-size: 18px;
 }
@@ -287,8 +347,8 @@
 #eye {
   position: absolute;
   color: #000;
-  top: 40%;
-  right: 3%;
+  right: 4%;
+  bottom: 50%;
 }
 
 #otp {
@@ -330,6 +390,10 @@
   border-bottom: 2px black solid;
   outline: none;
   font-size: 18px;
+}
+
+.diadmin {
+  width: 80%;
 }
 
 #div_1 {

@@ -1,0 +1,43 @@
+/* #thank{
+    width: 100%;
+    height: 100%;
+    color: black;
+    margin: auto;
+  } */
+  *{
+    font-family: sans-serif;
+  }
+  #thnq{
+    width: 40%;
+    height: 50%;
+    background-color: #b6b2b2;
+    margin: auto;
+    margin-top: 9%;
+  }
+  #thnq img{
+    width: 70%;
+    margin: auto;
+  }
+  #thnq div{
+    margin-left: 10%;
+  }
+  body{
+    background-color: #b6b2b2;
+  }
+  #thankmsg{
+    padding-top: 15px;
+    margin-top: -10px;
+    width: 63%;
+    height: 80%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  #thankmsg :first-child{
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #thankmsg :nth-child(2) a{
+    color: black;
+    font-size: 18px;
+  }

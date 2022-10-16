@@ -26,15 +26,24 @@ function getsearchaname(danny){
         var sarchedname = document.getElementById('searchfunction').value;
         localStorage.setItem('Productsearched',JSON.stringify(sarchedname));
         document.getElementById('searchfunction').value = "";
-location.href="../../product/product.html";
+      location.href = "../product/product.html";
     }  
 }
 document.getElementById('searchfunctionbybutton').addEventListener('click',Bybutton);
 
 function Bybutton(){
-    var getproductfromsearch = document.getElementById('searchfunction').value;
-    localStorage.setItem('Productsearched',JSON.stringify(getproductfromsearch));
-    document.getElementById('searchfunction').value = '';
+    // var getproductfromsearch = document.getElementById('searchfunction').value;
+    // localStorage.setItem('Productsearched',JSON.stringify(getproductfromsearch));
+    // document.getElementById('searchfunction').value = '';
+    // location.href = "../../product/product.html";
+    var reco = new webkitSpeechRecognition();
+  reco.lang = "en-GB";
+  reco.onresult = function (event) {
+    console.log(event.results[0][0].transcript, " recond");
+    document.getElementById("searchfunction").value = event.results[0][0].transcript;
+    // search(event.results[0][0].transcript);
+  };
+  reco.start();
 }
 
 
@@ -49,19 +58,59 @@ hamburger.addEventListener('click',() => {
     x12.classList.toggle('active');  
 })
 
+document.getElementById('storeinls').addEventListener('click', addtolocal);
+function addtolocal() {
+  var ls0 = document.getElementById('storeinls').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls0));
+  location.href = "../product/product.html";
 
-// document.querySelectorAll('.storeinls').addEventListener('click',()=>{
-//     var getitpart2 = event.target.innerText;
-//     console.log(getitpart2)
-    
-//     localStorage.setItem('Productsearched',JSON.stringify(getitpart2));
-// });
-// function addtolocal(){
-//    var getitpart3 = document.querySelector('.storeinls').innerText;
-//    console.log(getitpart3)
-//    localStorage.setItem('Productsearched',JSON.stringify(getitpart3));
+}
+document.getElementById('storeinls1').addEventListener('click', addtolocal1);
+function addtolocal1() {
+  var ls1 = document.getElementById('storeinls1').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls1));
+  location.href = "../product/product.html";
+}
+document.getElementById('storeinls2').addEventListener('click', addtolocal2);
+function addtolocal2() {
+  var ls2 = document.getElementById('storeinls2').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls2));
+  location.href = "../product/product.html";
+}
+document.getElementById('storeinls3').addEventListener('click', addtolocal3);
+function addtolocal3() {
+  var ls3 = document.getElementById('storeinls3').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls3));
+  location.href = "../product/product.html";
+}
+document.getElementById('storeinls4').addEventListener('click', addtolocal4);
+function addtolocal4() {
+  var ls4 = document.getElementById('storeinls4').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls4));
+  location.href = "../product/product.html";
+}
+document.getElementById('storeinls5').addEventListener('click', addtolocal5);
+function addtolocal5() {
+  var ls5 = document.getElementById('storeinls5').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls5));
+  location.href = "../product/product.html";
+}
+document.getElementById('storeinls6').addEventListener('click', addtolocal6);
+function addtolocal6() {
+  var ls6 = document.getElementById('storeinls6').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls6));
+  location.href = "../product/product.html";
+}
+document.getElementById('storeinls7').addEventListener('click', addtolocal7);
+function addtolocal7() {
+  var ls7 = document.getElementById('storeinls7').innerText;
+  localStorage.setItem('Productsearched',JSON.stringify(ls7));
+  location.href = "../product/product.html";
+}
 
-// }
+
+
+
 
 
 
@@ -80,3 +129,24 @@ hamburger.addEventListener('click',() => {
 //      hoome.style.display = 'none';
      
 //   })
+
+
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

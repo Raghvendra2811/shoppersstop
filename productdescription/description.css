@@ -1,6 +1,5 @@
 body {
-  background-color:white;
-
+  background-color: white;
 }
 
 #contant_div {
@@ -274,6 +273,17 @@ strong {
   /* border: 1px black solid; */
 }
 
+#tst {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  /* font-style: italic; */
+  font-size: 40px;
+  margin: 2%;
+  margin-top: 20px;
+  font-weight: 600;
+  /* font-family: ; */
+}
 #dropDownContent {
   width: 100%;
   margin: auto;
@@ -284,6 +294,9 @@ strong {
 }
 
 #redeeee {
+  color: orangered;
+}
+#rdee {
   color: orangered;
 }
 

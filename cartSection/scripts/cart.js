@@ -351,5 +351,6 @@ displayProducts(cartProducts,"Standard Delivery");
     })
     cartProducts.splice(idx,1);
     document.getElementById("middle2second").lastChild.remove();
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
     displayProducts(cartProducts,selected);
     }
