@@ -22,11 +22,19 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  font-size: xx-large;
-  width: 80%;
+  /* font-size: xx-large; */
+  width: 50%;
   margin: auto;
   height: 20%;
   border: 2px black solid;
+  border-radius: 8px;
+  font-size: large;
+  font-family: sans-serif;
+}
+
+#lodinasadminn:hover {
+  background-color: #000;
+  color: white;
 }
 
 #alertts {
@@ -301,6 +309,14 @@
 }
 
 #crose {
+  font-size: 40px;
+  /* border: 2px solid white; */
+  height: 50px;
+  margin-right: 1%;
+  margin-top: 1%;
+  color: white;
+}
+#crose5 {
   font-size: 40px;
   /* border: 2px solid white; */
   height: 50px;
