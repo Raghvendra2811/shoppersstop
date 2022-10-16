@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("https://i.pinimg.com/736x/f0/2d/9a/f02d9a35032d79913361eaed592c8c21.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  #add-product-button {
+    padding: 2% 4%;
+    font-size: larger;
+    font-weight: 500;
+  }
+  #add-product-outerdiv {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    /* height: 100vh; */
+    margin: auto;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+    margin-top: 40px;
+    background-color: white;
+  }
+  #add-product-outerdiv {
+    /* color: wheat; */
+  }
+  #add-product-heading {
+    margin: auto;
+    text-align: center;
+    margin: 30px;
+  }
+  #add-product-submit-div {
+    margin: auto;
+    text-align: center;
+  }
+  #add-product-outerdiv > .input-div {
+    /* border: 5px solid red; */
+    margin: 30px auto;
+  }
+  #add-product-outerdiv > .input-div span {
+    width: 120px;
+    margin: auto;
+    text-align: center;
+  }
+  #go-to-home{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }

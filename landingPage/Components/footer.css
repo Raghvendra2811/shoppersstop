@@ -27,6 +27,7 @@
   width: 85%;
   margin: auto;
   display: flex;
+  margin-top: 30px;
   justify-content: space-evenly;
 }
 #footer-inner-1 > div {
@@ -201,7 +202,7 @@
 }
 @media screen and (max-width: 550px){
   #footer{
-    display: none;
+    /* display: none; */
   }
   #cartBottomRow,
   #cartService {
