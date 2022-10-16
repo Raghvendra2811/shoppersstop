@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="confirm">Click to confirm Order</div>
+
+    <div id="inner-body">
+        <div id="checkHead" style="background-color: white">
+        <div style="background-color: white">
+          <h3 style="background-color: white">MY CHECKOUT</h3>
+        </div>
+        <div>
+          <a href=""><h2 style="background-color: black">SHOPPERS STOP</h2></a>
+        </div>
+        <div id="icons" style="background-color: white">
+          <i class="fa-solid fa-heart" style="background-color: white"></i>
+          <p>Account</p>
+        </div>
+    </div>
+
+    <div id="checkingDetails">
+        <div id="horizontal">
+             <div>
+                <p>Signed in as : <span></span></p>
+            </div>
+            <div>
+              <p>Deliver to : <a href="" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Please add delivery address</a></p>
+          </div>
+          <!-- payment wala div -->
+          <div> 
+            <p>PAYMENT</p>
+            <img src="https://sslimages.shoppersstop.com/sys-master/root/hff/heb/16687090991134/Cart-Pg-strip.jpg"/>
+            <!-- payment k niche ka dropdown ka div -->
+            <div id="payOption">
+                <div>
+                    <p>Other Payments</p>
+                    <p>Pay Using Cards, Net Banking, Wallets</p>
+                </div>
+                <div id="closePay">
+                    <img src="data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.102 8.602c.22-.22.576-.22.796 0L12 15.704l7.102-7.102a.562.562 0 1 1 .796.796l-7.5 7.5a.562.562 0 0 1-.796 0l-7.5-7.5a.563.563 0 0 1 0-.796z' fill='%23000'/%3E%3C/svg%3E" alt=""/>
+                </div>
+            </div>
+            <div id="payDropDown">
+                <div id="left">
+                    <div>
+                        <img src="../resources/debit.svg"/>
+                        <p>Debit / Credit Card</p>
+                    </div>
+                </div>
+                <div id="right">
+                    <div><p>Enter Debit / Credit Card Details</p></div>
+                    <div>
+                        <div>
+                            <div id="cardnumber">Card Number</div>
+                            <input placeholder="Enter card number here"/>
+                        </div>
+                        <div id="cardDeatails">
+                            <div id="expdate">
+                                <div>Expiry</div>
+                                <input placeholder="MM/YY">
+                            </div>
+                            <div id="cvv">
+                                <div>CVV</div>
+                                <input placeholder="CVV" type="text">
+                            </div>
+                        </div>
+                        <div id="checkBox">
+                            <input type="checkbox">
+                            <label>Save this card for future</label>
+                        </div>
+                        <div id="btn"><button>Proceed to pay</button></div>
+                        <div id="bank">
+                            <p>Offers for you</p>
+                            <div>
+                                <img src="https://assets.juspay.in/hyper/images/common/ic_bank_508534.png" alt="">
+                                <p>ICICI Bank Offer</p>
+                            </div>
+                            <div>
+                                <p id="offerDis">Rs. 500 Instant Discount on select ICICI Debit & Credit Card</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="vertical">
+            <div id="coupon">
+                <p>Apply coupon</p>
+                <input type="text" placeholder="Enter promo/coupon code " /><span>APPLY</span>
+            </div>
+            <div id="product">
+                <div id="itemcnt">
+                    <p>Items( <span></span>)</p>
+                </div>
+                <div id="payProd">
+                
+                </div>
+                <div>
+                    <!-- <input type="submit" value="EDIT CART"/> -->
+                </div>
+            </div>
+
+
+
+            <div id="billingbox">
+                <div>
+                  <h3>Order Summary</h3>
+                </div>
+                <div>
+                  <p>Sub total</p>
+                  <h4 id="itemchoosedprice">5000.00</h4>
+                </div>
+                <div>
+                  <p>Delivery charges*</p>
+                  <p id="deliverybenefit">Free</p>
+                </div>
+                <div>
+                  <p>Coupon dicount</p>
+                  <h3>Apply Coupon</h3>
+                </div>
+                
+                <div>
+                  <h3>Total Price</h3>
+                  <h4 id="itemchoosedtotal">5000.00</h4>
+                </div>
+                
+                <div>
+                  <p>Total Saving</p>
+                  <p>0.00</p>
+                </div>
+                <div>
+                   <!-- <h4 id="checkoutboxx"></h4>  -->
+                </div>
+                <div id="endTxt">
+                   <p></p> 
+                </div>
+  
+  
+              </div>
+
+
+
+
+        </div>
+        <!-- <div>
+            <p>Signed in as : <span></span></p>
+        </div>
+        <div>
+              <p>Deliver to : <a href="addressPage.html">Please add delivery address</a></p> mmmmmmmmmmmmm 
+            <p>Deliver to : <a href="" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Please add delivery address</a></p>
+        </div>
+        <div>
+            <p>PAYMENT</p>
+            <img src="https://sslimages.shoppersstop.com/sys-master/root/hff/heb/16687090991134/Cart-Pg-strip.jpg"/>
+        </div> -->
+        <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Other Payments
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div> -->
+          <!-- <div class="dropDown">
+            <div>
+                <p>Other Payments</p>
+                <p>Pay Using Cards, Net Banking, Wallets</p>
+            </div>
+            <div id="dropImg"> <img src="data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.102 8.602c.22-.22.576-.22.796 0L12 15.704l7.102-7.102a.562.562 0 1 1 .796.796l-7.5 7.5a.562.562 0 0 1-.796 0l-7.5-7.5a.563.563 0 0 1 0-.796z' fill='%23000'/%3E%3C/svg%3E" alt=""></div>
+          
+            <div class="payOption">
+                <div id="payOptionLeft">
+                    <div class="payMethods">
+                        <img src="../resources/debit.svg"/>
+                         <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Nq5Miw05MsgA5TNatWEH1EAsdHbkyrz6Ng&usqp=CAU"/> mmmmmmmmm
+                        <p>Credit / Debit Card</p>
+                    </div>
+                    <div class="payMethods"></div>
+                    <div class="payMethods"></div>
+                    <div class="payMethods"></div>
+                    <div class="payMethods"></div>
+                </div>
+                <div id="payOptionRight">
+                    <p>Enter Debit/Credit Card Details</p>
+                    <div id="cardDetails">
+                        <p>Card Number</p>
+                        <input type="text" placeholder="Enter card number here " />
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- <div id="coupon">
+        <p>Apply coupon</p>
+        <input type="text" placeholder="Enter promo/coupon code " /><span>APPLY</span>
+    </div> -->
+
+    <!-- <div class="product">
+        <div>
+            <p>Items( <span></span>)</p>
+        </div>
+        <div id="payProd"></div>
+        <div>
+            <input type="submit" value="EDIT CART"/>
+        </div>
+    </div> -->
+
+    <div id="boot">
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">DELIVERY ADDRESS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <!-- I will not close if you click outside of me. -->
+                <form method="post"> 
+                    <!-- <form>  -->
+                    <!-- <div> -->
+                    <div class="txtField">
+                        <input type="text" required/>
+                        <span></span>
+                        <label>First Name</label>
+                    </div>
+                    <div class="txtField">
+                        <input type="text" required/>
+                        <span></span>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="txtField">
+                        <input type="number" required/>
+                        <span></span>
+                        <label>Mobile Number</label>
+                    </div>
+                    <div class="txtField">
+                        <input id="pin" type="number" required/>
+                        <span></span>
+                        <label> Enter Pincode</label>
+                    </div>
+                    <div class="txtField">
+                        <input id="city" type="text" required/>
+                        <span></span>
+                        <label>City</label>
+                    </div>
+                    <div class="txtField">
+                        <input id="state" type="text" required/>
+                        <span></span>
+                        <label>State</label>
+                    </div>
+                    <!-- <input type="checkbox" id="vehicle1">
+                    <label> Make this as my default address</label> -->
+                    <button id="addressBtn" onclick="fun()">SAVE AND PROCEED</button>
+                 </form>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+    <!-- </div> -->
+
+</body>
+</html>
+
+<script src="../scripts/checkout.js"></script>
+
+<script src="https://kit.fontawesome.com/9525d477a8.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+

@@ -1,0 +1,516 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #F5F5F5;
+  }
+  body{
+    background-color: #F5F5F5;}
+  #checkHead {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #checkHead div h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;}
+  #checkHead > div:nth-child(2) {
+    background-color: black;
+    margin-top: 4px;
+    margin-bottom: 10px;}
+  #checkHead > div:nth-child(2) > a {text-decoration: none;}
+  #checkHead > div:nth-child(2) > a > h2 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #checkHead > div:nth-child(2) > a > h2::first-letter {
+    font-size: 30px;
+  }
+  #checkHead > div:first-child {
+    padding-top: 15px;
+  }
+  #checkHead > div:last-child {
+    display: flex;
+    margin-top: 15px;
+  }
+  #checkHead > div:last-child > i {
+    margin-right: 20px;
+    padding-top: 5px;
+  }
+  #checkHead > div:last-child > p {
+    text-align: center;
+    background-color: rgb(192, 190, 190);
+    border-radius: 35px;
+    padding-top: 8px;
+    margin-top: -2px;
+    width: 90px;
+  }
+  /* address wala 302 */
+  .offcanvas-header, .offcanvas-body {
+    background-color: white;
+    width: 460px;
+    margin-left: -40px;
+  }
+  #staticBackdropLabel{
+    background-color: white;
+  }
+  #staticBackdrop{
+    margin-left: 40px;
+    padding-left: 2px;
+  }
+  form{
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: -5%;
+    margin-bottom: 5px;
+  }
+  form .txtField{
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 40px 0;
+    background-color: white;
+  }
+   .txtField input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .txtField label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    background-color: white;
+  }
+  .txtField span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    transition: .5s;
+  }
+  .txtField input:focus ~ label, .txtField input:valid ~ label{
+    top: -5px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .txtField input:focus ~ span::before, .txtField input:valid ~ span::before{
+    width: 100%;
+  }
+  #boot h5{
+    font-weight: 600;
+    padding-top: 6%;
+    padding-bottom: 0;
+    margin-left: 10%;
+  }
+  input[type="submit"]{
+    padding: 5%;
+    width: 94%;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  #addressBtn{
+    padding: 5%;
+    width: 94%;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+  input[type="checkbox"]{
+    font-size: 15%;
+    padding-top: 2px;
+  }
+  #vehicle1 label{
+    font-size: 18px;
+    margin-left: -2%;
+    background-color: white;
+  }
+   #checkingDetails{
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap: 24px;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+   }
+
+   #horizontal{
+    padding-bottom: 10%;
+   }
+   #horizontal >div{
+    /* border:2px solid green; */
+    background-color: white;
+    font-weight: 600;
+    margin-bottom: 3%;
+   }
+   #horizontal >div > p{
+    background-color: white;
+    padding-top: 2%;
+    padding-left: 3%;
+   }
+   #horizontal > :nth-child(2)> p> a{
+    background-color: white;
+    color: black;
+   }
+   #horizontal > :nth-child(3){
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid gray;
+   }
+   #horizontal > :nth-child(3)>img{
+    width: 100%;
+   }
+   #coupon{
+    background-color: white;
+   }
+   #coupon p,input{
+    background-color: white;
+   }
+   #coupon> p{
+    font-weight: 600;
+    padding-left: 3%;
+   }
+   #coupon >input{
+    padding-left: 5%;
+    margin-left: 3%;
+    padding: 2%;
+    padding-right: 15%;
+    margin-bottom: 3%;
+    border-color: gray;
+   }
+   #coupon>span{
+    padding: 14px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: gray;
+    color: white;
+   }
+   #payProd{
+    height: 400px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-left: 4%;
+    margin-right: 3%;
+    margin-top: 2%;
+  }
+  ::-webkit-scrollbar{
+    width: 3px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: gray;
+  }
+  #product{
+    /* border: 2px solid salmon; */
+    background-color: white;
+    padding-bottom: 10px;
+    margin-top: 6%;
+  }
+   #product > div :first-child {
+    background-color: white;
+    /* padding-left: 10px; */
+    /* font-weight: 700; */
+   }
+  #itemcnt > p{
+    padding-top: 8px;
+    padding-left: 20px;
+    font-weight: 700;
+   }
+   #product > div :last-child{
+    background-color: white;
+    color: black;
+   }
+   #product > div :last-child>input{
+    border: none;
+    text-align: center;
+    color: blue;
+   }
+   #items{
+    display: grid;
+    grid-template-columns: 25% 50%;
+    background-color: white;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+   }
+   #imgDiv {
+    text-align: center;
+    background-color: white;
+   }
+   #imgDiv > img{
+    width: 75%;
+   }
+   #imgDetails, #imgDetails> p{
+    background-color: white;
+   }
+   #payOption{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: white;
+   }
+   #payOption>div :first-child{
+    background-color: white;
+   }
+   #payOption> div:first-child> p:nth-child(2){
+    margin-top: -20px;
+    color: gray;
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 2px;
+    background-color: white;
+    padding-bottom: 0;
+   }
+   #left{
+    background-color: white;
+   }
+   #left>div{
+    border-left: 7px solid black;
+    padding-left: 10px;
+   }
+   #left >div> p{
+    display: inline-block;
+    padding-top: 10px;
+   }
+   #left>img{
+    /* padding-top: 2px; */
+    padding-left: 15px;
+    padding-right: 16px;
+   }
+   #payDropDown{
+    display: grid;
+    grid-template-columns: 28% 72%;
+    border: 1px solid gray;
+   }
+   #right{
+    background-color: white;
+   }
+   #right>div :first-child{
+    padding: 16px;
+    background-color: white;
+   }
+   #right>div:nth-child(2){
+    /* border: 2px solid grey; */
+    margin-top: -20px;
+   
+   }
+  
+   #cardnumber{
+    margin-top: -15px;
+    width: 50%;
+    text-align:start;
+    color: gray;
+    margin-left: -12px;
+   
+   }
+   #cardnumber+input{
+    margin-top:-150%;
+    /* border: 4px solid blue; */
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 120px;
+   }
+   #cardDeatails{
+    display:flex;
+    column-gap: 5%;
+    justify-items: flex-end;
+    background-color: white;
+   }
+   #expdate>div{
+    color: gray;
+    padding-top: -20px;
+   }
+   #cvv{
+    color: gray;
+    background-color: white;
+   }
+   #expdate{
+    padding: -10px;
+    margin-top: -15px;
+   }
+   #cardDeatails input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: -10px;
+    width: 80%;
+    margin-top: -15px;
+   }
+   #checkBox{
+    padding-top: 1%;
+    padding-left: 4%;
+    color: gray;
+    background-color: white;
+   }
+   #checkBox label{
+    background-color: white;
+   }
+   #btn > button{
+    color: green;
+    width: 40%;
+   }
+   #btn{
+    padding-left: 2%;
+    padding-top: 7%;
+    background-color: white;
+   }
+   #bank  img{
+    width: 9%;
+   }
+   #bank{
+    background-color: white;
+   }
+   #bank>div{
+    background-color: white;
+    margin-left: 8px;
+    margin-top: -18px;
+   }
+   #bank>div>p{
+    display: inline-block;
+    background-color: white;
+   }
+   #offerDis{
+    font-weight: 100;
+   }
+
+
+
+
+
+
+    #billingbox {
+    margin-top: 22px;
+    height: 360px;
+    background-color: white;
+  }
+  #vertical > #billingbox > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+  }
+  #vertical > #billingbox > div:last-child {
+    display: block;
+    /* margin: 20px; */
+    padding: 15px;
+  }
+  #vertical > #billingbox > div:last-child > p {
+    margin: 20px;
+    color: grey;
+    font-size: 13px;
+  }
+  #vertical > #billingbox > div:last-child{
+    background-color: #F5F5F5;;
+  }
+  
+  #vertical > #billingbox > div:nth-child(7) {
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #F5F5F5;
+  }
+  
+  #vertical > #billingbox > div:nth-child(7) > h4 {
+    color: white;
+    background-color: black;
+  }
+  #vertical > #billingbox > div h3,
+  p,
+  h4 {
+    background-color: white;
+  }
+  
+  #vertical > #billingbox > div:nth-child(4) > h3 {
+    text-decoration: underline;
+  }
+  #vertical > #billingbox > div:nth-child(5) > h4 {
+    color: red;
+  }
+  #vertical > #billingbox > div:nth-child(3) > p:nth-child(2) {
+    color: grey;
+  }
+  #vertical > #billingbox > div:nth-child(5) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+#confirm{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  top: 40%;
+  left: 40%;
+  font-size: x-large;
+  border-radius: 8px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  animation-name: alert;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+@keyframes alert {
+  0%{
+    transform: scale(0.1);
+  }
+  100%{
+    transform: scale(1.0);
+  }
+}
+
+
+
+
+
+
+
+   @media screen and (min-width:570) and (max-width: 992px) {
+    #checkingDetails {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    #checkHead{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media screen and (min-width:200px) and (max-width: 570px) {
+    #checkingDetails {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #checkHead{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
