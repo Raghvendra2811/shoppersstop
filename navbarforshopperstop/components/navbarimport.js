@@ -1,5 +1,5 @@
 function navbarim() {
-    return `<header id="navbarhomepage">
+  return `<header id="navbarhomepage">
     <div id="hamburger">
       <span class="bars"></span>
       <span class="bars"></span>
@@ -109,7 +109,7 @@ function navbarim() {
       <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
       <span class='noi'>0</span>
       </div>
-      <a href="">
+      <a href="#" id="openmodal">
         <img
           src="https://static.vecteezy.com/system/resources/previews/002/318/271/original/user-profile-icon-free-vector.jpg"
           alt=""
@@ -119,8 +119,7 @@ function navbarim() {
   </header>`;
 }
 
-
-function navbarim1(){
+function navbarim1() {
   return `<div id="navbarline2part1">
   <ul id="nav-menu1">
     <li>
@@ -548,4 +547,4 @@ function navbarim1(){
 <a href="#main"><button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button></a>`;
 }
 
-export{navbarim,navbarim1};
+export { navbarim, navbarim1 };
