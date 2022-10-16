@@ -1,4 +1,7 @@
 
+
+
+ 
 var expanded1 = false;
 
 //console.log(1);
@@ -78,6 +81,25 @@ function showCheckboxes4() {
 
 }
 
+// let key=document.getElementById("searchfunction").value;
+// console.log(key);
+
+let search=JSON.parse(localStorage.getItem("Productsearched"));
+
+ if(search!==null)
+ {
+
+    let url=`https://superstop.herokuapp.com/product/?q=${search}`;
+    console.log(url);
+    get(url);
+     
+ }
+ else{
+    let url=`https://superstop.herokuapp.com/product`;
+    console.log(url);
+    get(url);
+ }
+
 //var arr=["https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H","https://sslimages.shoppersstop.com/sys-master/images/h70/h21/27962780778526/A22SFCSLHU08323_BLACK.jpg_230Wx334H"];
 let whole_arr=[];
 async function get(url) {
@@ -104,11 +126,7 @@ data.map((ele)=>
 }
  
 
-let url = "https://superstop.herokuapp.com/product";
-
-get(url);
-
-
+ 
 
 function appendData(data) {
   document.querySelector(".loading").style.display = "none";
