@@ -86,17 +86,39 @@ function showCheckboxes4() {
 
 let search=JSON.parse(localStorage.getItem("Productsearched"));
 
- if(search!==null)
+if(search=="MENS" || search=="Mens" || search=="mens")
+{
+  let url=`https://superstop.herokuapp.com/mens`;
+  get(url);
+  document.getElementById("category_text").innerText=search;
+}
+else if(search=="WATCHES")
+{
+  let url=`https://superstop.herokuapp.com/product/?q=${"watch"}`;
+  document.getElementById("category_text").innerText=search;
+   
+   get(url);
+}
+else if(search=="KIDS")
+{
+  let url=`https://superstop.herokuapp.com/product/?q=${"boys"}`;
+  document.getElementById("category_text").innerText=search;
+   
+   get(url);
+}
+else if(search!==null)
  {
 
     let url=`https://superstop.herokuapp.com/product/?q=${search}`;
-    console.log(url);
+   document.getElementById("category_text").innerText=search;
+    
     get(url);
      
  }
  else{
     let url=`https://superstop.herokuapp.com/product`;
-    console.log(url);
+  document.getElementById("category_text").innerText=search;
+     
     get(url);
  }
 
@@ -201,7 +223,7 @@ function appendData(data) {
 }
 let new_arr=[];
 function checkFun() {
-  console.log("hello");
+  
   if (event.target.checked) {
     let ans = event.target.value;
    whole_arr=[];
