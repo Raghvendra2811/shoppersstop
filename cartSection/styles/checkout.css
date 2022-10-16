@@ -379,6 +379,7 @@
     width: 40%;
    }
    #btn{
+    border: 2px solid red;
     padding-left: 2%;
     padding-top: 7%;
     background-color: white;

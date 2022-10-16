@@ -6,40 +6,19 @@ document.getElementById("cart_footer").innerHTML=footer();
 
 
 
+//cartproduct_s
+
+var cartProducts = JSON.parse(localStorage.getItem("cartprotuct_s")) || [];
+let obj = {
+  qty : 1
+};
+for(var i=0; i<cartProducts.length; i++){
+  var newEle = cartProducts[i];
+  newEle.qty=1;
+}
 
 
-var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [
-    {
-        image_url : "https://sslimages.shoppersstop.com/sys-master/images/hc8/hb6/28383648317470/AW22KSSE56F_GREEN.jpg_230Wx334H",
-        brand : "Kashish",
-        namee : "Sanya Malhotra Embroidered Round Neck Viscose Blend Womens Kurta Sharara Dupatta Set",
-        color : "green",
-        // size : "Medium",
-        price : 1299,
-        qty : 1
-    },
-
-    {
-        image_url : "https://sslimages.shoppersstop.com/sys-master/images/hc8/hb6/28383648317470/AW22KSSE56F_GREEN.jpg_230Wx334H",
-        brand : "Kashish",
-        namee : "Sanya Malhotra Embroidered Round Neck Viscose Blend Womens Kurta Sharara Dupatta Set",
-        color : "pink",
-        // size : "Small",
-        price : 1299,
-        qty : 1
-    },
-    {
-        image_url : "https://sslimages.shoppersstop.com/sys-master/images/hc8/hb6/28383648317470/AW22KSSE56F_GREEN.jpg_230Wx334H",
-        brand : "Kashish",
-        namee : "Sanya Malhotra Embroidered Round Neck Viscose Blend Womens Kurta Sharara Dupatta Set",
-        color : "pink",
-        // size : "Small",
-        price : 1299,
-        qty : 1
-    }
-];
-
-
+console.log("carttt:", cartProducts);
 
 document.getElementById("emptyCart").style.display="none";
 
@@ -139,6 +118,12 @@ displayProducts(cartProducts,"Standard Delivery");
     billingboxdiv6P2.innerText = "₹"+profit;
     billingboxdiv6.append(billingboxdiv6P1, billingboxdiv6P2);
     var billingboxdiv7 = document.createElement("div");
+
+    // billingboxdiv7.setAttribute("id", "checkBtnn");
+
+    // document.getElementById("checkBtnn").addEventListener("click", function(){
+    //   openCheckoutPage();
+    // });
     var billingboxdiv7h4 = document.createElement("h4");
     billingboxdiv7h4.setAttribute("id", "checkoutboxx");
     billingboxdiv7h4.innerText = "CHECKOUT";
@@ -162,15 +147,28 @@ displayProducts(cartProducts,"Standard Delivery");
     document.getElementById("middle2second").append(billingboxdiv);
   }
   function displayProducts(items,radiop) {
-    document.getElementById("itemCnt").innerText=items.length;
+
+
+    if(items.length===0){
+      document.getElementById("emptyCart").style.display="block";
+      document.getElementById("middle").style.display="none";
+    }else{
+      document.getElementById("itemCnt").innerText=items.length;
+    }
+  
+
+
     items.map(function (el, idx) {
+
+      
+
       localStorage.setItem("cartProduct",JSON.stringify)
       var cartItemDiv = document.createElement("div");
       cartItemDiv.setAttribute("id", "cartitems");
       var itemimgdiv = document.createElement("div");
       itemimgdiv.setAttribute("id", "itemimage");
       var itemimage = document.createElement("img");
-      itemimage.setAttribute("src", el.image_url);
+      itemimage.setAttribute("src", el.img);
       itemimgdiv.append(itemimage);
       var aboutitemdiv = document.createElement("div");
       aboutitemdiv.setAttribute("id", "aboutitem");
@@ -179,7 +177,7 @@ displayProducts(cartProducts,"Standard Delivery");
       h3name.innerText = el.brand;
       var pnamee = document.createElement("p");
       pnamee.setAttribute("id", "branddescrip");
-      pnamee.innerText = el.namee;
+      pnamee.innerText = el.name;
       var spandivparent = document.createElement("div");
 
       var spandivparent2 = document.createElement("div");
@@ -223,13 +221,13 @@ displayProducts(cartProducts,"Standard Delivery");
       itempricediv.setAttribute("id", "itemprice");
       var pricespan = document.createElement("span");
       pricespan.setAttribute("id", "price");
-      pricespan.innerText = "₹"+el.price*el.qty;
+      pricespan.innerText = "₹"+el.price2*el.qty;
       itempricediv.append(pricespan);
       cartItemDiv.append(itemimgdiv, aboutitemdiv, itempricediv);
       document.getElementById("middle2first").append(cartItemDiv);
     });
     var totalsum = items.reduce(function (acc, ele, index) {
-      return acc + ele.price*ele.qty;
+      return acc + ele.price2*ele.qty;
     }, 0);
     var billingboxdiv = document.createElement("div");
     billingboxdiv.setAttribute("id", "billingbox");
@@ -354,3 +352,12 @@ displayProducts(cartProducts,"Standard Delivery");
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
     displayProducts(cartProducts,selected);
     }
+
+
+    // document.getElementById("checkoutboxx").addEventListener("click", openCheckoutPage);
+    // function openCheckoutPage(){
+    //   location.href="../pages/checkout.html";
+    //   // alert("kkkkkkkkkk");
+    // }
+
+    // openCheckoutPage();

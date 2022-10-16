@@ -4,6 +4,10 @@
   font-family: sans-serif;
   /* background-color: #F5F5F5; */
 }
+#emptyCart{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 #cBlankImg{
     width: 88%;
     height: 450px;
