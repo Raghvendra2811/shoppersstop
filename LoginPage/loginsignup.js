@@ -77,7 +77,13 @@ document.getElementById("submit2").addEventListener("click", () => {
   let bool = false;
   arr.map((ele) => {
     if (ele.password == val) {
-      alert("Login sucess!");
+      document.getElementById("alertts").style.display = "flex";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
+      // alert("Login sucess!");
+
       document.getElementById("containemodal2").style.display = "none";
       bool = true;
       return;
@@ -201,5 +207,17 @@ document.querySelector("#eye").addEventListener("click", () => {
   } else {
     b = true;
     document.querySelector(".hideclose").setAttribute("type", "password");
+  }
+});
+
+document.getElementById("submit5").addEventListener("click", () => {
+  let email = document.getElementById("adminemail").value;
+  let pass = document.getElementById("idminpass").value;
+  if (email == "admin@gmail.com") {
+    if (pass == "admin123") {
+      alert("login sucessfull");
+    } else {
+      alert("Invalid crediatial");
+    }
   }
 });
