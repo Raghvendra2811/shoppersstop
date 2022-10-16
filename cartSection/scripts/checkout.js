@@ -185,25 +185,25 @@ function displayProductsprice(items,sum,profit){
 
 // document.getElementById("boot").style.display="none";
 
-document.querySelector("#checkingDetails a").addEventListener("click", function(){
-    document.getElementById("boot").style.display="block";
-})
+// document.querySelector("#openAdd").addEventListener("click", function(){
+//     document.getElementById("boot").style.display="inline";
+// })
 
-// document.getElementById("addressBtn").addEventListener("click", function(){
-    function fun(){
-    // event.preventDefault();
-    let city = document.getElementById("city").innerText;
-    let state = document.getElementById("state").innerText;
-    let pinCode = document.getElementById("pin").innerText;
+document.getElementById("addressBtn").addEventListener("click", function(){
+    // function fun(){
+    event.preventDefault();
+    let city = document.getElementById("city").value;
+    let state = document.getElementById("state").value;
+    let pinCode = document.getElementById("pin").value;
 
-    document.querySelector("#horizontal :nth-child(2) p a").innerText=city+" "+state+" "+'('+pinCode+')';
-    console.log("jjj:", document.querySelector("#horizontal :nth-child(2) p a").innerText);
-    console.log("sss", "ssss")
+    // document.querySelector("#horizontal :nth-child(2) p a").innerText=city+" "+state+" "+'('+pinCode+')';
+    // console.log("jjj:", document.querySelector("#horizontal :nth-child(2) p a").innerText);
+    console.log("sss",city+" "+state+" "+'('+pinCode+')');
 
     // document.getElementById("boot").style.display="none"
-};
+});
 
-document.getElementById("btn").addEventListener("click", function(){
+document.getElementById("proceedBtn").addEventListener("click", function(){
     // alert("heyy")
     document.getElementById("confirm").style.display="flex";
     document.getElementById("confirm").addEventListener("click", function(){
