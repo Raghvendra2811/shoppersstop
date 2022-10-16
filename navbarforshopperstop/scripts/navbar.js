@@ -26,7 +26,7 @@ function getsearchaname(danny){
         var sarchedname = document.getElementById('searchfunction').value;
         localStorage.setItem('Productsearched',JSON.stringify(sarchedname));
         document.getElementById('searchfunction').value = "";
-
+location.href="../../product/product.html";
     }  
 }
 document.getElementById('searchfunctionbybutton').addEventListener('click',Bybutton);
