@@ -17,7 +17,8 @@
   grid-template-columns: 4% 92% 4%;
 }
 .carousel div i {
- font-size: 30px;
+  font-size: 25px;
+  color: rgb(101, 101, 101);
 }
 .carousel div {
   /* border: 2px solid blueviolet; */
@@ -55,6 +56,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
+  margin-top: 30px;
 }
 
 .housedesign img {
@@ -66,7 +68,6 @@
   /* border: 5px solid red; */
   transition: transform 500ms;
   display: flex;
-
 }
 .h2_3grid {
   width: 90%;
@@ -95,12 +96,30 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
   grid-gap: 30px;
+  margin-bottom: 20px;
 }
 .design6grid img {
   width: 100%;
   margin: auto;
 }
-h2 {
+#home-container h2 {
+  font-family: sans-serif;
   margin-top: 55px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+  .design6grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .design3grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .housedesign {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .carousel div i {
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+  }
 }
