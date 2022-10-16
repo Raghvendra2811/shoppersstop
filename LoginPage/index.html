@@ -15,6 +15,16 @@
 
 
     <link rel="stylesheet" href="./loginsignup.css">
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Noto+Sans+JP:wght@500&family=Roboto:wght@100;300;400&family=Secular+One&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -50,6 +60,10 @@
                 <button id="submit">Continue</button>
                 <div id="option">
                     <span id="siguppp">Login using</span> <a id="change" href="#">Email</a>
+                </div>
+
+                <div id="lodinasadminn">
+                    Control Panel
                 </div>
                 <div id="logos">
                     <img id="facebook_logo"
@@ -203,62 +217,56 @@
 
 
 
+    <div id="containemodal5">
+        <div id="crose4"><i class="fa-regular fa-circle-xmark"></i></div>
+        <div id="modal">
+            <div id="first_child_modal">
+                <div id="grandchild1">
+                    <p><i id="back3" class="fa-solid fa-arrow-left-long"></i></p>
+                </div>
+                <div id="grandchild">
+                    <h1>ADMIN LOGIN</h1>
+                    <!-- <P>let's get you registerd!</P> -->
+                </div>
+            </div>
+            <div id="second_child_modal">
+                <div id="div_1" class="div_1">
+
+                </div>
+
+                <div id="div_1" class="diadmin">
+                    <label>Email<span id="textred">*</span></label>
+                    <input type="email" class="div_1_input" id="adminemail">
+                </div>
+                <div id="div_1" class="diadmin">
+                    <label>Password<span id="textred">*</span></label>
+                    <input type="password" class="div_1_input" id="idminpass">
+                </div>
+
+
+                <button id="submit5">Submit</button>
+
+                <div id="logos">
+                    <img id="facebook_logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" /><img
+                        id="google_logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png">
+                </div>
+            </div>
+            <!-- <div id="third_child_modal">
+                <p>By signing up you agree to our<a href="#"> Terms of Service </a>& <a href="#">Privacy Policy</a></p>
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <div id="alertts">Sucessfully Login</div>
 
 
 
 
 
-
-
-    <!-- 
-
-
-
-
-    var arr = JSON.parse(localStorage.getItem("userlist")) || [];
-    let val = document.getElementById("mobileNumber").value;
-    // arr.map((el) => {
-    //   if (el.email == val) {
-    //     document.getElementById("containemodal2").style.display = "flex";
-    //     document.getElementById("containemodal").style.display = "none";
-    //     // document.getElementById("password").innerText = "";
-    //     return;
-    //   } else if (el.email != val) {
-    //     alert("Please enter correct email");
-    //   }
-    // });
-    let bool = false;
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].email == val) {
-        document.getElementById("containemodal2").style.display = "flex";
-        document.getElementById("containemodal").style.display = "none";
-        // document.getElementById("password").innerText = "";
-        bool = true;
-        break;
-      }
-    }
-    if (!bool) {
-      alert("Please enter correct email");
-    }
-  }
-});
-
-document.getElementById("submit2").addEventListener("click", () => {
-  var arr = JSON.parse(localStorage.getItem("userlist")) || [];
-  let val = document.getElementById("password").value;
-  let bool = false;
-  arr.map((ele) => {
-    if (ele.password == val) {
-      alert("Login sucess!");
-      document.getElementById("containemodal2").style.display = "none";
-      bool = true;
-      return;
-    }
-  });
-  if (!bool) {
-    alert("Please enter correct password");
-  }
-}); -->
 
 
 </body>
