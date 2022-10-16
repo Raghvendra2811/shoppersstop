@@ -1,3 +1,13 @@
+
+
+import {footer} from "../../landingPage/Components/footer.js";
+
+document.getElementById("cart_footer").innerHTML=footer();
+
+
+
+
+
 var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [
     {
         image_url : "https://sslimages.shoppersstop.com/sys-master/images/hc8/hb6/28383648317470/AW22KSSE56F_GREEN.jpg_230Wx334H",

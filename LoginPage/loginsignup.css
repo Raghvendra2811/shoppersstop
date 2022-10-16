@@ -163,8 +163,8 @@
 }
 
 #password {
-  margin-top: 30px;
-  width: 80%;
+  /* margin-top: 30px; */
+  width: 95%;
 
   /* font-size: 30px; */
   /* border: none; */
@@ -173,7 +173,7 @@
   border-left: none;
   border-right: none;
   border-bottom: 2px black solid;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   outline: none;
   font-size: 18px;
 }
@@ -287,8 +287,8 @@
 #eye {
   position: absolute;
   color: #000;
-  top: 40%;
-  right: 3%;
+  right: 4%;
+  bottom: 50%;
 }
 
 #otp {
