@@ -1,6 +1,5 @@
 body {
-  background-color:white;
-
+  background-color: white;
 }
 
 #contant_div {
@@ -284,6 +283,9 @@ strong {
 }
 
 #redeeee {
+  color: orangered;
+}
+#rdee {
   color: orangered;
 }
 
