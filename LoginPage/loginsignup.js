@@ -259,9 +259,10 @@ setTimeout(() => {
         s.innerText = "login sucessfull";
         s.style.display = "flex";
         s.style.backgroundColor = "green";
-
+        
         setTimeout(() => {
           document.getElementById("alertts").style.display = "none";
+          location.href="../admin/admin.html"
         }, 1200);
 
         // alert("login sucessfull");
@@ -293,4 +294,4 @@ setTimeout(() => {
     document.getElementById("containemodal5").style.display = "none";
     document.getElementById("containemodal").style.display = "flex";
   });
-}, 1000);
+}, 2000);

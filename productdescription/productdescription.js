@@ -21,7 +21,6 @@ document.getElementById("sizess1").addEventListener("click", () => {
   document.getElementById("sizess5").style.backgroundColor = "white";
   document.getElementById("sizess5").style.color = "black";
 });
-
 document.getElementById("sizess2").addEventListener("click", () => {
   // console.log("helo2")
   document.getElementById("sizess2").style.backgroundColor = "black";
@@ -105,12 +104,15 @@ function displayDisciption() {
   document.getElementById("redeeee").innerText = arrayy.discount;
   document.getElementById("bran").innerText = arrayy.brand;
   document.getElementById("pronamee").innerText = arrayy.name;
+document.querySelector("title").innerText=arrayy.name;
+
   document.getElementById("ratinss").innerText = arrayy.rating;
 }
 
 displayDisciption();
 
 document.getElementById("addTocart").addEventListener("click", () => {
+  
   var pro = JSON.parse(localStorage.getItem("cartprotuct_s")) || [];
   let AddorNot = false;
   for (let i = 0; i < pro.length; i++) {
@@ -123,6 +125,10 @@ document.getElementById("addTocart").addEventListener("click", () => {
   if (!AddorNot) {
     pro.push(arrayy);
     localStorage.setItem("cartprotuct_s", JSON.stringify(pro));
+    let  count =JSON.parse(localStorage.getItem("cartprotuct_s"))||[];
+
+document.querySelector(".noi").innerText=count.length
+
   }
   // document.getElementById("addTocart").innerText = "Edit to cart";
 
