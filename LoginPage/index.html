@@ -40,8 +40,7 @@
 
             <div id="somenewdiv">
                 <label id="label1">Mobile Number<span id="textred">*</span></label>
-                <input type="tel" class="form-control ob-mobile custom-validity-input" id="mobileNumber" placeholder=""
-                    required="">
+                <input type="tel" id="mobileNumber" placeholder="" required="">
             </div>
             <div id="second_child_modal">
                 <!-- <label id="labe">Mobile Number<span id="textred">*</span></label> -->
@@ -73,18 +72,24 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
+                    <p><i class="fa-solid fa-arrow-left-long" id="back1"></i></p>
                 </div>
                 <div id="grandchild">
                     <h1>Password</h1>
                     <P>for a tailored experience</P>
                 </div>
             </div>
+
+            <div id="somenewdiv">
+                <label id="label1">Password<span id="textred">*</span></label>
+                <input type="password" class="hideclose" id="password" placeholder="" required="">
+                <i id="eye" class="fa-solid fa-eye"></i>
+            </div>
             <div id="second_child_modal">
-                <input type="password" class="form-control ob-mobile custom-validity-input" id="password" placeholder=""
+                <!-- <input type="password" class="form-control ob-mobile custom-validity-input" id="password" placeholder=""
                     required="">
                 <i id="eye" class="fa-solid fa-eye"></i>
-                <label id="label2">Password<span id="textred">*</span></label>
+                <label id="label2">Password<span id="textred">*</span></label> -->
                 <button id="submit2">Submit</button>
                 <div id="option1">
                     <p style="text-align:right">Forgot password?</p>
@@ -113,7 +118,7 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
+                    <p><i id="back2" class="fa-solid fa-arrow-left-long"></i></p>
                 </div>
                 <div id="grandchild">
                     <h1>Verify OTP</h1>
@@ -154,7 +159,7 @@
         <div id="modal">
             <div id="first_child_modal">
                 <div id="grandchild1">
-                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
+                    <p><i id="back3" class="fa-solid fa-arrow-left-long"></i></p>
                 </div>
                 <div id="grandchild">
                     <h1>Welcome to Shoppers Stop</h1>
@@ -168,7 +173,7 @@
                 </div>
                 <div id="div_1">
                     <label>Mobile<span id="textred">*</span></label>
-                    <input type="tel" class="div_1_input" id="div_2_input">
+                    <input type="tel" maxlength="10" class="div_1_input" id="div_2_input">
                 </div>
                 <div id="div_1">
                     <label>Email<span id="textred">*</span></label>
