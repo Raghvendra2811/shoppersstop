@@ -218,6 +218,16 @@ setTimeout(() => {
       document.getElementById("containemodal4").style.display = "none";
       document.getElementById("containemodal").style.display = "flex";
       document.getElementById("mobileNumber").value = "";
+
+
+      let s = document.getElementById("alertts");
+        s.innerText = "Registered Sucessfully";
+        s.style.display = "flex";
+        s.style.backgroundColor = "green";
+
+        setTimeout(() => {
+          document.getElementById("alertts").style.display = "none";
+        }, 1200);
     }
   });
 
