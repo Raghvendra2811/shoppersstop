@@ -4,6 +4,9 @@
   font-family: sans-serif;
   /* background-color: #F5F5F5; */
 }
+body{
+  font-size: 110%;
+}
 #emptyCart{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -73,7 +76,7 @@ a{color: black;}
     width: 90px;
   }
   #middle {
-    background-color: rgb(247, 243, 243);
+    background-color: #F5F5F5;
     margin-top: 5px;
     margin-top: 25px;
   }
@@ -176,14 +179,15 @@ a{color: black;}
     height: 300px;
   }
   #cartitems > #itemimage {
-    width: 70%;
+    /* border: 2px solid red; */
+    width: 30%;
   }
   #cartitems > #itemimage > img {
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    /* height: 80%; */
   }
   #cartitems > #aboutitem {
-    width: 65%;
+    width: 95%;
   }
   #cartitems > #aboutitem > div {
     display: flex;
@@ -249,7 +253,7 @@ a{color: black;}
     border: none;
   }
   #strokedprice {text-decoration: line-through;}
-  #middle2second > #billingbox {height: 500px;}
+  #middle2second > #billingbox {height: 500px; padding-left: 14px; padding-right: 14px;padding-top: 8px;}
   #middle2second > #billingbox > div {
     display: flex;
     justify-content: space-between;
@@ -285,6 +289,7 @@ a{color: black;}
   }
   #middle2second > #billingbox > div:nth-child(5) > h4 {
     color: red;
+    font-size: 22px;
   }
   #middle2second > #billingbox > div:nth-child(3) > p:nth-child(2) {
     color: grey;

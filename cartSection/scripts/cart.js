@@ -16,7 +16,7 @@ for(var i=0; i<cartProducts.length; i++){
   var newEle = cartProducts[i];
   newEle.qty=1;
 }
-
+  // localStorage.setItem("cartprotuct_s", JSON.stringify(cartProducts));
 
 console.log("carttt:", cartProducts);
 
@@ -75,8 +75,10 @@ displayProducts(cartProducts,"Standard Delivery");
 
   function displayProductsprice(items,sum,profit){
 
+    
+
     var totalsum = items.reduce(function (acc, ele, index) {
-      return acc + ele.price*ele.qty;
+      return acc + ele.price1*ele.qty;
     }, 0);
     var billingboxdiv = document.createElement("div");
     billingboxdiv.setAttribute("id", "billingbox");
@@ -110,12 +112,14 @@ displayProducts(cartProducts,"Standard Delivery");
     var billingboxdiv5h4 = document.createElement("h4");
     billingboxdiv5h4.setAttribute("id", "itemchoosedtotal");
     billingboxdiv5h4.innerText = "₹"+sum;
+    localStorage.setItem("sum",JSON.stringify( sum));
     billingboxdiv5.append(billingboxdiv5h3, billingboxdiv5h4);
     var billingboxdiv6 = document.createElement("div");
     var billingboxdiv6P1 = document.createElement("p");
     billingboxdiv6P1.innerText = "Total Saving";
     var billingboxdiv6P2 = document.createElement("p");
     billingboxdiv6P2.innerText = "₹"+profit;
+    localStorage.setItem("profit", profit);
     billingboxdiv6.append(billingboxdiv6P1, billingboxdiv6P2);
     var billingboxdiv7 = document.createElement("div");
 
@@ -221,13 +225,13 @@ displayProducts(cartProducts,"Standard Delivery");
       itempricediv.setAttribute("id", "itemprice");
       var pricespan = document.createElement("span");
       pricespan.setAttribute("id", "price");
-      pricespan.innerText = "₹"+el.price2*el.qty;
+      pricespan.innerText = "₹"+el.price1*el.qty;
       itempricediv.append(pricespan);
       cartItemDiv.append(itemimgdiv, aboutitemdiv, itempricediv);
       document.getElementById("middle2first").append(cartItemDiv);
     });
     var totalsum = items.reduce(function (acc, ele, index) {
-      return acc + ele.price2*ele.qty;
+      return acc + ele.price1*ele.qty;
     }, 0);
     var billingboxdiv = document.createElement("div");
     billingboxdiv.setAttribute("id", "billingbox");
@@ -300,7 +304,7 @@ displayProducts(cartProducts,"Standard Delivery");
       if (couponcode1 == "DIWALI22") {
         var dicount=0;
         var finalsum = cartProducts.reduce(function (acc, ele, index) {
-            return acc + ele.price*ele.qty;
+            return acc + ele.price1*ele.qty;
         }, 0);
         if (finalsum >= 3000 && finalsum <= 5000) {
             finalsum = finalsum - 200;
@@ -314,6 +318,8 @@ displayProducts(cartProducts,"Standard Delivery");
             finalsum = finalsum - 900;
             dicount=900;
         }
+        //  localStorage.setItem('summ2','finalsum');
+         localStorage.setItem('discount1',dicount)
         document.getElementById("middle2second").lastChild.remove();
         displayProductsprice(cartProducts,finalsum,dicount);
         document.getElementById("alertmessage1").remove();
@@ -335,8 +341,11 @@ displayProducts(cartProducts,"Standard Delivery");
     }
 
     function changeqty(elem,items){
+      // localStorage.setItem("cartprotuct_s", JSON.stringify(items));
+
       var qtyprice=event.target.value;
       elem.qty=qtyprice;
+      localStorage.setItem("cartprotuct_s", JSON.stringify(items));
       document.getElementById("middle2second").lastChild.remove();
       items.map(function(elem){
         document.getElementById("middle2first").lastChild.remove();
@@ -349,15 +358,14 @@ displayProducts(cartProducts,"Standard Delivery");
     })
     cartProducts.splice(idx,1);
     document.getElementById("middle2second").lastChild.remove();
-    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+    localStorage.setItem("cartprotuct_s", JSON.stringify(cartProducts));
     displayProducts(cartProducts,selected);
     }
 
 
-    // document.getElementById("checkoutboxx").addEventListener("click", openCheckoutPage);
-    // function openCheckoutPage(){
-    //   location.href="../pages/checkout.html";
-    //   // alert("kkkkkkkkkk");
-    // }
+    document.getElementById("checkoutboxx").addEventListener("click", openCheckoutPage);
+    function openCheckoutPage(){
+      location.href="../pages/checkout.html";
+    }
 
     // openCheckoutPage();
