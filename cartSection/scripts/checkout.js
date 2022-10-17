@@ -26,7 +26,7 @@ function display(item){
         
 
         let price = document.createElement("p");
-        price.innerText = "₹ " + el.price2;
+        price.innerText = "₹ " + el.price1;
 
         let qnt = document.createElement("span");
         qnt.innerText = "Quantity: " + (el.qty-0);
@@ -78,7 +78,7 @@ displayProductsprice(cartProducts, proff);
 function displayProductsprice(items,profit){
 
     var totalsum = items.reduce(function (acc, ele, index) {
-      return acc + ele.price2*ele.qty;
+      return acc + ele.price1*ele.qty;
     }, 0);
 
     var billingboxdiv = document.createElement("div");
