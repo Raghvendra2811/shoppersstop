@@ -5,7 +5,9 @@
     background-color: #F5F5F5;
   }
   body{
-    background-color: #F5F5F5;}
+    background-color: #F5F5F5;
+    /* font-size: 180%; */
+  }
   #checkHead {
     display: flex;
     justify-content: space-between;
@@ -159,6 +161,7 @@
     width: 80%;
     margin: auto;
     margin-top: 4%;
+    font-size: 120%;
    }
 
    #horizontal{
@@ -319,6 +322,7 @@
    #right>div:nth-child(2){
     /* border: 2px solid grey; */
     margin-top: -20px;
+    background-color: white;
    
    }
   
@@ -374,16 +378,26 @@
    #checkBox label{
     background-color: white;
    }
-   #btn > button{
+   /* #proceedBtn > button{
     color: green;
     width: 40%;
-   }
-   #btn{
-    border: 2px solid red;
+    background-color: rgb(187, 37, 37);
+   } */
+   #proceedBtn{
+    /* border: 2px solid red; */
     padding-left: 2%;
+      /* color: red; */
     padding-top: 7%;
     background-color: white;
+    margin-left: 8%;
+    /* background-color: black; */
    }
+   #proceedBtn > button{
+    color: green;
+    width: 40%;
+    background-color: rgb(215, 20, 20);
+   }
+
    #bank  img{
     width: 9%;
    }
