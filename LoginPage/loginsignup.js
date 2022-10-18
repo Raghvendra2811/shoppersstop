@@ -105,10 +105,11 @@ setTimeout(() => {
         flag1 = true;
         localStorage.setItem("flag_g", flag1);
 
-        document.getElementById("usernamedisplay").innerText =
-          localStorage.getItem("user_n_ame");
-        document.getElementById("navbarpart4").display.style = "flex";
-        document.getElementById("openmodal").display.style = "none";
+        let nameee = localStorage.getItem("user_n_ame");
+        document.getElementById("usernamedisplay").innerText = nameee;
+
+        document.getElementById("navbarpart4").style.display = "flex";
+        document.getElementById("openmodal").style.display = "none";
         let s = document.getElementById("alertts");
         s.innerText = "Login sucessfull";
         s.style.display = "flex";
