@@ -106,7 +106,7 @@ function navbarim() {
       <a href=""><i class="fa-regular fa-heart"></i></a>
       
       <div id="cartofhomepage">
-      <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="../cartSection/pages/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
       <span class='noi'>0</span>
       </div>
       <a href="#" id="openmodal">
@@ -115,6 +115,17 @@ function navbarim() {
           alt=""
         />
       </a>
+    </div>
+    <div id="navbarpart4">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="usernamedisplay">
+    
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Profile</a></li> 
+    <li><a class="dropdown-item" href="#">LogOut</a></li>
+  </ul>
+</div>
     </div>
   </header>`;
 }

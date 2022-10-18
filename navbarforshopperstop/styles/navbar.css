@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
- a{
+ #main a{
   text-decoration: none;
  }
- i{
+ #main1 a{
+  text-decoration: none;
+ }
+ #main i{
   color:black;
  }
 #main1{
@@ -18,6 +21,9 @@
   font-family: sans-serif;
   background-color: white;
  
+}
+#navbarpart4{
+  display: none;
 }
 /* #something{
     overflow: hidden;
@@ -349,6 +355,7 @@ display: none;
 
 
 
+
 #menshomepage{
     display: flex;
     justify-content: space-evenly;
@@ -401,7 +408,39 @@ display: none;
         margin: 0px 50px;
        
     }
-   
+    #menspart2{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+      padding: 0px;
+      gap: 5px;
+    }
+    #menspart2 > h4{
+      padding: 0px;
+    }
+    #menspart3{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+      padding: 0px;
+      gap: 5px;
+    }
+    #menspart3 > h4{
+      padding: 0px;
+    }
+    #menspart4{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+      padding: 0px;
+      gap: 5px;
+    }
+    #menspart4 > h4{
+      padding: 0px;
+    }
 
 
     #womens {
@@ -733,6 +772,17 @@ display: none;
     #Kids p:hover {
       color: red;
       cursor: pointer;
+    }
+    #Kidspart2{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+      padding: 0px;
+      gap: 5px;
+    }
+    #Kidspart2 > h4{
+      padding: 0px;
     }
 
    
