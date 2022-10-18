@@ -58,6 +58,14 @@ hamburger.addEventListener('click',() => {
     x12.classList.toggle('active');  
 })
 
+
+
+let flag234 = localStorage.getItem('flag_g');
+if(flag234==='true')
+{
+  var getlogindisplay = document.getElementById('navbarpart4');
+  getlogindisplay.style.display = 'flex';
+}
 document.getElementById('storeinls').addEventListener('click', addtolocal);
 function addtolocal() {
   var ls0 = document.getElementById('storeinls').innerText;
