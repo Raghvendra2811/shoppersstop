@@ -68,6 +68,8 @@ setTimeout(() => {
       for (let i = 0; i < arr.length; i++) {
         if (arr[i].email == val) {
           localStorage.setItem("user_n_ame", arr[i].name);
+          localStorage.setItem("user_e-mail", arr[i].email);
+
           document.getElementById("containemodal2").style.display = "flex";
           document.getElementById("containemodal").style.display = "none";
           document.getElementById("password").value = "";
