@@ -92,18 +92,22 @@ setTimeout(() => {
     }
   });
 
+  let flag1 = localStorage.getItem("flag_g") || false;
   document.getElementById("usernamedisplay").innerText =
     localStorage.getItem("user_n_ame");
-  localStorage.setItem("flag_g", "false");
+
   document.getElementById("submit2").addEventListener("click", () => {
     var arr = JSON.parse(localStorage.getItem("userlist")) || [];
     let val = document.getElementById("password").value;
     let bool = false;
     arr.map((ele) => {
       if (ele.password == val) {
-        localStorage.setItem("flag_g", "true");
+        flag1 = true;
+        localStorage.setItem("flag_g", flag1);
+
         document.getElementById("usernamedisplay").innerText =
           localStorage.getItem("user_n_ame");
+        document.getElementById("navbarpart4").display.style = "flex";
         let s = document.getElementById("alertts");
         s.innerText = "Login sucessfull";
         s.style.display = "flex";
