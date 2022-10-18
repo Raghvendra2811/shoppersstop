@@ -104,7 +104,7 @@ function displayDisciption() {
   document.getElementById("redeeee").innerText = arrayy.discount;
   document.getElementById("bran").innerText = arrayy.brand;
   document.getElementById("pronamee").innerText = arrayy.name;
-document.querySelector("title").innerText=arrayy.name;
+  document.querySelector("title").innerText = arrayy.name;
 
   document.getElementById("ratinss").innerText = arrayy.rating;
 }
@@ -112,7 +112,6 @@ document.querySelector("title").innerText=arrayy.name;
 displayDisciption();
 
 document.getElementById("addTocart").addEventListener("click", () => {
-  
   var pro = JSON.parse(localStorage.getItem("cartprotuct_s")) || [];
   let AddorNot = false;
   for (let i = 0; i < pro.length; i++) {
@@ -125,13 +124,32 @@ document.getElementById("addTocart").addEventListener("click", () => {
   if (!AddorNot) {
     pro.push(arrayy);
     localStorage.setItem("cartprotuct_s", JSON.stringify(pro));
-    let  count =JSON.parse(localStorage.getItem("cartprotuct_s"))||[];
+    let count = JSON.parse(localStorage.getItem("cartprotuct_s")) || [];
 
-document.querySelector(".noi").innerText=count.length
-
+    document.querySelector(".noi").innerText = count.length;
   }
   // document.getElementById("addTocart").innerText = "Edit to cart";
 
   // }
   // });
+});
+
+document.getElementById("moveToWishlist").addEventListener("click", () => {
+  var wishlist_Product =
+    JSON.parse(localStorage.getItem("wishlist_product_local")) || [];
+  let AddorNotinWishlist = false;
+  for (let i = 0; i < wishlist_Product.length; i++) {
+    if (wishlist_Product[i].id == arrayy.id) {
+      AddorNotinWishlist = true;
+      alert("already added in Wishlist");
+    }
+  }
+
+  if (!AddorNotinWishlist) {
+    wishlist_Product.push(arrayy);
+    localStorage.setItem(
+      "wishlist_product_local",
+      JSON.stringify(wishlist_Product)
+    );
+  }
 });
