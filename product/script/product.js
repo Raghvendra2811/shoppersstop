@@ -216,10 +216,21 @@ function appendData(data) {
       localStorage.setItem("target_product",JSON.stringify(arr[0]));
 
       let flag=localStorage.getItem("flag_g");
+      console.log(flag);
        
-      if(flag)
+      if(flag==true)
       {
        location.href="../productdescription/page.html";
+      }
+      else if(flag==false){
+        let s = document.getElementById("alertts");
+        s.innerText = "Please Login First";
+        s.style.display = "flex";
+        s.style.backgroundColor = "red";
+
+        setTimeout(() => {
+          document.getElementById("alertts").style.display = "none";
+        }, 1200);
       }
       else{
         let s = document.getElementById("alertts");
