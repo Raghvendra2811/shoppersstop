@@ -67,11 +67,13 @@ setTimeout(() => {
       let bool = false;
       for (let i = 0; i < arr.length; i++) {
         if (arr[i].email == val) {
+          localStorage.setItem("user_n_ame", arr[i].name);
           document.getElementById("containemodal2").style.display = "flex";
           document.getElementById("containemodal").style.display = "none";
           document.getElementById("password").value = "";
           document.getElementById("mobileNumber").value = "";
           bool = true;
+
           break;
         }
       }
@@ -90,12 +92,18 @@ setTimeout(() => {
     }
   });
 
+  document.getElementById("usernamedisplay").innerText =
+    localStorage.getItem("user_n_ame");
+  localStorage.setItem("flag_g", "false");
   document.getElementById("submit2").addEventListener("click", () => {
     var arr = JSON.parse(localStorage.getItem("userlist")) || [];
     let val = document.getElementById("password").value;
     let bool = false;
     arr.map((ele) => {
       if (ele.password == val) {
+        localStorage.setItem("flag_g", "true");
+        document.getElementById("usernamedisplay").innerText =
+          localStorage.getItem("user_n_ame");
         let s = document.getElementById("alertts");
         s.innerText = "Login sucessfull";
         s.style.display = "flex";
@@ -219,15 +227,14 @@ setTimeout(() => {
       document.getElementById("containemodal").style.display = "flex";
       document.getElementById("mobileNumber").value = "";
 
-
       let s = document.getElementById("alertts");
-        s.innerText = "Registered Sucessfully";
-        s.style.display = "flex";
-        s.style.backgroundColor = "green";
+      s.innerText = "Registered Sucessfully";
+      s.style.display = "flex";
+      s.style.backgroundColor = "green";
 
-        setTimeout(() => {
-          document.getElementById("alertts").style.display = "none";
-        }, 1200);
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
     }
   });
 
@@ -269,10 +276,10 @@ setTimeout(() => {
         s.innerText = "login sucessfull";
         s.style.display = "flex";
         s.style.backgroundColor = "green";
-        
+
         setTimeout(() => {
           document.getElementById("alertts").style.display = "none";
-          location.href="../admin/admin.html"
+          location.href = "../admin/admin.html";
         }, 1200);
 
         // alert("login sucessfull");
