@@ -58,6 +58,37 @@ hamburger.addEventListener('click',() => {
     x12.classList.toggle('active');  
 })
 
+
+
+let flag234 = localStorage.getItem('flag_g');
+if(flag234==='true')
+{
+  var getlogindisplay = document.getElementById('navbarpart4');
+  getlogindisplay.style.display = 'flex';
+  var iconsss = document.getElementById('openmodal');
+  iconsss.style.display = 'none';
+
+}
+else
+{
+  var getlogindisplay = document.getElementById('navbarpart4');
+  getlogindisplay.style.display = 'none';
+  var iconsss = document.getElementById('openmodal');
+  iconsss.style.display = 'flex';
+}
+
+
+
+
+
+document.getElementById('dropdownlogout', () => {
+
+  localStorage.setItem('flag_g',"false");
+  localStorage.setItem('user_n_ame',"");
+  localStorage.setItem('cartprotuct_s',JSON.stringify([]));
+  
+
+})
 document.getElementById('storeinls').addEventListener('click', addtolocal);
 function addtolocal() {
   var ls0 = document.getElementById('storeinls').innerText;

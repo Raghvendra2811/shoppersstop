@@ -103,7 +103,7 @@ function navbarim() {
         <button id='searchfunctionbybutton'><i class="fa-solid fa-microphone"></i></button>
       </div>
       
-      <a href=""><i class="fa-regular fa-heart"></i></a>
+      <a href="../../wishlist/wishlist.html"><i class="fa-regular fa-heart"></i></a>
       
       <div id="cartofhomepage">
       <a href="../cartSection/pages/cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
@@ -123,7 +123,7 @@ function navbarim() {
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">Profile</a></li> 
-    <li><a class="dropdown-item" href="#">LogOut</a></li>
+    <li id='dropdownlogout'><a class="dropdown-item" href="#">LogOut</a></li>
   </ul>
 </div>
     </div>
