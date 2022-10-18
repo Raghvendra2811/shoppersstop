@@ -423,8 +423,9 @@
 
 
     #billingbox {
+    padding: 15px;
     margin-top: 22px;
-    height: 360px;
+    height: 400px;
     background-color: white;
   }
   #vertical > #billingbox > div {
@@ -477,17 +478,17 @@
     border-bottom: 1px solid grey;
   }
 #confirm{
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20%;
-  top: 40%;
+  top: 9%;
   left: 40%;
   font-size: x-large;
   border-radius: 8px;
   height: 50px;
-  background-color: black;
+  background-color: green;
   color: white;
   font-weight: 600;
   animation-name: alert;

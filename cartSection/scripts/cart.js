@@ -9,13 +9,13 @@ document.getElementById("cart_footer").innerHTML=footer();
 //cartproduct_s
 
 var cartProducts = JSON.parse(localStorage.getItem("cartprotuct_s")) || [];
-let obj = {
-  qty : 1
-};
-for(var i=0; i<cartProducts.length; i++){
-  var newEle = cartProducts[i];
-  newEle.qty=1;
-}
+// let obj = {
+//   qty : 1
+// };
+// for(var i=0; i<cartProducts.length; i++){
+//   var newEle = cartProducts[i];
+//   newEle.qty=1;
+// }
   // localStorage.setItem("cartprotuct_s", JSON.stringify(cartProducts));
 
 console.log("carttt:", cartProducts);
@@ -78,7 +78,7 @@ displayProducts(cartProducts,"Standard Delivery");
     
 
     var totalsum = items.reduce(function (acc, ele, index) {
-      return acc + ele.price1*ele.qty;
+      return acc + ele.price1*(ele.qty || 1);
     }, 0);
     var billingboxdiv = document.createElement("div");
     billingboxdiv.setAttribute("id", "billingbox");
@@ -149,6 +149,12 @@ displayProducts(cartProducts,"Standard Delivery");
       billingboxdiv8
     );
     document.getElementById("middle2second").append(billingboxdiv);
+
+    document.getElementById("checkoutboxx").addEventListener("dblclick", openCheckoutPage);
+    function openCheckoutPage(){
+      location.href="../pages/checkout.html";
+    }
+
   }
   function displayProducts(items,radiop) {
 
@@ -202,7 +208,7 @@ displayProducts(cartProducts,"Standard Delivery");
       var option4=document.createElement("option");
       option4.innerText="4";
       sizeinput2.append(option1,option2,option3,option4)
-       sizeinput2.value = el.qty;
+       sizeinput2.value = el.qty || 1;
     span4.append(sizeinput2);
       spandivparent2.append(span3, span4);
       spandivparent.append(spandivparent2);
@@ -225,13 +231,13 @@ displayProducts(cartProducts,"Standard Delivery");
       itempricediv.setAttribute("id", "itemprice");
       var pricespan = document.createElement("span");
       pricespan.setAttribute("id", "price");
-      pricespan.innerText = "₹"+el.price1*el.qty;
+      pricespan.innerText = "₹"+el.price1*(el.qty || 1);
       itempricediv.append(pricespan);
       cartItemDiv.append(itemimgdiv, aboutitemdiv, itempricediv);
       document.getElementById("middle2first").append(cartItemDiv);
     });
     var totalsum = items.reduce(function (acc, ele, index) {
-      return acc + ele.price1*ele.qty;
+      return acc + ele.price1*(ele.qty || 1);
     }, 0);
     var billingboxdiv = document.createElement("div");
     billingboxdiv.setAttribute("id", "billingbox");
@@ -304,7 +310,7 @@ displayProducts(cartProducts,"Standard Delivery");
       if (couponcode1 == "DIWALI22") {
         var dicount=0;
         var finalsum = cartProducts.reduce(function (acc, ele, index) {
-            return acc + ele.price1*ele.qty;
+            return acc + ele.price1*(ele.qty || 1);
         }, 0);
         if (finalsum >= 3000 && finalsum <= 5000) {
             finalsum = finalsum - 200;
@@ -322,14 +328,14 @@ displayProducts(cartProducts,"Standard Delivery");
          localStorage.setItem('discount1',dicount)
         document.getElementById("middle2second").lastChild.remove();
         displayProductsprice(cartProducts,finalsum,dicount);
-        document.getElementById("alertmessage1").remove();
+        // document.getElementById("alertmessage1").remove();
     }
     else if(couponcode1===""){
         var message=document.createElement("span");
         message.innerText="please Enter Coupon!!";
         message.setAttribute("id","alertmessage");
         document.getElementById("alertcoupon").append(message);
-        document.getElementById("alertmessage1").remove()
+        // document.getElementById("alertmessage1").remove()
     }
     else {
         document.getElementById("alertmessage").remove();
@@ -363,7 +369,7 @@ displayProducts(cartProducts,"Standard Delivery");
     }
 
 
-    document.getElementById("checkoutboxx").addEventListener("click", openCheckoutPage);
+    document.getElementById("checkoutboxx").addEventListener("dblclick", openCheckoutPage);
     function openCheckoutPage(){
       location.href="../pages/checkout.html";
     }
