@@ -148,6 +148,10 @@ data.map((ele)=>
 }
  
 
+
+ 
+
+ 
  
 
 function appendData(data) {
@@ -210,9 +214,23 @@ function appendData(data) {
       let arr=[];
       arr.push(ele);
       localStorage.setItem("target_product",JSON.stringify(arr[0]));
-      
-      location.href="../productdescription/page.html";
 
+      let flag=localStorage.getItem("flag_g");
+       
+      if(flag)
+      {
+       location.href="../productdescription/page.html";
+      }
+      else{
+        let s = document.getElementById("alertts");
+        s.innerText = "Please Login First";
+        s.style.display = "flex";
+        s.style.backgroundColor = "red";
+
+        setTimeout(() => {
+          document.getElementById("alertts").style.display = "none";
+        }, 1200);
+      }
     })
 
     document.getElementById("show_product").prepend(card);
