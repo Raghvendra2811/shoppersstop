@@ -1,0 +1,26 @@
+#show_product {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+#price_parent {
+  display: flex;
+}
+#Move_To_Bag {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: auto;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  /* display: none; */
+  background-color: black;
+  color: white;
+}
+#Move_To_Bag :hover {
+  display: fles;
+}
+#footer{
+  margin-top: 50px;
+}
