@@ -108,6 +108,7 @@ setTimeout(() => {
         document.getElementById("usernamedisplay").innerText =
           localStorage.getItem("user_n_ame");
         document.getElementById("navbarpart4").display.style = "flex";
+        document.getElementById("openmodal").display.style = "none";
         let s = document.getElementById("alertts");
         s.innerText = "Login sucessfull";
         s.style.display = "flex";
