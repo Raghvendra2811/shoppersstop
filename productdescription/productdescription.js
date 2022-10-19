@@ -156,7 +156,16 @@ document.getElementById("moveToWishlist").addEventListener("click", () => {
   for (let i = 0; i < wishlist_Product.length; i++) {
     if (wishlist_Product[i].id == arrayy.id) {
       AddorNotinWishlist = true;
-      alert("already added in Wishlist");
+      // alert("already added in Wishlist");
+
+      let s = document.getElementById("alertts");
+      s.innerText = "already added in Wishlist";
+      s.style.display = "flex";
+      s.style.backgroundColor = "red";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
     }
   }
 
@@ -166,5 +175,14 @@ document.getElementById("moveToWishlist").addEventListener("click", () => {
       "wishlist_product_local",
       JSON.stringify(wishlist_Product)
     );
+
+    let s = document.getElementById("alertts");
+    s.innerText = "Added in Wishlist";
+    s.style.display = "flex";
+    s.style.backgroundColor = "green";
+
+    setTimeout(() => {
+      document.getElementById("alertts").style.display = "none";
+    }, 1200);
   }
 });
