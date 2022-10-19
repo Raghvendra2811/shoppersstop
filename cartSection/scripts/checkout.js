@@ -63,6 +63,7 @@ document.getElementById("proceedBtn").addEventListener("click", function(){
     document.getElementById("confirm").style.display="flex";
     document.getElementById("confirm").addEventListener("click", function(){
          location.href="../pages/thankyou.html";
+         localStorage.setItem('cartprotuct_s',JSON.stringify([]));
     })
 })
 
