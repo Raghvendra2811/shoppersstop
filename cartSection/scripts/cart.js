@@ -220,7 +220,7 @@ displayProducts(cartProducts,"Standard Delivery");
       });
       var wishh2 = document.createElement("h2");
       wishh2.setAttribute("id", "wishlist");
-      wishh2.innerText = "Move To Wishlist";
+      // wishh2.innerText = "Move To Wishlist";
         var deliveryopt=document.createElement("h5");
         deliveryopt.innerText=radiop;
       deliveryopt.setAttribute("id","deliveryoption");
