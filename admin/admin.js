@@ -3,8 +3,11 @@ document
   .addEventListener("click", async () => {
     let res = await fetch("https://superstop.herokuapp.com/product");
     let data = await res.json();
-
-    let id = data.length + 1;
+    let id;
+    if(data.length==495){
+      id=809;
+    }
+    id = id + 1;
     let getname = document.getElementById("title").value;
     let brand = document.getElementById("brand_name").value;
     let img = document.getElementById("image_link").value;
