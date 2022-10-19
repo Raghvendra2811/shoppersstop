@@ -99,7 +99,7 @@ function navbarim() {
     </div>
     <div id="navbarpart3">
       <div>
-        <input type="search" placeholder="Search Products & Brands" id='searchfunction'/>
+        <input type="search" placeholder="Search Products" id='searchfunction'/>
         <button id='searchfunctionbybutton'><i class="fa-solid fa-microphone"></i></button>
       </div>
       
@@ -123,7 +123,7 @@ function navbarim() {
   </button>
   <ul class="dropdown-menu">
     
-    <li id='dropdownlogout'><a class="dropdown-item" href="#">LogOut</a></li>
+    <li id='dropdownlogout'><a class="dropdown-item" href="#">Logout</a></li>
   </ul>
 </div>
     </div>
