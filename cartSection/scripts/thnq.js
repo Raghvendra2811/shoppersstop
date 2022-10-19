@@ -1,4 +1,4 @@
 setTimeout(()=>{
     document.getElementById("mainDiv").style.display="none";
-    location.href="../../landingPage/index.html"
+    location.href="../../index.html"
 }, 2000)
