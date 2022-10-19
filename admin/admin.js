@@ -1,7 +1,7 @@
 document
   .getElementById("add-product-button")
   .addEventListener("click", async () => {
-    let res = await fetch("https://superstop.herokuapp.com/demo");
+    let res = await fetch("https://superstop.herokuapp.com/product");
     let data = await res.json();
 
     let id = data.length + 1;
@@ -35,7 +35,7 @@ document
         discount: discount,
         rating: rating,
       };
-      let update = await fetch(`https://superstop.herokuapp.com/demo`, {
+      let update = await fetch(`https://superstop.herokuapp.com/product`, {
         method: "POST",
         body: JSON.stringify(item),
         headers: {
