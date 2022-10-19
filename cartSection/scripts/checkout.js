@@ -150,7 +150,8 @@ function displayProductsprice(items,profit){
     document.getElementById("vertical").append(billingboxdiv);
   }
 
-document.getElementById("signId").innerText=localStorage.getItem("user_e_mail");
+document.getElementById("signId").innerText=localStorage.getItem("user_e-mail");
+document.getElementById("logedinUser").innerText=localStorage.getItem("user_n_ame");
 
 
 

@@ -17,12 +17,12 @@
         <div style="background-color: white">
           <h3 style="background-color: white">MY CHECKOUT</h3>
         </div>
-        <div>
+        <div id="logogo">
           <a href=""><h2 style="background-color: black">SHOPPERS STOP</h2></a>
         </div>
         <div id="icons" style="background-color: white">
           <!-- <i class="fa-solid fa-heart" style="background-color: white"></i> -->
-          <!-- <p>Account</p> -->
+          <p id="logedinUser"></p>
         </div>
     </div>
 
@@ -72,23 +72,23 @@
                     <div>
                         <div>
                             <div id="cardnumber">Card Number</div>
-                            <input placeholder="Enter card number here"/>
+                            <input maxlength="16" type="tel" placeholder="Enter card number here"  />
                         </div>
                         <div id="cardDeatails">
                             <div id="expdate">
                                 <div>Expiry</div>
-                                <input placeholder="MM/YY">
+                                <input type="month" placeholder="MM/YY">
                             </div>
                             <div id="cvv">
-                                <div>CVV</div>
-                                <input placeholder="CVV" type="text">
+                                <div id="cvWidth">CVV</div>
+                                <input maxlength="3" placeholder="CVV" type="tel">
                             </div>
                         </div>
                         <div id="checkBox">
                             <input type="checkbox">
                             <label>Save this card for future</label>
                         </div>
-                        <div id="proceedBtn"><button>Proceed to pay</button></div>
+                        <div id="proceedBtn"><button style="background-color: grey;">Proceed to pay</button></div>
                         <div id="bank">
                             <p>Offers for you</p>
                             <div>
