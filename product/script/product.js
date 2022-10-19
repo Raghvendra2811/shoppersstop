@@ -215,7 +215,7 @@ function appendData(data) {
       arr.push(ele);
       localStorage.setItem("target_product",JSON.stringify(arr[0]));
 
-      let flag=localStorage.getItem("flag_g");
+      let flag=JSON.parse(localStorage.getItem("flag_g"));
       console.log(flag);
        
       if(flag==true)
@@ -339,9 +339,7 @@ function checkFun() {
        {
         appendData(ans);
        },200);
-       
-      
-       
+        
 
       }
   
