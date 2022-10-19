@@ -117,11 +117,26 @@ document.getElementById("addTocart").addEventListener("click", () => {
   for (let i = 0; i < pro.length; i++) {
     if (pro[i].id == arrayy.id) {
       AddorNot = true;
-      alert("already added in cart");
+      let s = document.getElementById("alertts");
+      s.innerText = "already added in cart";
+      s.style.display = "flex";
+      s.style.backgroundColor = "red";
+
+      setTimeout(() => {
+        document.getElementById("alertts").style.display = "none";
+      }, 1200);
     }
   }
 
   if (!AddorNot) {
+    let s = document.getElementById("alertts");
+    s.innerText = "Added in cart";
+    s.style.display = "flex";
+    s.style.backgroundColor = "Green";
+
+    setTimeout(() => {
+      document.getElementById("alertts").style.display = "none";
+    }, 1200);
     pro.push(arrayy);
     localStorage.setItem("cartprotuct_s", JSON.stringify(pro));
     let count = JSON.parse(localStorage.getItem("cartprotuct_s")) || [];
