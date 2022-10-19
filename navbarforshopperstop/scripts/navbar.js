@@ -86,7 +86,7 @@ document.getElementById('dropdownlogout').addEventListener("click", () => {
   localStorage.setItem('flag_g',"false");
   localStorage.setItem('user_n_ame',"");
   localStorage.setItem('cartprotuct_s',JSON.stringify([]));
-  location.href = './index.html'
+  location.href = '../index.html'
 
 })
 document.getElementById('storeinls').addEventListener('click', addtolocal);
