@@ -375,3 +375,5 @@ displayProducts(cartProducts,"Standard Delivery");
     }
 
     // openCheckoutPage();
+
+    // document.getElementById("nameUser").innerText=localStorage.setItem("user_n_ame").value;
